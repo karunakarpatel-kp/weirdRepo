@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="222" height="60" viewBox="0 0 222 60">
+  <g id="Group_17" data-name="Group 17" transform="translate(-152 -23)">
+    <text id="Karunakar" transform="translate(227 47)" fill="#ffca3e" font-size="26" font-family="Georgia-Bold, Georgia" font-weight="700"><tspan x="0" y="0">Karunakar</tspan></text>
+    <text id="Patel" transform="translate(227 74)" fill="#ffca3e" font-size="24" font-family="Georgia-Bold, Georgia" font-weight="700"><tspan x="0" y="0">Patel</tspan></text>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="64" height="58" rx="4" transform="translate(152 25)" fill="#ffca3e"/>
+    <g id="Group_11" data-name="Group 11" transform="translate(165.943 40.299)">
+      <line id="Line_3" data-name="Line 3" x1="5.627" y2="27.654" transform="translate(16.213)" fill="none" stroke="#020c53" stroke-width="5"/>
+      <g id="Group_4" data-name="Group 4" transform="translate(0 7.033)">
+        <path id="Path_6" data-name="Path 6" d="M16,23.854l10.947-8.927L16,6" transform="translate(9.543 -6)" fill="none" stroke="#020c53" stroke-linejoin="round" stroke-width="5"/>
+        <path id="Path_7" data-name="Path 7" d="M12.947,6,2,14.927l10.947,8.927" transform="translate(-2 -6)" fill="none" stroke="#020c53" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+    </g>
+  </g>
+</svg>
+ 
