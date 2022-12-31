@@ -10,18 +10,16 @@ const Home = () => {
   return (
     <>
       <ImageOnRightCard
-        Title="Learn SEO Right From Start To Finish"
-        Description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, necessitatibus exercitationem doloremque,
-            quam nemo nescifugiat aliquam! Distinctio doloribus possimus fugit perferendis fuga aliquam...."
+        Title="Learn SEO Right From Start To Finish Image On Right Side"
+        Description="In this blog post you will be able o learn all the required technologies and most often you will able to see all the new era of technologies in this this blog post you will be able o learn all the required technologies and most often you will able to see all the new era of technologies in this World this blog post you will be able o learn all the required technologies and most often you will able to see all the new era of technologies in this World World.....!"
         href="/"
         ImageSrc={coding}
         ImageAlt="Coding-Image"
       />
 
       <ImageOnLeftCard
-        Title="Learn SEO Right From Start To Finish"
-        Description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, necessitatibus exercitationem doloremque,
-            quam nemo nescifugiat aliquam! Distinctio doloribus possimus fugit perferendis fuga aliquam...."
+        Title="Learn SEO Right From Start To Finish By Image on Left"
+        Description="In this blog post you will be able o learn all the required technologies and most often you will able to see all the new era of technologies in this this blog post you will be able o learn all the required technologies and most often you will able to see all the new era of technologies in this World this blog post you will be able o learn all the required technologies and most often you will able to see all the new era of technologies in this World World.....!"
         href="/Blog/seo"
         ImageSrc={seo}
         ImageAlt="SEO-Image"

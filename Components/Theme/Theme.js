@@ -32,10 +32,10 @@ Theme = createTheme(Theme, {
   typography: {
     h1: {
       fontFamily: "Georgia, sans-serif",
-      fontSize: "2.1rem",
+      fontSize: "1.6rem",
       letterSpacing: "0",
       fontWeight: "bold",
-      lineHeight: "49px",
+      lineHeight: "2.5rem",
       textTransform: "capitalize",
       color: themeColors.headingColor,
       // For Mobile (Extra Small Screens)
@@ -131,10 +131,10 @@ Theme = createTheme(Theme, {
       },
     },
     body1: {
-      fontSize: "1.3rem",
+      fontSize: "1.2rem",
       fontWeight: "normal",
       fontFamily: "Georgia, sans-serif",
-      lineHeight: "36px",
+      lineHeight: "2rem",
       letterSpacing: "0px",
 
       // For Mobile (Extra Small Screens)

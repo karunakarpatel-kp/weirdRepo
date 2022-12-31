@@ -27,8 +27,8 @@ const Seo = () => {
   };
   return (
     <>
-      <Box m="auto" mb={5} sx={{ width: { xs: "100%", sm: "100%", md: 990, lg: 990 }, padding: { xs: "0px 10px" } }}>
-        <Heading variant="h1" title="Learn SEO Right from start to finish." />
+      <Box m="auto" mb={5} maxWidth={800} p={2} border={0}>
+        <Heading variant="h1" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. " />
 
         <Stack direction="row" display="flex">
           <Subtitle text="By: Karunakar Patel" />
@@ -38,19 +38,23 @@ const Seo = () => {
 
         {/* Image For Desktop Screens */}
         <Box
-          width={990}
-          height={462}
+          // width={990}
+          // height={462}
           bgcolor="#ECECEC"
           mt={2}
           mb={2}
+          p={1}
           textAlign="center"
-          sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block" } }}
+          position="relative"
+          sx={{
+            display: { xs: "none", sm: "none", md: "block", lg: "block" },
+          }}
         >
-          <Image alt="Coding Image" src={coding} width={990} height={462} />
+          <Image alt="Coding Image" src={coding} layout="responsive" />
         </Box>
 
         {/* Image for Mobile Screens */}
-        <Grid
+        {/* <Grid
           item
           xs={12}
           sm={12}
@@ -65,7 +69,7 @@ const Seo = () => {
               <Image alt="hi" src={coding} width={360} />
             </Box>
           </Box>
-        </Grid>
+        </Grid> */}
 
         {/* <Box textAlign="center" mt={2} mb={2} sx={{ display: { xs: "block", sm: "block", md: "none", lg: "none" } }}>
           <Image alt="Coding Image" src={coding} width={370} style={{ minWidth: "270px", margin: "auto" }} />
@@ -119,14 +123,15 @@ const Seo = () => {
           <Subtitle text="Read Time: 10mins" sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block" } }} />
         </Stack>
 
-        <Box pl={1} pr={1}>
-          <Paragraph text="In this paragraphy text you will learn how to save the editable fields of car details to the state and more over make previous year claims to editable fields and save it in a a state." />
+        <Box pl={0} pr={0}>
+          <Paragraph text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed consectetur repudiandae voluptatem similique " />
 
           <Paragraph text="In this paragraphy text you will learn how to save the editable fields of car details to the state and more over make previous year claims to editable fields and save it in a a state." />
 
           <Paragraph text="In this paragraphy text you will learn how to save the editable fields of car details to the state and more over make previous year claims to editable fields and save it in a a state." />
 
           <Paragraph text="In this par sdf sdfl fdsk fdlkfj l skdfou sldfou flsdfj sd agraphy text you will learn how to save the editable fields of car details to the state and more over make previous year claims to editable fields and save it in a a state." />
+
           <Paragraph
             text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atque
           adipisci rerum architecto voluptatum autem repellat possimus libero nostrum suscipit quod. Fuga officiis
