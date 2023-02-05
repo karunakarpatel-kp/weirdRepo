@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import Logo from ".././../public/Logo.svg";
 import Link from "next/link";
-const Header = () => {
+const Navigation = () => {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -41,4 +41,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navigation;

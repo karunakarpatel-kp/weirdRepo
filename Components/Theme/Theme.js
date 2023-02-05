@@ -60,7 +60,7 @@ Theme = createTheme(Theme, {
       fontSize: "1.5rem",
       letterSpacing: "0",
       fontWeight: "bold",
-      lineHeight: "49px",
+      lineHeight: "40px",
       textTransform: "capitalize",
       color: themeColors.headingColor,
       // For Mobile (Extra Small Screens)
@@ -85,7 +85,7 @@ Theme = createTheme(Theme, {
       fontSize: "1.4rem",
       letterSpacing: "0",
       fontWeight: "bold",
-      lineHeight: "49px",
+      lineHeight: "36px",
       textTransform: "capitalize",
       color: themeColors.headingColor,
       // For Mobile (Extra Small Screens)
@@ -110,7 +110,7 @@ Theme = createTheme(Theme, {
       fontSize: "1.3rem",
       letterSpacing: "0",
       fontWeight: "bold",
-      lineHeight: "49px",
+      lineHeight: "36px",
       textTransform: "capitalize",
       color: themeColors.headingColor,
       // For Mobile (Extra Small Screens)
@@ -130,6 +130,59 @@ Theme = createTheme(Theme, {
         // border: "1px solid green",
       },
     },
+
+    h5: {
+      fontFamily: "Georgia, sans-serif",
+      fontSize: "1.3rem",
+      letterSpacing: "0",
+      fontWeight: "bold",
+      lineHeight: "36px",
+      textTransform: "capitalize",
+      color: themeColors.headingColor,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
+    h6: {
+      fontFamily: "Georgia, sans-serif",
+      fontSize: "1.3rem",
+      letterSpacing: "0",
+      fontWeight: "bold",
+      lineHeight: "36px",
+      textTransform: "capitalize",
+      color: themeColors.headingColor,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
     body1: {
       fontSize: "1.2rem",
       fontWeight: "normal",

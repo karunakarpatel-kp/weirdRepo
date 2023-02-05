@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../UI/Header";
+import Header from "../UI/Navigation";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import Theme from "../Theme/Theme";
 import Grid from "@mui/material/Grid";

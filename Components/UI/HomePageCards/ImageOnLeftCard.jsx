@@ -2,13 +2,28 @@ import { Button, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import { createClient } from "pexels";
+import seoImage from "../../../public/seo.jpg";
 
 const ImageOnLeftCard = (props) => {
+  const [imageURL, setImageURL] = React.useState("");
+
   const { ImageAlt, ImageSrc, Title, Description, href } = props;
+
   const textTruncate = (Description) => {
     return <>{Description?.length > 300 ? `${Description.substring(0, 200)}....` : Description} </>;
   };
+
+  useEffect(() => {
+    // PIXELS Images In Here
+    // const client = createClient(process.env.PIXELS_API_KEY);
+    // const query = "money by typing jobs";
+    // client.photos.search({ query, per_page: 1 }).then((photos) => {
+    //   setImageURL(photos.photos[0].src.original);
+    // });
+  }, []);
+
   return (
     <>
       <Grid item xs={12} sm={12} md={6} lg={6} display={{ xs: "block", sm: "none", lg: "none", md: "none" }}>
@@ -23,7 +38,13 @@ const ImageOnLeftCard = (props) => {
         {/* For Desktop Versions Image Goes Here...! */}
         <Grid item xs={12} sm={12} md={6} lg={5} display={{ xs: "none", sm: "none", lg: "flex", md: "flex" }}>
           <Box display="flex" justifyContent="center" alignItems="center">
-            <Image alt={ImageAlt} src={ImageSrc} style={{ width: "100%", height: "auto", margin: "auto" }} />
+            <Image
+              alt={ImageAlt}
+              src={seoImage}
+              width={400}
+              height={351}
+              style={{ width: "100%", height: "auto", margin: "auto" }}
+            />
           </Box>
         </Grid>
 
@@ -48,7 +69,7 @@ export default ImageOnLeftCard;
 {
   /* For Mobile Versions Images Goes Here...! */
 }
-// <Grid item xs={12} sm={12} md={6} lg={6} mt={4} display={{ xs: "block", sm: "none", lg: "none", md: "none" }}>
+// <Grid item xs={12} sm={12} md={6} lg={6} mt={4} display={{ xs: "block", sm: "none", lg: "none", md: "none" }}>px
 //   <Box display="flex" justifyContent="center" alignItems="center">
 //     <Box maxWidth={400} maxHeight={351} display="flex" justifyContent="center" alignItems="center">
 //       <Image alt={ImageAlt} src={ImageSrc} style={{ width: "100%", height: "auto" }} />

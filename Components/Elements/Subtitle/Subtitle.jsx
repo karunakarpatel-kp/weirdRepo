@@ -3,7 +3,7 @@ import React from "react";
 
 const Subtitle = (props) => {
   return (
-    <Typography variant="subtitle2" {...props}>
+    <Typography {...props} variant="body2" component="p" fontSize="medium">
       {props.text}
     </Typography>
   );
