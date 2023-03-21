@@ -130,8 +130,8 @@ Theme = createTheme(Theme, {
       // For Mobile (Extra Small Screens)
       [Theme.breakpoints.down("sm")]: {
         // border: "1px solid red",
-        fontSize: "1.0rem",
-        // lineHeight: "36px",
+        fontSize: "1.1rem",
+        lineHeight: "33px",
       },
       // For Medium or Mobile Phones (landScapes)
       [Theme.breakpoints.between("sm", "md")]: {
@@ -182,8 +182,8 @@ Theme = createTheme(Theme, {
       // For Mobile (Extra Small Screens)
       [Theme.breakpoints.down("sm")]: {
         // border: "1px solid red",
-        fontSize: "1.3rem",
-        lineHeight: "39px",
+        fontSize: "1.2rem",
+        lineHeight: "33px",
       },
       // For Medium or Mobile Phones (landScapes)
       [Theme.breakpoints.between("sm", "md")]: {
@@ -208,8 +208,8 @@ Theme = createTheme(Theme, {
       // For Mobile (Extra Small Screens)
       [Theme.breakpoints.down("sm")]: {
         // border: "1px solid red",
-        fontSize: "1.3rem",
-        lineHeight: "39px",
+        fontSize: "1.2rem",
+        lineHeight: "30px",
       },
       // For Medium or Mobile Phones (landScapes)
       [Theme.breakpoints.between("sm", "md")]: {
@@ -240,8 +240,8 @@ Theme = createTheme(Theme, {
       // For Medium or Mobile Phones (landScapes)
       [Theme.breakpoints.between("sm", "md")]: {
         // border: "1px solid black",
-        fontSize: "1.3rem",
-        lineHeight: "39px",
+        fontSize: "1.2rem",
+        lineHeight: "30px",
       },
       // For Larger Screens
       [Theme.breakpoints.up("md")]: {
@@ -266,8 +266,8 @@ Theme = createTheme(Theme, {
       // For Medium or Mobile Phones (landScapes)
       [Theme.breakpoints.between("sm", "md")]: {
         // border: "1px solid black",
-        fontSize: "1.3rem",
-        lineHeight: "39px",
+        fontSize: "1.2rem",
+        lineHeight: "30px",
       },
       // For Larger Screens
       [Theme.breakpoints.up("md")]: {
@@ -292,8 +292,8 @@ Theme = createTheme(Theme, {
       // For Medium or Mobile Phones (landScapes)
       [Theme.breakpoints.between("sm", "md")]: {
         // border: "1px solid black",
-        fontSize: "1.3rem",
-        lineHeight: "39px",
+        fontSize: "1.1rem",
+        lineHeight: "30px",
       },
       // For Larger Screens
       [Theme.breakpoints.up("md")]: {

@@ -125,7 +125,10 @@ const Seo = () => {
             text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atque
           adipisci rerum architecto voluptatum autem "
           />
-          <HeadingThree id="two" title="This is heading number three dude...!" />
+          <HeadingThree
+            id="two"
+            title="This is heading number three dudei in which one of the best possible ways to get Heading dude...!"
+          />
           <Paragraph
             text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atque
           adipisci rerum architecto voluptatum autem repellat possimus libero nostrum suscipit quod. Fuga officiis
