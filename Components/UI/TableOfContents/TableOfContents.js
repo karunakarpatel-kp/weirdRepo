@@ -28,7 +28,7 @@ const TableOfContents = (props) => {
 
   return (
     <>
-      <Box flexGrow={1} maxWidth={{ xs: "100%", sm: "50%", md: "50%", lg: "50%" }}>
+      <Box flexGrow={1}>
         <Accordion
           elevation={0}
           sx={{

@@ -1,9 +1,14 @@
 import { createTheme } from "@mui/material/styles";
 
 export const themeColors = {
-  primaryMain: "#020c53",
+  primaryMain: "#284A98",
   secondaryMain: "#ffca3c",
-  headingColor: "#002755",
+  headingColor: "rgb(48,52,59)",
+  ReadmoreArticleColor: "#4D4F8D",
+  tagBgColor: "#8AAAE5",
+  tabtextColor: "#ECECEC",
+  LastUpdateTagsColor: "#9EA4B2",
+  blogPostBrandSubheading: "rgb(192,192,192)",
 };
 
 let Theme = createTheme({
@@ -30,11 +35,305 @@ let Theme = createTheme({
 
 Theme = createTheme(Theme, {
   typography: {
-    h1: {
-      fontFamily: "Georgia, sans-serif",
+    // For all the Paragraph Items in the Blog Post/Pages
+    brandParagraph: {
+      fontSize: "1.26rem",
+      fontWeight: "400",
+      fontFamily: "WotfardLight",
+      color: "rgb(31,34,38)",
+      lineHeight: "2rem",
+      letterSpacing: "0",
+
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.2rem",
+        lineHeight: "36px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.2rem",
+        lineHeight: "36px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
+    // Image On Top Title Goes Here
+    brandTitle: {
+      fontFamily: "Wotfard",
       fontSize: "1.6rem",
       letterSpacing: "0",
-      fontWeight: "bold",
+      fontWeight: "600",
+      lineHeight: "2.5rem",
+      textTransform: "capitalize",
+      color: themeColors.headingColor,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.3rem",
+        lineHeight: "30px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.3rem",
+        lineHeight: "30px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.between("md", "lg")]: {
+        // border: "1px solid green",
+        fontSize: "1.3rem",
+        lineHeight: "30px",
+      },
+    },
+
+    // For HomePage Card Description
+    brandDescriptionParagraph: {
+      fontSize: "1.1rem",
+      fontWeight: "normal",
+      fontFamily: "WotfardLight",
+      color: "#8890a0",
+      lineHeight: "2rem",
+      letterSpacing: "0px",
+
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.1rem",
+        lineHeight: "30px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.2rem",
+        lineHeight: "36px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.between("md", "lg")]: {
+        // border: "1px solid green",
+        fontSize: "1.1rem",
+        lineHeight: "33px",
+      },
+    },
+
+    blogPostBrandSubheading: {
+      fontSize: "1.2rem",
+      fontWeight: "400",
+      fontFamily: "WotfardLight",
+      lineHeight: "30px",
+      letterSpacing: "0px",
+      color: themeColors.blogPostBrandSubheading,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.0rem",
+        // lineHeight: "36px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.1rem",
+        lineHeight: "34px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
+    blogPostBrandTitle: {
+      fontFamily: "Wotfard",
+      fontSize: "2rem",
+      letterSpacing: "0",
+      fontWeight: "600",
+      lineHeight: "2.5rem",
+      textTransform: "capitalize",
+      color: themeColors.headingColor,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.3rem",
+        lineHeight: "35px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.4rem",
+        lineHeight: "39px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
+    blogPostBrandHeadingTwo: {
+      fontFamily: "Wotfard",
+      fontSize: "1.3rem",
+      letterSpacing: "0",
+      // fontWeight: "bold",
+      lineHeight: "40px",
+      textTransform: "capitalize",
+      color: themeColors.primaryMain,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
+    blogPostBrandHeadingThree: {
+      fontFamily: "Wotfard",
+      fontSize: "1.29rem",
+      letterSpacing: "0",
+      // fontWeight: "bold",
+      lineHeight: "40px",
+      textTransform: "capitalize",
+      color: themeColors.primaryMain,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
+    blogPostBrandHeadingFour: {
+      fontFamily: "Wotfard",
+      fontSize: "1.27rem",
+      letterSpacing: "0",
+      // fontWeight: "bold",
+      lineHeight: "40px",
+      textTransform: "capitalize",
+      color: themeColors.primaryMain,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
+    blogPostBrandHeadingFive: {
+      fontFamily: "Wotfard",
+      fontSize: "1.25rem",
+      letterSpacing: "0",
+      // fontWeight: "bold",
+      lineHeight: "40px",
+      textTransform: "capitalize",
+      color: themeColors.primaryMain,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
+    blogPostBrandHeadingSix: {
+      fontFamily: "Wotfard",
+      fontSize: "1.199rem",
+      letterSpacing: "0",
+      // fontWeight: "bold",
+      lineHeight: "40px",
+      textTransform: "capitalize",
+      color: themeColors.primaryMain,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.3rem",
+        lineHeight: "39px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.up("md")]: {
+        // border: "1px solid green",
+      },
+    },
+
+    brandingSectionIntro: {
+      fontFamily: "Wotfard",
+      fontSize: "1.3rem",
+      letterSpacing: "0",
+      fontWeight: "400",
+      lineHeight: "36px",
+      // textTransform: "capitalize",
+      color: themeColors.headingColor,
+      // For Mobile (Extra Small Screens)
+      [Theme.breakpoints.down("sm")]: {
+        // border: "1px solid red",
+        fontSize: "1.133rem",
+        lineHeight: "33px",
+      },
+      // For Medium or Mobile Phones (landScapes)
+      [Theme.breakpoints.between("sm", "md")]: {
+        // border: "1px solid black",
+        fontSize: "1.2rem",
+        lineHeight: "39px",
+      },
+      // For Larger Screens
+      [Theme.breakpoints.between("md", "lg")]: {
+        // border: "1px solid green",
+        fontSize: "1.1999rem",
+        lineHeight: "39px",
+      },
+    },
+
+    h1: {
+      fontFamily: "Wotfard",
+      fontSize: "2rem",
+      letterSpacing: "0",
+      fontWeight: "600",
       lineHeight: "2.5rem",
       textTransform: "capitalize",
       color: themeColors.headingColor,
@@ -56,10 +355,10 @@ Theme = createTheme(Theme, {
       },
     },
     h2: {
-      fontFamily: "Georgia, sans-serif",
+      fontFamily: "Wotfard",
       fontSize: "1.5rem",
       letterSpacing: "0",
-      fontWeight: "bold",
+      // fontWeight: "bold",
       lineHeight: "40px",
       textTransform: "capitalize",
       color: themeColors.headingColor,
@@ -81,10 +380,10 @@ Theme = createTheme(Theme, {
       },
     },
     h3: {
-      fontFamily: "Georgia, sans-serif",
+      fontFamily: "Wotfard",
       fontSize: "1.4rem",
       letterSpacing: "0",
-      fontWeight: "bold",
+      // fontWeight: "bold",
       lineHeight: "36px",
       textTransform: "capitalize",
       color: themeColors.headingColor,
@@ -106,10 +405,10 @@ Theme = createTheme(Theme, {
       },
     },
     h4: {
-      fontFamily: "Georgia, sans-serif",
+      fontFamily: "Wotfard",
       fontSize: "1.3rem",
       letterSpacing: "0",
-      fontWeight: "bold",
+      // fontWeight: "bold",
       lineHeight: "36px",
       textTransform: "capitalize",
       color: themeColors.headingColor,
@@ -130,12 +429,11 @@ Theme = createTheme(Theme, {
         // border: "1px solid green",
       },
     },
-
     h5: {
-      fontFamily: "Georgia, sans-serif",
+      fontFamily: "Wotfard",
       fontSize: "1.3rem",
       letterSpacing: "0",
-      fontWeight: "bold",
+      // fontWeight: "bold",
       lineHeight: "36px",
       textTransform: "capitalize",
       color: themeColors.headingColor,
@@ -156,20 +454,19 @@ Theme = createTheme(Theme, {
         // border: "1px solid green",
       },
     },
-
     h6: {
-      fontFamily: "Georgia, sans-serif",
+      fontFamily: "Wotfard",
       fontSize: "1.3rem",
       letterSpacing: "0",
-      fontWeight: "bold",
+      // fontWeight: "bold",
       lineHeight: "36px",
       textTransform: "capitalize",
       color: themeColors.headingColor,
       // For Mobile (Extra Small Screens)
       [Theme.breakpoints.down("sm")]: {
         // border: "1px solid red",
-        fontSize: "1.3rem",
-        lineHeight: "39px",
+        fontSize: "1.2rem",
+        lineHeight: "33px",
       },
       // For Medium or Mobile Phones (landScapes)
       [Theme.breakpoints.between("sm", "md")]: {
@@ -182,11 +479,11 @@ Theme = createTheme(Theme, {
         // border: "1px solid green",
       },
     },
-
     body1: {
-      fontSize: "1.2rem",
+      fontSize: "1.1rem",
       fontWeight: "normal",
-      fontFamily: "Georgia, sans-serif",
+      fontFamily: "Wotfard",
+      color: "#8890a0",
       lineHeight: "2rem",
       letterSpacing: "0px",
 
@@ -210,10 +507,9 @@ Theme = createTheme(Theme, {
     body2: {
       fontSize: "1.3rem",
       fontWeight: "normal",
-      fontFamily: "Georgia, sans-serif",
+      fontFamily: "Wotfard",
       lineHeight: "36px",
       letterSpacing: "0px",
-
       // For Mobile (Extra Small Screens)
       [Theme.breakpoints.down("sm")]: {
         // border: "1px solid red",
@@ -229,6 +525,39 @@ Theme = createTheme(Theme, {
       // For Larger Screens
       [Theme.breakpoints.up("md")]: {
         // border: "1px solid green",
+      },
+    },
+  },
+
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        variantMapping: {
+          brandParagraph: "p",
+          brandDescriptionParagraph: "p",
+          blogPostBrandSubheading: "p",
+          blogPostBrandTitle: "h1",
+          brandTitle: "h1",
+          blogPostBrandHeadingTwo: "h2",
+          blogPostBrandHeadingThree: "h3",
+          blogPostBrandHeadingFour: "h4",
+          blogPostBrandHeadingFive: "h5",
+          blogPostBrandHeadingSix: "h6",
+          brandingSectionIntro: "h6",
+        },
+      },
+    },
+  },
+
+  overrides: {
+    MuiCssBaseline: {
+      "@global": {
+        "@font-face": {
+          fontFamily: "Wotfard",
+          src: 'url(/fonts/Wotfard-Regular.otf) format("truetype)',
+          fontWeight: "normal",
+          fontStyle: "normal",
+        },
       },
     },
   },

@@ -3,6 +3,37 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-padding-top: 70px; /* height of your navbar */
+}
+body {
+  color: rgb(31, 34, 38);
+  /* background-color: rgb(255, 255, 255); */
+  background-color: #fff;
+}
 a {
   text-decoration: none;
+}
+
+.listItemContent {
+  font-size: medium;
+  font-family: "WotfardLight";
+  font-weight: 400;
+  color: #9ea4b2;
+  margin: 13px 0px;
+}
+.listItemLinkContent {
+  color: #9ea4b2;
+}
+.innerListItemContainer {
+  list-style: none;
+  padding-left: 20px;
+}
+/* Active color items for scrollSpy */
+.activeScrollItem {
+  color: #020c53 !important;
+  font-size: large;
+}
+.activeScrollItem > a {
+  color: #020c53 !important;
 }

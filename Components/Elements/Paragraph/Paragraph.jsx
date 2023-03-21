@@ -6,7 +6,7 @@ const Paragraph = (props) => {
   const { id, text, variant } = props;
   return (
     <>
-      <Typography mt={3} id={id ? id : null}>
+      <Typography variant="brandParagraph" mb={3} id={id ? id : null}>
         {text}
       </Typography>
     </>

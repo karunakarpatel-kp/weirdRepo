@@ -3,7 +3,7 @@ import React from "react";
 
 const Subtitle = (props) => {
   return (
-    <Typography {...props} variant="body2" component="p" fontSize="medium">
+    <Typography {...props} variant="blogPostBrandSubheading" mb={3}>
       {props.text}
     </Typography>
   );
