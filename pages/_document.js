@@ -9,7 +9,21 @@ const Document = () => {
         <Head>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
           {/* Google Analytics Code */}
-          <Gtag />
+          {/* <Gtag /> */}
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=G-6JKN93G7ET`} />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-6JKN93G7ET', {
+                  page_path: window.location.pathname,
+                });
+              `,
+            }}
+          />
           {/* Google Adsense Code In Below */}
           <script
             async
