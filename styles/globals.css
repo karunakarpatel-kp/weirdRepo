@@ -37,3 +37,29 @@ a {
 .activeScrollItem > a {
   color: #020c53 !important;
 }
+
+pre {
+  padding: 25px 30px !important;
+  margin: 16px 0px;
+}
+
+code {
+  /* background-color: rgb(239, 239, 239); */
+  /* padding: 3px 6px; */
+  border-radius: 3px;
+  /* color: rgb(91, 98, 173); */
+  font-family: "wotfardLight";
+  font-size: medium;
+  line-height: 25px;
+  word-break: break-word;
+}
+
+.customCode {
+  background-color: rgb(239, 239, 239);
+  padding: 3px 6px;
+  margin: 0px 0px;
+  border-radius: 3px;
+  color: rgb(91, 98, 173);
+  font-family: "wotfardLight";
+  font-size: medium;
+}

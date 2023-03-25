@@ -18,6 +18,9 @@ import HeadingFour from "../../Components/Elements/Headings/HeadingFour";
 import HeadingFive from "../../Components/Elements/Headings/HeadingFive";
 import HeadingSix from "../../Components/Elements/Headings/HeadingSix";
 import Link from "next/link";
+import SyntaxHighlight from "../../Components/SyntaxHighlighter/SyntaxHighlight";
+import Ccode from "../../Components/SyntaxHighlighter/Ccode";
+import SandboxCode from "../../Components/Sandbox/SandboxCode";
 
 export const TableOfContentsList = [
   { id: "1", title: "This Is One", targetElement: "lastItem" },
@@ -32,6 +35,25 @@ export const ArticleDetailsList = [
 ];
 
 export const BlogPostTags = [{ id: "One" }];
+export const code1 = `function App() {
+  return (
+      <SyntaxHighlighter children={code} language="javascript" style={dracula} />
+  );
+}
+// this comment is here to demonstrate an extremely long line length, well beyond what you should probably allow in your own code, though sometimes you'll be highlighting code you can't refactor, which is unfortunate but should be handled gracefully
+
+function createChildren(style, useInlineStyles) {
+  let childrenCount = 0;
+  return children => {
+    childrenCount += 1;
+    return children.map((child, i) => createElement({
+      node: child,
+      style,
+      useInlineStyles,
+      key:\`\${codesegmentsdf}\`
+    }));
+  }
+}`;
 
 const Seo = () => {
   const scrollIntoView = () => {
@@ -85,8 +107,27 @@ const Seo = () => {
         sx={{ pl: { xs: 2, sm: 2, md: 0, lg: 0 }, pr: { xs: 2, sm: 2, md: 0, lg: 0 } }}
       >
         <Grid item md={8} lg={8}>
+          <Paragraph text="Hi this is an another paragraph {}" />
+
+          <Paragraph>
+            This is one of the best paragraph in my life and i was about to include <Ccode>Code</Ccode> in this best of
+            the mui component in which you will able to learn all the components like <Ccode>FormControl</Ccode> of the
+            mui component...!
+          </Paragraph>
+
+          <SyntaxHighlight>{code1}</SyntaxHighlight>
+
+          <Paragraph text="This is how the preview of the Code looks like" />
+
+          <SandboxCode />
+
           <Paragraph text="Multiselect in Material UI is an extended feature to the regular select or dropdown menu that enables users to select multiple values within the same input field." />
-          <Paragraph text="MUI provides a couple of convenient options to get a feature-rich multiselect component included in our project." />
+          <Paragraph text="`hi` sdlfk `<code>one</code>`" />
+          <Paragraph text="This is the most important MUi code in which where you will learn all the type of techniques in which you will be able to run the programming code within no time." />
+          <Typography variant="brandParagraph" mb={3}>
+            Here in below is the Syntax Highlighters
+          </Typography>
+          <SyntaxHighlight>{code1}</SyntaxHighlight>
           <Paragraph text="In this tutorial, we’ll learn how to create a multiselect component using Select and Autocomplete with a customized menu list and removable tags/chips as values." />
           <Paragraph text="MUI provides a couple of convenient options to get a feature-rich multiselect component included in our project. lorem" />
           <Paragraph text="MUI provides a couple of convenient options to get a feature-rich multiselect component included in our project." />
@@ -139,9 +180,7 @@ const Seo = () => {
           adipisci rerum architecto voluptatum autem repellat possimus libero nostrum suscipit quod. Fuga officiis
           co "
           />
-
           <HeadingFour title="Four Heading Labore expedita perspiciatis, amet, natus atque" />
-
           <Paragraph
             text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atque
           co "
@@ -157,6 +196,13 @@ const Seo = () => {
           <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
           <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
           <HeadingSix title="This is the heading number six of the blog post idiot....!" />
+          <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
+          <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
+          <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
+          <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
+          <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
+          <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
+          <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
           <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
           <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
           <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
