@@ -116,8 +116,13 @@ const Seo = () => {
           </Paragraph>
 
           <SyntaxHighlight>{code1}</SyntaxHighlight>
+          <Paragraph>
+            Hi this is the simple code executed by me using the following command called <Ccode>npm run start</Ccode> in
+            the command line and then you will be able to start the server successfully running at{" "}
+            <Ccode>localhost:3000</Ccode>
+          </Paragraph>
 
-          <Paragraph text="This is how the preview of the Code looks like" />
+          <Paragraph text="This is how the preview of the Code looks like This is how the preview of the Code looks likeThis is how the preview of the Code looks likeThis is how the preview of the Code looks likeThis is how the preview of the Code looks likeThis is how the preview of the Code looks likeThis is how the preview of the Code looks likeThis is how the preview of the Code looks likeThis is how the preview of the Code looks likeThis is how the preview of the Code looks likeThis is how the preview of the Code looks like" />
 
           <SandboxCode />
 
