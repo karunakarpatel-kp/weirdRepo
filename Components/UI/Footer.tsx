@@ -4,7 +4,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import React from "react";
 import Link from "next/link";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>

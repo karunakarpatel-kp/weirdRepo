@@ -1,7 +1,7 @@
 import { Html, Main, Head, NextScript } from "next/document";
 import React from "react";
 
-const Document = () => {
+const Document: React.FC = () => {
   return (
     <>
       <Html>
@@ -26,7 +26,7 @@ const Document = () => {
           <script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2687924945894784"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           ></script>
         </Head>
         <body>

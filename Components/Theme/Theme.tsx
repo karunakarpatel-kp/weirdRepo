@@ -1,6 +1,17 @@
 import { createTheme } from "@mui/material/styles";
 
-export const themeColors = {
+interface themeColorProps {
+  primaryMain: string;
+  secondaryMain: string;
+  headingColor: string;
+  ReadmoreArticleColor: string;
+  tagBgColor: string;
+  tabtextColor: string;
+  LastUpdateTagsColor: string;
+  blogPostBrandSubheading: string;
+}
+
+export const themeColors: themeColorProps = {
   primaryMain: "#284A98",
   secondaryMain: "#ffca3c",
   headingColor: "rgb(48,52,59)",
@@ -10,6 +21,59 @@ export const themeColors = {
   LastUpdateTagsColor: "#9EA4B2",
   blogPostBrandSubheading: "rgb(192,192,192)",
 };
+
+// Updating the Typography Variant Props
+
+declare module "@mui/material/styles" {
+  interface TypographyVariants {
+    brandTitle: React.CSSProperties;
+    brandDescriptionParagraph: React.CSSProperties;
+    blogPostBrandTitle: React.CSSProperties;
+    blogPostBrandSubheading: React.CSSProperties;
+    blog: React.CSSProperties;
+    brandParagraph: React.CSSProperties;
+    blogPostBrandHeadingTwo: React.CSSProperties;
+    blogPostBrandHeadingThree: React.CSSProperties;
+    blogPostBrandHeadingFour: React.CSSProperties;
+    blogPostBrandHeadingFive: React.CSSProperties;
+    blogPostBrandHeadingSix: React.CSSProperties;
+    brandingSectionIntro: React.CSSProperties;
+  }
+  // Allow configuration using 'createTheme'
+  interface TypographyVariantsOptions {
+    brandTitle: React.CSSProperties;
+    brandDescriptionParagraph: React.CSSProperties;
+    blogPostBrandTitle: React.CSSProperties;
+    blogPostBrandSubheading: React.CSSProperties;
+    blog: React.CSSProperties;
+    brandParagraph: React.CSSProperties;
+    blogPostBrandHeadingTwo: React.CSSProperties;
+    blogPostBrandHeadingThree: React.CSSProperties;
+    blogPostBrandHeadingFour: React.CSSProperties;
+    blogPostBrandHeadingFive: React.CSSProperties;
+    blogPostBrandHeadingSix: React.CSSProperties;
+    brandingSectionIntro: React.CSSProperties;
+  }
+}
+
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    brandTitle: true;
+    brandDescriptionParagraph: true;
+    blogPostBrandTitle: true;
+    blogPostBrandSubheading: true;
+    blog: true;
+    brandParagraph: true;
+    blogPostBrandHeadingTwo: true;
+    blogPostBrandHeadingThree: true;
+    blogPostBrandHeadingFour: true;
+    blogPostBrandHeadingFive: true;
+    blogPostBrandHeadingSix: true;
+    brandingSectionIntro: true;
+  }
+}
+
+// Start 'createTheme'
 
 let Theme = createTheme({
   palette: {

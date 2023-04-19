@@ -2,9 +2,17 @@ import { Button, Grid, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 import Link from "next/link";
 import React from "react";
-import { themeColors } from "../../Theme/Theme";
+import { themeColors } from "@Theme/Theme";
 
-const LastUpdateTags = (props) => {
+interface LastUpdatedTagsProps {
+  lastUpdatedTime: string;
+  tags: {
+    tag: string;
+    href: string;
+  }[];
+}
+
+const LastUpdateTags = (props: LastUpdatedTagsProps) => {
   const { lastUpdatedTime, tags } = props;
   return (
     <>

@@ -13,15 +13,30 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    // setting up the base URL
+    "baseUrl": ".",
+    "paths": {
+      "@Components/*": ["Components/*"],
+      "@Elements/*": ["Components/Elements/*"],
+      "@Layout/*": ["Components/Layout/*"],
+      "@Sandbox/*": ["Components/Sandbox/*"],
+      "@SEO/*": ["Components/SEO/*"],
+      "@SyntaxHighlighter/*": ["Components/SyntaxHighlighter/*"],
+      "@Theme/*": ["Components/Theme/*"],
+      "@UI/*": ["Components/UI/*"],
+      "@Public/*": ["public/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/_app.js",
-    "pages/index.jsx",
-    "Components/UI/Navigation.jsx"
+    "pages/_app.tsx",
+    "pages/index.tsx",
+    "Components/UI/Navigation.jsx",
+    "Components/UI/TableOfContents/TableOfContents.jsx"
   ],
+
   "exclude": ["node_modules"]
 }

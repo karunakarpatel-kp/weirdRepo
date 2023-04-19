@@ -1,22 +1,20 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForwardIos";
 
 import Link from "next/link";
 
-import MainLayout from "../../Components/Layout/MainLayout";
-import HeaderSection from "../../Components/SEO/Head";
+import MainLayout from "@Layout/MainLayout";
+import HeaderSection from "@SEO/Head";
 
-import seo from "../../public/seo.jpg";
-import coding from "../../public/coding.jpg";
-import hi from "../../public/hi.jpg";
+import seo from "@Public/seo.jpg";
+import coding from "@Public/coding.jpg";
 
-import ImageOnRightCard from "../../Components/UI/HomePageCards/ImageOnRightCard";
-import ImageOnLeftCard from "../../Components/UI/HomePageCards/ImageOnLeftCard";
-import ImageOnTopCard from "../../Components/UI/HomePageCards/ImageOnTopCard";
-import { themeColors } from "../../Components/Theme/Theme";
+import ImageOnTopCard from "@UI/HomePageCards/ImageOnTopCard";
+import { themeColors } from "@Theme/Theme";
 
-const Blog = () => {
+import { NextPageWithLayout } from "../_app";
+
+const Blog: NextPageWithLayout = () => {
   return (
     <>
       <HeaderSection
@@ -195,6 +193,6 @@ const Blog = () => {
 
 export default Blog;
 
-Blog.getLayout = function getLayout(page: any) {
+Blog.getLayout = function getLayout(page) {
   return <MainLayout>{page}</MainLayout>;
 };

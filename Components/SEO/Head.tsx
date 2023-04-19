@@ -1,7 +1,16 @@
 import React from "react";
 import Head from "next/head";
 
-const HeaderSection = (props: any) => {
+interface HeaderSectionProps {
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+  publishedTime: string;
+  lastUpdatedTime: string;
+}
+
+const HeaderSection = (props: HeaderSectionProps) => {
   const { title, description, image, url, publishedTime, lastUpdatedTime } = props;
   return (
     <>

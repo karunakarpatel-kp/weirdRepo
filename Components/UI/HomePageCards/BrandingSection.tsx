@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 
 import { Box } from "@mui/system";
-import { themeColors } from "../../Theme/Theme";
+import { themeColors } from "@Theme/Theme";
+import karunakarImage from "@Public/karunakarImage.svg";
 
-import karunakarImage from "../../../public/karunakarImage.svg";
 import Typography from "@mui/material/Typography";
 import Link from "next/link";
 
-const BrandingSection = () => {
+const BrandingSection: React.FC = () => {
   return (
     <>
       <Box

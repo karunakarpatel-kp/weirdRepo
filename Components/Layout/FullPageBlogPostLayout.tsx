@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import { Fab, Grid } from "@mui/material";
-import Footer from "../UI/Footer";
-import Theme from "../Theme/Theme";
 import { ArrowUpward } from "@mui/icons-material";
-import Navigation from "../UI/Navigation";
 
-const FullPageBlogPostLayout = (props) => {
+import Footer from "@UI/Footer";
+import Theme from "@Theme/Theme";
+import Navigation from "@UI/Navigation";
+
+interface FullpageBlogPostLayoutProps {
+  children?: React.ReactNode;
+}
+
+const FullPageBlogPostLayout = (props: FullpageBlogPostLayoutProps) => {
   const [showButton, setShowButon] = useState(false);
 
   useEffect(() => {

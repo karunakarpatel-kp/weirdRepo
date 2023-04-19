@@ -1,6 +1,10 @@
 import React from "react";
 
-const Ccode = (props) => {
+interface CcodeProps {
+  children?: JSX.Element | JSX.Element[] | string | string[];
+}
+
+const Ccode = (props: CcodeProps) => {
   return (
     <>
       <code className="customCode">{props.children}</code>

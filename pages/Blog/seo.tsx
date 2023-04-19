@@ -3,38 +3,54 @@ import React, { useRef } from "react";
 import { Divider, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 
-import coding from "../../public/coding.jpg";
-import Paragraph from "../../Components/Elements/Paragraph/Paragraph";
-import Subtitle from "../../Components/Elements/Subtitle/Subtitle";
-import FullPageBlogPostLayout from "../../Components/Layout/FullPageBlogPostLayout";
-import HeaderImageFullBlogPost from "../../Components/UI/ImageCards/HeaderImageFullBlogPost";
-import HeaderSection from "../../Components/SEO/Head";
-import Scrollspy from "react-scrollspy";
-import LastUpdateTags from "../../Components/UI/LastUpdate&Tags/LastUpdateTags";
-import HeadingOne from "../../Components/Elements/Headings/HeadingOne";
-import HeadingTwo from "../../Components/Elements/Headings/HeadingTwo";
-import HeadingThree from "../../Components/Elements/Headings/HeadingThree";
-import HeadingFour from "../../Components/Elements/Headings/HeadingFour";
-import HeadingFive from "../../Components/Elements/Headings/HeadingFive";
-import HeadingSix from "../../Components/Elements/Headings/HeadingSix";
-import Link from "next/link";
-import SyntaxHighlight from "../../Components/SyntaxHighlighter/SyntaxHighlight";
-import Ccode from "../../Components/SyntaxHighlighter/Ccode";
-import SandboxCode from "../../Components/Sandbox/SandboxCode";
+import coding from "@Public/coding.jpg";
 
-export const TableOfContentsList = [
+import Paragraph from "@Elements/Paragraph/Paragraph";
+import Subtitle from "@Elements/Subtitle/Subtitle";
+
+import FullPageBlogPostLayout from "@Layout/FullPageBlogPostLayout";
+import HeaderImageFullBlogPost from "@UI/ImageCards/HeaderImageFullBlogPost";
+import HeaderSection from "@SEO/Head";
+import LastUpdateTags from "@UI/LastUpdate&Tags/LastUpdateTags";
+import HeadingOne from "@Elements/Headings/HeadingOne";
+import Scrollspy from "react-scrollspy";
+import HeadingTwo from "@Elements/Headings/HeadingTwo";
+import HeadingThree from "@Elements/Headings/HeadingThree";
+import HeadingFour from "@Elements/Headings/HeadingFour";
+import HeadingFive from "@Elements/Headings/HeadingFive";
+import HeadingSix from "@Elements/Headings/HeadingSix";
+import Link from "next/link";
+import SyntaxHighlight from "@SyntaxHighlighter/SyntaxHighlight";
+import Ccode from "@SyntaxHighlighter/Ccode";
+import SandboxCode from "@Sandbox/SandboxCode";
+
+import { NextPageWithLayout } from "../_app";
+
+interface TableOfContentsListProps {
+  id: string;
+  title: string;
+  targetElement: string;
+}
+
+interface ArticleDetailsListProps {
+  id: string;
+  title: string;
+}
+
+export const TableOfContentsList: TableOfContentsListProps[] = [
   { id: "1", title: "This Is One", targetElement: "lastItem" },
   { id: "2", title: "This Is Two", targetElement: "headingNumberOne" },
   { id: "3", title: "This Is Three", targetElement: "lastItem" },
 ];
 
-export const ArticleDetailsList = [
+export const ArticleDetailsList: ArticleDetailsListProps[] = [
   { id: "1", title: "Published By: Karunakar Patel" },
   { id: "2", title: "Last Updated On: Karunakar Patel" },
   { id: "3", title: "Read Time: 3mins" },
 ];
 
-export const BlogPostTags = [{ id: "One" }];
+export const BlogPostTags: { id: string }[] = [{ id: "One" }];
+
 export const code1 = `function App() {
   return (
       <SyntaxHighlighter children={code} language="javascript" style={dracula} />
@@ -55,7 +71,7 @@ function createChildren(style, useInlineStyles) {
   }
 }`;
 
-const Seo = () => {
+const Seo: NextPageWithLayout = () => {
   const scrollIntoView = () => {
     window.scrollTo({
       top: 0,
@@ -109,6 +125,8 @@ const Seo = () => {
         <Grid item md={8} lg={8}>
           <Paragraph text="Hi this is an another paragraph {}" />
 
+          <Ccode>Code block Out the Paragraph</Ccode>
+
           <Paragraph>
             This is one of the best paragraph in my life and i was about to include <Ccode>Code</Ccode> in this best of
             the mui component in which you will able to learn all the components like <Ccode>FormControl</Ccode> of the
@@ -132,12 +150,16 @@ const Seo = () => {
           <Typography variant="brandParagraph" mb={3}>
             Here in below is the Syntax Highlighters
           </Typography>
+
           <SyntaxHighlight>{code1}</SyntaxHighlight>
+
           <Paragraph text="In this tutorial, we’ll learn how to create a multiselect component using Select and Autocomplete with a customized menu list and removable tags/chips as values." />
           <Paragraph text="MUI provides a couple of convenient options to get a feature-rich multiselect component included in our project. lorem" />
           <Paragraph text="MUI provides a couple of convenient options to get a feature-rich multiselect component included in our project." />
           <Paragraph text="Multiselect in Material UI is an extended feature to the regular select or dropdown menu that enables users to select multiple values within the same input field." />
+
           <Paragraph text="Multiselect in Material UI is an extended feature to the regular select or dropdown menu that enables users to select multiple values within the same input field." />
+
           <HeadingTwo
             id="headingNumberOne"
             title="This is heading Number Two in this whole text field is some of the major fields in heading Number Two"

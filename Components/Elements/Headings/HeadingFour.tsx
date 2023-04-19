@@ -1,7 +1,11 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
-const HeadingFour = (props) => {
+interface HeadingFourProps {
+  title?: string;
+  id?: string;
+}
+const HeadingFour = (props: HeadingFourProps) => {
   const { title, id } = props;
   return (
     <>

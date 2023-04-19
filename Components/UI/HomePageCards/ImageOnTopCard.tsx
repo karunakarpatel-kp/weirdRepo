@@ -9,18 +9,27 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
 import sampleImage from "../../../public/seo.jpg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { themeColors } from "../../Theme/Theme";
 import { Box } from "@mui/system";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const ImageOnTopCard = (props) => {
+type ImageOnTopCardProps = {
+  Title: string;
+  Description: string;
+  href: string;
+  ImageSrc: StaticImageData;
+  ImageAlt: string;
+  tags: { tag: string; href: string }[];
+};
+
+const ImageOnTopCard: React.FC<ImageOnTopCardProps> = (props: ImageOnTopCardProps) => {
   const router = useRouter();
 
   const { Title, Description, href, ImageSrc, ImageAlt, tags } = props;
 
-  const textTruncate = (Description) => {
+  const textTruncate = (Description: string) => {
     return <>{Description?.length > 100 ? `${Description.substring(0, 105)}.....` : Description} </>;
   };
 

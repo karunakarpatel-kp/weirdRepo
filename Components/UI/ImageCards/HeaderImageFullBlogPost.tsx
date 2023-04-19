@@ -1,8 +1,13 @@
 import { Box } from "@mui/system";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
-const HeaderImageFullBlogPost = (props) => {
+interface HeaderImageFullBlogPostProps {
+  alt: string;
+  image: StaticImageData;
+}
+
+const HeaderImageFullBlogPost = (props: HeaderImageFullBlogPostProps) => {
   const { alt, image } = props;
   return (
     <>

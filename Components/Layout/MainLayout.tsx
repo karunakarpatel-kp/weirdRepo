@@ -1,14 +1,17 @@
 import React from "react";
-import Header from "../UI/Navigation";
+import Header from "@UI/Navigation";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
-import Theme, { themeColors } from "../Theme/Theme";
+import Theme, { themeColors } from "@Theme/Theme";
 import Grid from "@mui/material/Grid";
-import Footer from "../UI/Footer";
+import Footer from "@UI/Footer";
 import { useRouter } from "next/router";
-import BrandingSection from "../UI/HomePageCards/BrandingSection";
+import BrandingSection from "@UI/HomePageCards/BrandingSection";
 import Toolbar from "@mui/material/Toolbar";
 
-const MainLayout = (props: any) => {
+interface MainLayoutProps {
+  children?: React.ReactNode;
+}
+const MainLayout = (props: MainLayoutProps) => {
   const route = useRouter();
   const homePageRoute = route.asPath;
   return (

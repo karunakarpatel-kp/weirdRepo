@@ -1,22 +1,22 @@
-import Grid from "@mui/material/Grid";
-import { Box } from "@mui/system";
-import Typography from "@mui/material/Typography";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForwardIos";
-
-import MainLayout from "../Components/Layout/MainLayout";
-import ImageOnRightCard from "../Components/UI/HomePageCards/ImageOnRightCard";
-import ImageOnLeftCard from "../Components/UI/HomePageCards/ImageOnLeftCard";
-import ImageOnTopCard from "../Components/UI/HomePageCards/ImageOnTopCard";
-import RectangularAd from "../Components/UI/Ads/RectangularAd";
-
-import seo from "../public/seo.jpg";
-import coding from "../public/coding.jpg";
-import hi from "../public/hi.jpg";
 import Link from "next/link";
-import { themeColors } from "../Components/Theme/Theme";
-import HeaderSection from "../Components/SEO/Head";
 
-const Home = () => {
+import ArrowForwardIcon from "@mui/icons-material/ArrowForwardIos";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import { Box } from "@mui/system";
+
+import MainLayout from "@Layout/MainLayout";
+import ImageOnTopCard from "@UI/HomePageCards/ImageOnTopCard";
+import HeaderSection from "@SEO/Head";
+import { themeColors } from "@Theme/Theme";
+
+import coding from "@Public/coding.jpg";
+import seo from "@Public/seo.jpg";
+
+import { ReactElement } from "react";
+import { NextPageWithLayout } from "./_app";
+
+const Home: NextPageWithLayout = () => {
   return (
     <>
       <HeaderSection
@@ -164,6 +164,6 @@ const Home = () => {
 
 export default Home;
 
-Home.getLayout = function getLayout(page) {
+Home.getLayout = function getLayout(page: ReactElement) {
   return <MainLayout>{page}</MainLayout>;
 };
