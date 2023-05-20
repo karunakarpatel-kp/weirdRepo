@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useRouter } from "next/router";
 
 import { Divider, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
@@ -25,6 +26,15 @@ import Ccode from "@SyntaxHighlighter/Ccode";
 import SandboxCode from "@Sandbox/SandboxCode";
 
 import { NextPageWithLayout } from "../_app";
+import {
+  LineShareButton,
+  LineIcon,
+  FacebookMessengerShareButton,
+  FacebookIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+} from "next-share";
+import Sharing from "@Components/SocialShare/Sharing";
 
 interface TableOfContentsListProps {
   id: string;
@@ -79,6 +89,11 @@ const Seo: NextPageWithLayout = () => {
       behavior: "smooth",
     });
   };
+
+  const pageUrl = useRouter();
+  const url = "https://www.karunakarpatel.com";
+  const completeURL = url + pageUrl.asPath;
+
   return (
     <>
       <HeaderSection
@@ -134,6 +149,7 @@ const Seo: NextPageWithLayout = () => {
           </Paragraph>
 
           <SyntaxHighlight>{code1}</SyntaxHighlight>
+
           <Paragraph>
             Hi this is the simple code executed by me using the following command called <Ccode>npm run start</Ccode> in
             the command line and then you will be able to start the server successfully running at{" "}
@@ -232,7 +248,7 @@ const Seo: NextPageWithLayout = () => {
           <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
           <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
           <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
-          <Paragraph text="Paragraph Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
+          <Paragraph text="Paragraph Hi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore expedita perspiciatis, amet, natus atqueco" />
         </Grid>
 
         <Grid item md={4} lg={4} sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block" } }}>
@@ -293,6 +309,11 @@ const Seo: NextPageWithLayout = () => {
                   </a>
                 </li>
               </Scrollspy>
+
+              {/* Social Sharing Icons Are below */}
+              <Box>
+                <Sharing url={completeURL} title="This is the title of the Blog Post" />
+              </Box>
             </Box>
           </Box>
         </Grid>

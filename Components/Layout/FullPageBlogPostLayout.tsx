@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from "react";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
-import { Fab, Grid } from "@mui/material";
+import { Box, Fab, Grid, Typography } from "@mui/material";
 import { ArrowUpward } from "@mui/icons-material";
 
 import Footer from "@UI/Footer";
 import Theme from "@Theme/Theme";
 import Navigation from "@UI/Navigation";
+import Sharing from "@Components/SocialShare/Sharing";
+import { useRouter } from "next/router";
 
 interface FullpageBlogPostLayoutProps {
   children?: React.ReactNode;
 }
 
 const FullPageBlogPostLayout = (props: FullpageBlogPostLayoutProps) => {
+  let basePath = "https://www.karunakarpatel.com";
+  let router = useRouter();
+  let completeURL = basePath + router.asPath;
+
   const [showButton, setShowButon] = useState(false);
 
   useEffect(() => {
@@ -43,6 +49,26 @@ const FullPageBlogPostLayout = (props: FullpageBlogPostLayoutProps) => {
         <Grid item xs={12} sm={11} md={10} lg={9} minHeight="100vh" border={0}>
           {/* Center Content */}
           {props.children}
+
+          {/* Sharing Icon Container In Below */}
+          <Grid
+            container
+            direction="row"
+            spacing={3}
+            mb={3}
+            mt={-6}
+            sx={{
+              pl: { xs: 2, sm: 2, md: 0, lg: 0 },
+              pr: { xs: 2, sm: 2, md: 0, lg: 0 },
+              display: { xs: "block", md: "none", lg: "none" },
+            }}
+          >
+            <Grid item md={8} lg={8}>
+              {/* Please remove the title and make it dynamic....! */}
+              <Sharing url={completeURL} title="hi" />
+            </Grid>
+          </Grid>
+          {/* End of Sharing Container */}
         </Grid>
 
         <Grid item xs={12} sm={0.5} md={1} lg={1.5}>

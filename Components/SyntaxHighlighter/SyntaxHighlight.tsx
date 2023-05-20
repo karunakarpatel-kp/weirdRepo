@@ -12,7 +12,14 @@ const SyntaxHighlight = (props: SyntaxhighlightProps) => {
   const codeSnippet = `${props.codeSnippet}`;
   return (
     <>
-      <Syntaxhighlighter language="javascript" style={a11yDark} wrapLines wrapLongLines showInlineLineNumbers>
+      <Syntaxhighlighter
+        language="javascript"
+        style={a11yDark}
+        wrapLines
+        wrapLongLines
+        showInlineLineNumbers
+        customStyle={{ overflowX: "hidden", borderRadius: "3px" }}
+      >
         {props.children}
       </Syntaxhighlighter>
     </>
