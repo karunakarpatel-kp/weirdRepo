@@ -97,7 +97,7 @@ const Seo: NextPageWithLayout = () => {
   return (
     <>
       <HeaderSection
-        title="SEO Page"
+        title="Start learning Reactjs in easy way"
         description="This is the Description of the webpate"
         image="https://image-url"
         url="https://blog-page-url"
@@ -109,7 +109,7 @@ const Seo: NextPageWithLayout = () => {
 
       <Grid container direction="row" sx={{ pl: { xs: 2, sm: 2, md: 0, lg: 0 }, pr: { xs: 2, sm: 2, md: 0, lg: 0 } }}>
         <Grid item md={10} lg={8}>
-          <HeadingOne title="How to Create a Multiselect Component with Material UI (MUI)" id="Heading Number One" />
+          <HeadingOne title="Start learning React js in an easy way : A comprehensive guide " id="Heading Number One" />
 
           <Subtitle text="Learn how to create and customize a Multiselect component with Material UI and React By Karunakar Patel and he is making out this BlogPost...!" />
 
