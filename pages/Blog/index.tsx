@@ -35,7 +35,7 @@ const Blog: NextPageWithLayout = () => {
       <Grid container sx={{ spacing: { xs: 0, sm: 2, md: 2, lg: 2 }, pl: { xs: 1 } }}>
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <ImageOnTopCard
-            Title="Learn SEO Right From Start To Finish Image On Right Side"
+            Title="Next.js Installation: Everything You Need to Know to Get Started"
             Description="In this blog post you will be able o learn all the required technologies and most often you will able to see all the new era of technologies in this this blog post you will be able o learn all the required technologies and most often you will able to see all the new era of technologies in this World this blog post you will be able o learn all the required technologies and most often you will able to see all the new era of technologies in this World World.....!"
             href="/Blog/seo"
             ImageSrc={seo}
