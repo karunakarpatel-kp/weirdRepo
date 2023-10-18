@@ -63,3 +63,6 @@ code {
   font-family: "wotfardLight";
   font-size: medium;
 }
+.inside_ele {
+  padding-left: 20px;
+}

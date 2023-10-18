@@ -4,7 +4,7 @@ import Head from "next/head";
 interface HeaderSectionProps {
   title: string;
   description: string;
-  image: string;
+  image?: string;
   url: string;
   publishedTime: string;
   lastUpdatedTime: string;
