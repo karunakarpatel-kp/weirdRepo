@@ -60,8 +60,8 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Karunakar Patel: Navigating the landscape of programming knowledge",
     description:
       "Explore the world of programming with Karunakar Patel, where we delve into the exciting landscape of programming knowledge. Here, you'll find simplified explanations, hands-on tutorials, practical tips, and personal experiences about programming. let's learn together step by step.",
-    lastUpdateTime: "2023-10-18T06:07:55+0000",
-    publishedTime: "2023-10-18T06:07:55+0000",
+    lastUpdateTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2023-10-20T19:07:55+00:00",
     featuredImage: nextjsInstallImage,
     featuredImageAltText: "a-person-with-computer",
   },
@@ -72,8 +72,8 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Karunakar Patel Blog: A hub for programming enthusiasts.",
     description:
       "Welcome to Karunakar Patel's Blog! This is the perfect place for people who love programming. You'll find easy-to-understand articles and tutorials for beginners and experienced coders alike. Join our community and let's learn and grow together in the world of coding!",
-    lastUpdateTime: "2023-10-18T06:07:55+0000",
-    publishedTime: "2023-10-18T06:07:55+0000",
+    lastUpdateTime: "2023-10-20T19:19:55+00:00",
+    publishedTime: "2023-10-20T19:19:55+00:00",
     featuredImage: nextjsInstallImage,
     featuredImageAltText: "a-person-with-computer",
   },
@@ -84,8 +84,8 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Next.js Installation: Everything You Need to Know to Get Started",
     description:
       "Learn how to install Next.js in an easy way. This guide provides step-by-step instructions for a smooth setup. If you are looking for seamless Next.js installation,  this tutorial has got you covered. Start building efficient and powerful web applications with Next.js today!",
-    lastUpdateTime: "2023-10-18T06:07:55+0000",
-    publishedTime: "2023-10-18T06:07:55+0000",
+    publishedTime: "2023-10-20T19:07:55+00:00",
+    lastUpdateTime: "2023-10-20T19:07:55+00:00",
     tags: [
       { tag: "Next.js Install", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },
       { tag: "Next.js", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },
