@@ -85,7 +85,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to install Next.js in an easy way. This guide provides step-by-step instructions for a smooth setup. If you are looking for seamless Next.js installation,  this tutorial has got you covered. Start building efficient and powerful web applications with Next.js today!",
     publishedTime: "2023-10-20T19:07:55+00:00",
-    lastUpdateTime: "2023-10-20T19:07:55+00:00",
+    lastUpdateTime: "2023-10-28T07:07:55+00:00",
     tags: [
       { tag: "Next.js Install", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },
       { tag: "Next.js", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },

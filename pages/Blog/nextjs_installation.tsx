@@ -140,7 +140,7 @@ const NextjsInstallation: NextPageWithLayout = () => {
         title={SEO_OBJ.NEXTJS_INSTALLATION.title}
         description={SEO_OBJ.NEXTJS_INSTALLATION.description!}
         // image={SEO_OBJ.NEXTJS_INSTALLATION.featuredImage}
-        image="https://raw.githubusercontent.com/karunakarpatel-kp/Blogging-2022/main/public/nextjs_install.jpg"
+        image="https://raw.githubusercontent.com/karunakarpatel-kp/Blogging-2022/main/public/nextjs_install.png"
         url={SEO_OBJ.NEXTJS_INSTALLATION.absoluteURL}
         publishedTime={SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}
         lastUpdatedTime={SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}
