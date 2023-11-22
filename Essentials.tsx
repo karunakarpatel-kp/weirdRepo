@@ -1,5 +1,6 @@
 import seoImage from "@Public/seo.jpg";
 import nextjsInstallImage from "@Public/nextjs_install.png";
+import welcomePatelsImage from "@Public/welcome-page.png";
 
 interface blogPostURLSProps {
   NEXTJS_INSTALLATION_RELATIVE: string;
@@ -97,7 +98,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
       "Explore the world of programming with Karunakar Patel, where we delve into the exciting landscape of programming knowledge. Here, you'll find simplified explanations, hands-on tutorials, practical tips, and personal experiences about programming. let's learn together step by step.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2023-10-20T19:07:55+00:00",
-    featuredImage: nextjsInstallImage,
+    featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
   },
   // BlogPage  /Blog/
@@ -109,7 +110,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
       "Welcome to Karunakar Patel's Blog! This is the perfect place for people who love programming. You'll find easy-to-understand articles and tutorials for beginners and experienced coders alike. Join our community and let's learn and grow together in the world of coding!",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2023-10-20T19:19:55+00:00",
-    featuredImage: nextjsInstallImage,
+    featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
   },
   // nextjs_installation
