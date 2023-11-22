@@ -35,7 +35,7 @@ import {
   WhatsappIcon,
 } from "next-share";
 import Sharing from "@Components/SocialShare/Sharing";
-import { blogPostsObj, blogPostURLS, SEO_OBJ } from "Essentials";
+import { blogPostsObj, blogPostURLS, DateMonthYearForBlogPost, SEO_OBJ } from "Essentials";
 import HighlightText from "@Components/SyntaxHighlighter/highlightText";
 
 interface TableOfContentsListProps {
@@ -111,29 +111,6 @@ const NextjsInstallation: NextPageWithLayout = () => {
   const url = "https://www.karunakarpatel.com";
   const completeURL = url + pageUrl.asPath;
 
-  const convertedLastUpdatedTime = (lastUpdateTime: string) => {
-    const months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
-    const date = new Date(lastUpdateTime);
-    const day = date.getDate();
-    const month = months[date.getMonth()]; // Months are 0-based in JavaScript Dates
-    const year = date.getFullYear();
-    // console.log(`${day}/${month}/${year}`, "DATE");
-    return `${day}, ${month}, ${year}`;
-  };
-
   return (
     <>
       <HeaderSection
@@ -153,7 +130,7 @@ const NextjsInstallation: NextPageWithLayout = () => {
           <HeadingOne title={SEO_OBJ.NEXTJS_INSTALLATION.title} id="title" />
           <Subtitle text={SEO_OBJ.NEXTJS_INSTALLATION.description!} />
           <LastUpdateTags
-            lastUpdatedTime={convertedLastUpdatedTime(SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime)}
+            lastUpdatedTime={DateMonthYearForBlogPost(SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime)}
             tags={SEO_OBJ.NEXTJS_INSTALLATION.tags!}
           />
           {/* Image For Desktop Screens */}

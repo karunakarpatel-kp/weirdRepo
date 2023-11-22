@@ -38,6 +38,41 @@ interface SEO_OBJ_Props {
   };
 }
 
+export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const date = new Date(lastUpdateTime);
+  const day = date.getDate();
+  const month = months[date.getMonth()]; // Months are 0-based in JavaScript Dates
+  const year = date.getFullYear();
+  // console.log(`${day}/${month}/${year}`, "DATE");
+  return `${day}, ${month}, ${year}`;
+};
+
+export const dynamicLastUpdatedTime = () => {
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+  const month = String(currentDate.getMonth() + 1).padStart(2, "0"); // Adding 1 because months are 0-indexed
+  const day = String(currentDate.getDate()).padStart(2, "0");
+  const hours = String(currentDate.getHours()).padStart(2, "0");
+  const minutes = String(currentDate.getMinutes()).padStart(2, "0");
+  const seconds = String(currentDate.getSeconds()).padStart(2, "0");
+  const formattedDate = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}+05:30`;
+  return formattedDate;
+};
+
 export const BASE_URL: { HOME_PAGE_BASE_URL: string; BLOG_PAGE_BASE_URL: string } = {
   HOME_PAGE_BASE_URL: "https://www.karunakarpatel.com",
   BLOG_PAGE_BASE_URL: "https://www.karunakarpatel.com/Blog",
@@ -60,7 +95,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Karunakar Patel: Navigating the landscape of programming knowledge",
     description:
       "Explore the world of programming with Karunakar Patel, where we delve into the exciting landscape of programming knowledge. Here, you'll find simplified explanations, hands-on tutorials, practical tips, and personal experiences about programming. let's learn together step by step.",
-    lastUpdateTime: "2023-11-13T17:45:55+00:00",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2023-10-20T19:07:55+00:00",
     featuredImage: nextjsInstallImage,
     featuredImageAltText: "a-person-with-computer",
@@ -72,7 +107,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Karunakar Patel Blog: A hub for programming enthusiasts.",
     description:
       "Welcome to Karunakar Patel's Blog! This is the perfect place for people who love programming. You'll find easy-to-understand articles and tutorials for beginners and experienced coders alike. Join our community and let's learn and grow together in the world of coding!",
-    lastUpdateTime: "2023-11-13T17:45:55+00:00",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2023-10-20T19:19:55+00:00",
     featuredImage: nextjsInstallImage,
     featuredImageAltText: "a-person-with-computer",
@@ -85,7 +120,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to install Next.js in an easy way. This guide provides step-by-step instructions for a smooth setup. If you are looking for seamless Next.js installation,  this tutorial has got you covered. Start building efficient and powerful web applications with Next.js today!",
     publishedTime: "2023-10-20T19:07:55+00:00",
-    lastUpdateTime: "2023-11-13T17:45:55+00:00",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Next.js Install", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },
       { tag: "Next.js", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },
