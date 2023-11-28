@@ -11,9 +11,6 @@ body {
   /* background-color: rgb(255, 255, 255); */
   background-color: #fff;
 }
-a {
-  text-decoration: none;
-}
 
 .listItemContent {
   font-size: medium;
@@ -61,8 +58,35 @@ code {
   border-radius: 3px;
   color: rgb(91, 98, 173);
   font-family: "wotfardLight";
-  font-size: medium;
+  font-weight: 400;
+  font-size: 1.26rem;
 }
+
 .inside_ele {
   padding-left: 20px;
+}
+
+a {
+  position: relative;
+  color: rgb(91, 98, 173);
+  text-decoration: underline;
+  text-decoration-color: #9ea4b2;
+  text-decoration-thickness: 0.3px;
+  text-decoration-style: dotted;
+  text-underline-offset: 6px;
+}
+
+a:hover {
+  color: #36106a;
+  text-decoration: underline;
+  text-decoration-color: #36106a;
+  text-decoration-thickness: 0.3px;
+  text-decoration-style: solid;
+  text-underline-offset: 6px;
+}
+
+.MuiTabs-indicator {
+  background-color: white;
+  bottom: 6px;
+  height: 1px;
 }

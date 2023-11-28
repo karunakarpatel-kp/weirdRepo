@@ -18,8 +18,7 @@ const Blog: NextPageWithLayout = () => {
       <HeaderSection
         title={SEO_OBJ.BLOG_PAGE.title}
         description={SEO_OBJ.BLOG_PAGE.description!}
-        // image="https://image-url"
-        image="https://raw.githubusercontent.com/karunakarpatel-kp/Blogging-2022/main/public/nextjs_install.jpg"
+        image={SEO_OBJ.BLOG_PAGE.featuredImage}
         url={SEO_OBJ.BLOG_PAGE.absoluteURL}
         publishedTime={SEO_OBJ.BLOG_PAGE.publishedTime}
         lastUpdatedTime={SEO_OBJ.BLOG_PAGE.lastUpdateTime}
