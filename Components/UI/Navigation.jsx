@@ -9,6 +9,7 @@ import { Box } from "@mui/system";
 import Stack from "@mui/material/Stack";
 
 import Logo from ".././../public/Logo.svg";
+import ReadingProgressBar from "./ReadingProgressBar";
 
 const Navigation = () => {
   const [homePageActive, setHomePageActive] = useState(false);
@@ -91,6 +92,7 @@ const Navigation = () => {
           </Toolbar>
         </AppBar>
       </Box>
+      <ReadingProgressBar />
     </>
   );
 };
