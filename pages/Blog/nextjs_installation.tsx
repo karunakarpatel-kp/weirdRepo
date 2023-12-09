@@ -35,7 +35,7 @@ import {
 } from "next-share";
 import Sharing from "@Components/SocialShare/Sharing";
 import { blogPostsObj, blogPostURLS, DateMonthYearForBlogPost, SEO_OBJ } from "Essentials";
-import { HighlightText as B } from "@Components/SyntaxHighlighter/highlightText";
+import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightText";
 import { Ccode as C } from "@SyntaxHighlighter/Ccode";
 import { CLink as Li } from "@Components/SyntaxHighlighter/CLink";
 
@@ -169,7 +169,7 @@ const NextjsInstallation: NextPageWithLayout = () => {
 
           <HeadingTwo id="what_is_next.js" title="What is Next.js?" />
           <Grid container>
-            <Grid item xs={12} sm={12} md={6} lg={6}>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
               <Paragraph>
                 Nextjs is a popular framework for building full-stack web applications, particularly React-based
                 applications which was developed and maintained by Vercel. Next.js simplifies the process of building
@@ -186,9 +186,9 @@ const NextjsInstallation: NextPageWithLayout = () => {
                 Routing, Inbuilt styling, SEO, Optimization, etc... and mostly supports Typescript.
               </Paragraph>
             </Grid>
-            <Grid item xs={12} sm={12} md={6} lg={6}>
+            {/* <Grid item xs={12} sm={12} md={6} lg={6}>
               <Box minHeight={300} bgcolor="lightgrey"></Box>
-            </Grid>
+            </Grid> */}
           </Grid>
           <Paragraph text="Okay, now let's get our hands dirty with the installation of Next.js." />
 

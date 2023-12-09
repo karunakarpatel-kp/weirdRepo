@@ -9,6 +9,15 @@ interface blogPostURLSProps {
   HOME_PAGE_RELATIVE: string;
   BLOG_PAGE_RELATIVE: string;
   BLOG_PAGE_ABSOLUTE: string;
+
+  PRIVACY_PAGE_ABSOLUTE: string;
+  PRIVACY_PAGE_RELATIVE: string;
+
+  CONTACT_PAGE_ABSOLUTE: string;
+  CONTACT_PAGE_RELATIVE: string;
+
+  DISCLAIMER_PAGE_ABSOLUTE: string;
+  DISCLAIMER_PAGE_RELATIVE: string;
 }
 
 interface blogPostsObjProps {
@@ -82,8 +91,19 @@ export const BASE_URL: { HOME_PAGE_BASE_URL: string; BLOG_PAGE_BASE_URL: string 
 export const blogPostURLS: blogPostURLSProps = {
   HOME_PAGE_ABSOLUTE: BASE_URL.HOME_PAGE_BASE_URL,
   HOME_PAGE_RELATIVE: "/",
+
   BLOG_PAGE_ABSOLUTE: BASE_URL.BLOG_PAGE_BASE_URL,
   BLOG_PAGE_RELATIVE: "/Blog",
+
+  PRIVACY_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/privacy`,
+  PRIVACY_PAGE_RELATIVE: "/privacy",
+
+  CONTACT_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/contact`,
+  CONTACT_PAGE_RELATIVE: "/contact",
+
+  DISCLAIMER_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/disclaimer`,
+  DISCLAIMER_PAGE_RELATIVE: "/disclaimer",
+
   NEXTJS_INSTALLATION_RELATIVE: "/Blog/nextjs_installation",
   NEXTJS_INSTALLATION_ABSOLUTE: `${BASE_URL.BLOG_PAGE_BASE_URL}/nextjs_installation`,
 };
@@ -113,6 +133,43 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
   },
+
+  POLICY_PAGE: {
+    absoluteURL: blogPostURLS.PRIVACY_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.PRIVACY_PAGE_RELATIVE,
+    title: "Privacy Policy | KarunakarPatel Blog",
+    description:
+      "Welcome to KarunakarPatel privacy policy. In here you can find all the details about privacy policy of Karunakar Patel",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2023-12-09T19:07:55+00:00",
+    featuredImage: welcomePatelsImage,
+    featuredImageAltText: "a-person-with-computer",
+  },
+
+  CONTACT_PAGE: {
+    absoluteURL: blogPostURLS.CONTACT_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.CONTACT_PAGE_RELATIVE,
+    title: "Contact Us | KarunakarPatel",
+    description:
+      "Welcome to KarunakarPatel contact page. In here you can find all the details of about KarunakarPatel contact information and a way to contact administrator of the KarunakarPatel site.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2023-12-09T19:07:55+00:00",
+    featuredImage: welcomePatelsImage,
+    featuredImageAltText: "a-person-with-computer",
+  },
+
+  DISCLAIMER_PAGE: {
+    absoluteURL: blogPostURLS.DISCLAIMER_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.DISCLAIMER_PAGE_RELATIVE,
+    title: "Disclaimer | KarunakarPatel",
+    description:
+      "Welcome to KarunakarPatel disclaimer page. In here you can find all the details of about KarunakarPatel's Disclaimer and its policies.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2023-12-09T19:07:55+00:00",
+    featuredImage: welcomePatelsImage,
+    featuredImageAltText: "a-person-with-computer",
+  },
+
   // nextjs_installation
   NEXTJS_INSTALLATION: {
     absoluteURL: blogPostURLS.NEXTJS_INSTALLATION_ABSOLUTE,

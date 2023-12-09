@@ -11,13 +11,15 @@ export const getServerSideProps = ({ res }: any) => {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <!-- We'll render the URLs for our sitemap here. -->
-      ${siteData.map((singleSiteData) => {
-        return `<url> <loc>${singleSiteData.url}</loc>
+      ${siteData
+        .map((singleSiteData) => {
+          return `<url> <loc>${singleSiteData.url}</loc>
               <lastmod>${singleSiteData.lastUpdatedTime}</lastmod>
               <changefreq>weekly</changefreq>
               <priority>1.0</priority>
             </url>`;
-      })}
+        })
+        .join("")}
     </urlset>
   `;
   res.setHeader("Content-Type", "text/xml");
