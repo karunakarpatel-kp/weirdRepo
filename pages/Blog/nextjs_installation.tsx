@@ -35,7 +35,7 @@ import {
 } from "next-share";
 import Sharing from "@Components/SocialShare/Sharing";
 import { blogPostsObj, blogPostURLS, DateMonthYearForBlogPost, SEO_OBJ } from "Essentials";
-import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightText";
+import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightTexts";
 import { Ccode as C } from "@SyntaxHighlighter/Ccode";
 import { CLink as Li } from "@Components/SyntaxHighlighter/CLink";
 

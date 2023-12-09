@@ -11,7 +11,7 @@ import Subtitle from "@Components/Elements/Subtitle/Subtitle";
 import Paragraph from "@Components/Elements/Paragraph/Paragraph";
 import LastUpdateTags from "@Components/UI/LastUpdate&Tags/LastUpdateTags";
 import HeaderImageFullBlogPost from "@Components/UI/ImageCards/HeaderImageFullBlogPost";
-import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightText";
+import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightTexts";
 import HeadingTwo from "@Components/Elements/Headings/HeadingTwo";
 import HeadingThree from "@Components/Elements/Headings/HeadingThree";
 import Sharing from "@Components/SocialShare/Sharing";
