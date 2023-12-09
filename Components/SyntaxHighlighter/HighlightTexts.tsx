@@ -1,10 +1,10 @@
 import React from "react";
 
-interface highlightTextProps {
+interface HighlightTextProps {
   children?: JSX.Element | JSX.Element[] | string | string[];
 }
 
-export const HighlightText = (props: highlightTextProps) => {
+export const HighlightText = (props: HighlightTextProps) => {
   return (
     <>
       <strong className="customCode">{props.children}</strong>
