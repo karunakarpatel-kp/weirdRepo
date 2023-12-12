@@ -442,7 +442,7 @@ const NextjsInstallation: NextPageWithLayout = () => {
 
               {/* Social Sharing Icons Are below */}
               <Box>
-                <Sharing url={completeURL} title="This is the title of the Blog Post" />
+                <Sharing />
               </Box>
             </Box>
           </Box>
