@@ -18,8 +18,8 @@ const Custom404: NextPageWithLayout = () => {
       <HeaderSection
         title="Page Not Found | KarunakarPatel Blog"
         description="This is an custom 404 page for KarunakarPatel Blog"
-        publishedTime="2023-12-12T19:07:55+00:00"
-        lastUpdatedTime="2023-12-12T19:07:55+00:00"
+        publishedTime="2023-12-12T12:07:31+05:30"
+        lastUpdatedTime="2023-12-12T12:07:31+05:30"
         url="https://www.karunakarpatel.com/404"
         image={NotFoundSvgImage}
       />
