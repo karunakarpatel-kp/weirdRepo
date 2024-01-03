@@ -1,6 +1,7 @@
 import seoImage from "@Public/seo.jpg";
 import nextjsInstallImage from "@Public/nextjs_install.png";
 import welcomePatelsImage from "@Public/welcome-page.png";
+import youtubeVideoDownloaderImage from "@Public/youtube-video-downloader.png";
 
 interface blogPostURLSProps {
   NEXTJS_INSTALLATION_RELATIVE: string;
@@ -201,9 +202,10 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   YOUTUBE_VIDEO_DOWNLOAD_PAGE: {
     absoluteURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE,
-    title: "Youtube Video Downloader :",
-    description: "Youtube Video Downloader Page Description",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    title: "Youtube Video Downloader | Best Place To Download Youtube Videos",
+    description:
+      "Here is the best place where you can use youtube video downloader, youtube video to mp3, download youtube videos for free. This is the best tool to download youtube videos.",
+    publishedTime: "2024-01-03T14:22:25+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "youtube-video-downloader", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
@@ -211,8 +213,8 @@ export const SEO_OBJ: SEO_OBJ_Props = {
       { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
       { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
     ],
-    featuredImage: nextjsInstallImage,
-    featuredImageAltText: "a-person-with-computer",
+    featuredImage: youtubeVideoDownloaderImage,
+    featuredImageAltText: "a-simple-youtube-image",
   },
 };
 

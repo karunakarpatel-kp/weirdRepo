@@ -9,6 +9,8 @@ import { AppDispatch, RootState } from "store/centralStore";
 import { setOpenModal } from "store/utilitySlice";
 import { Alert, AlertTitle, IconButton } from "@mui/material";
 import { Close, CloseOutlined } from "@mui/icons-material";
+import Image from "next/image";
+import downlaodIMG from "@Public/download.png";
 
 const style = {
   position: "absolute" as "absolute",
@@ -18,6 +20,9 @@ const style = {
   bgcolor: "white",
   boxShadow: 24,
   p: 1,
+  minHeight: "300px",
+  maxHeight: "85%",
+  overflowY: "scroll",
 };
 
 const ModalContainer = () => {
@@ -52,6 +57,8 @@ const ModalContainer = () => {
       onClose={handleClose}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
+
+      // hideBackdrop
       // sx={{ width: 600 }}
     >
       <Box sx={style} width={{ xs: 380, sm: 350, md: 650, lg: 650 }}>
@@ -67,12 +74,12 @@ const ModalContainer = () => {
         <Box sx={{ textAlign: "center" }}>
           {/* Mobile Devices */}
           <Box display={{ xs: "block", sm: "block", md: "none", lg: "none" }}>
-            <iframe src={getVideoURL} width={350} height={250} allowFullScreen />
+            <iframe src={getVideoURL} width={350} height={250} allowFullScreen title="VideoURL" />
           </Box>
 
           {/* Desktop Devices */}
           <Box display={{ xs: "none", sm: "none", md: "block", lg: "block" }}>
-            <iframe src={getVideoURL} width={600} height={300} allowFullScreen />
+            <iframe src={getVideoURL} width={600} height={300} allowFullScreen title="VideoURL" />
           </Box>
 
           {!showMessage && (
@@ -88,10 +95,16 @@ const ModalContainer = () => {
         </Box>
 
         {showMessage && (
-          <Alert severity="success">
-            <AlertTitle>Click on the more icon in iframe video</AlertTitle>
-            Click on more icon in the iframe video and you may be able to download the whole video at once...!
-          </Alert>
+          <>
+            <Alert severity="info">
+              <AlertTitle>Click to start downloading</AlertTitle>
+              Click on <strong>more icon</strong> in the iframe video and you can start downloading the full video.
+              Please check the below image for reference.
+            </Alert>
+            <Box sx={{ textAlign: "center", margin: "auto" }}>
+              <Image src={downlaodIMG} width={300} height={200} alt="download-image" />
+            </Box>
+          </>
         )}
       </Box>
     </Modal>

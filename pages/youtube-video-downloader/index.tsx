@@ -41,6 +41,7 @@ const YoutubeVideoDownloader: NextPageWithLayout = () => {
               p: 3,
               textAlign: "center",
               position: "relative",
+              width: "100%",
             }}
           >
             <Typography
@@ -48,7 +49,7 @@ const YoutubeVideoDownloader: NextPageWithLayout = () => {
               sx={{ mb: { xs: 2, sm: 2, md: 3, lg: 3, color: "white" } }}
               id="title"
             >
-              Download Youtube Videos For Free of Cost By This AI Tool.
+              {SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.title}
             </Typography>
             <Box
               margin="auto"
@@ -57,9 +58,7 @@ const YoutubeVideoDownloader: NextPageWithLayout = () => {
               sx={{ width: { xs: 5 / 5, sm: 5 / 5, md: 3 / 5, lg: 3 / 5 } }}
             >
               <Typography variant="blogPostBrandSubheading" mb={6} mt={5}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at quam, beatae optio magni libero
-                sint tempore? Quae, ea voluptatibus quos expedita inventore enim similique amet a incidunt molestiae
-                tenetur minus, fuga mollitia voluptas. In mollitia laborum cumque ullam laudantium.
+                {SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.description}
               </Typography>
               <LastUpdateTags
                 lastUpdatedTime={DateMonthYearForBlogPost(SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.lastUpdateTime)}
