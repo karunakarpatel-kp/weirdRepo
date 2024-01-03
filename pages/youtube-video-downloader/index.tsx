@@ -148,7 +148,3 @@ const YoutubeVideoDownloader: NextPageWithLayout = () => {
 };
 
 export default YoutubeVideoDownloader;
-
-// YoutubeVideoDownloader.getLayout = function getLayout(page) {
-//   return <ExtendFullPageLayout>{page}</ExtendFullPageLayout>;
-// };

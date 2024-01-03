@@ -112,7 +112,7 @@ export const blogPostURLS: blogPostURLSProps = {
   NEXTJS_INSTALLATION_ABSOLUTE: `${BASE_URL.BLOG_PAGE_BASE_URL}/nextjs_installation`,
   NEXTJS_INSTALLATION_RELATIVE: "/Blog/nextjs_installation",
 
-  YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE: `${BASE_URL}/nextjs_installation`,
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-video-downloader`,
   YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE: "/youtube-video-downloader",
 };
 
@@ -201,7 +201,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   YOUTUBE_VIDEO_DOWNLOAD_PAGE: {
     absoluteURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE,
-    title: "Youtube Video Downloader Page.",
+    title: "Youtube Video Downloader :",
     description: "Youtube Video Downloader Page Description",
     publishedTime: "2023-10-20T19:07:55+00:00",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
