@@ -90,3 +90,13 @@ a:hover {
   bottom: 6px;
   height: 1px;
 }
+
+/* TextField CSS */
+
+.MuiFormLabel-root-MuiInputLabel-root {
+  color: "white";
+  outline: 1px solid white;
+}
+.MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  outline: 1px solid white;
+}

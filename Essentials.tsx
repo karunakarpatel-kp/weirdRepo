@@ -1,12 +1,18 @@
 import seoImage from "@Public/seo.jpg";
 import nextjsInstallImage from "@Public/nextjs_install.png";
 import welcomePatelsImage from "@Public/welcome-page.png";
+import youtubeVideoDownloaderImage from "@Public/youtube-video-downloader.png";
 
 interface blogPostURLSProps {
   NEXTJS_INSTALLATION_RELATIVE: string;
   NEXTJS_INSTALLATION_ABSOLUTE: string;
+
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE: string;
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE: string;
+
   HOME_PAGE_ABSOLUTE: string;
   HOME_PAGE_RELATIVE: string;
+
   BLOG_PAGE_RELATIVE: string;
   BLOG_PAGE_ABSOLUTE: string;
 
@@ -104,8 +110,11 @@ export const blogPostURLS: blogPostURLSProps = {
   DISCLAIMER_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/disclaimer`,
   DISCLAIMER_PAGE_RELATIVE: "/disclaimer",
 
-  NEXTJS_INSTALLATION_RELATIVE: "/Blog/nextjs_installation",
   NEXTJS_INSTALLATION_ABSOLUTE: `${BASE_URL.BLOG_PAGE_BASE_URL}/nextjs_installation`,
+  NEXTJS_INSTALLATION_RELATIVE: "/Blog/nextjs_installation",
+
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-video-downloader`,
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE: "/youtube-video-downloader",
 };
 
 export const SEO_OBJ: SEO_OBJ_Props = {
@@ -188,6 +197,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImage: nextjsInstallImage,
     featuredImageAltText: "a-person-with-computer",
   },
+
+  // Youtube Video Downloader
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE: {
+    absoluteURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE,
+    title: "Youtube Video Downloader | Best Place To Download Youtube Videos",
+    description:
+      "Here is the best place where you can use youtube video downloader, youtube video to mp3, download youtube videos for free. This is the best tool to download youtube videos.",
+    publishedTime: "2024-01-03T14:22:25+05:30",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "youtube-video-downloader", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
+      { tag: "Video", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: youtubeVideoDownloaderImage,
+    featuredImageAltText: "a-simple-youtube-image",
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -201,5 +229,16 @@ export const blogPostsObj: blogPostsObjProps[] = [
     tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
     featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
     featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
+  },
+  {
+    id: 1,
+    url: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}`,
+    title: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.title}`,
+    description: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.description}`,
+    lastUpdateTime: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.publishedTime}`,
+    tags: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.tags!,
+    featuredImage: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImageAltText}`,
   },
 ];

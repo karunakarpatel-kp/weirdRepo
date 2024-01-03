@@ -20,10 +20,11 @@ const LastUpdateTags = (props: LastUpdatedTagsProps) => {
         <Grid
           item
           xs={12}
-          sm={5}
-          md={5}
-          lg={5}
-          sx={{ textAlign: { xs: "center", sm: "left", md: "normal", lg: "normal" } }}
+          sm={12}
+          md={12}
+          lg={12}
+          // sx={{ textAlign: { xs: "center", sm: "left", md: "normal", lg: "normal" } }}
+          sx={{ textAlign: { xs: "center", sm: "center", md: "center", lg: "center" } }}
         >
           <Typography
             fontWeight={500}
@@ -37,11 +38,11 @@ const LastUpdateTags = (props: LastUpdatedTagsProps) => {
         <Grid
           item
           xs={12}
-          sm={7}
-          md={7}
-          lg={7}
+          sm={12}
+          md={12}
+          lg={12}
           mt={-1}
-          sx={{ textAlign: { xs: "center", sm: "left", md: "normal", lg: "normal" } }}
+          sx={{ textAlign: { xs: "center", sm: "center", md: "center", lg: "center" } }}
         >
           <Box sx={{ "&.MuiBox-root": { marginTop: "-4px" } }}>
             {tags.length > 0 &&
