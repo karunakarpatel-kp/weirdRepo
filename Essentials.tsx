@@ -5,8 +5,13 @@ import welcomePatelsImage from "@Public/welcome-page.png";
 interface blogPostURLSProps {
   NEXTJS_INSTALLATION_RELATIVE: string;
   NEXTJS_INSTALLATION_ABSOLUTE: string;
+
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE: string;
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE: string;
+
   HOME_PAGE_ABSOLUTE: string;
   HOME_PAGE_RELATIVE: string;
+
   BLOG_PAGE_RELATIVE: string;
   BLOG_PAGE_ABSOLUTE: string;
 
@@ -104,8 +109,11 @@ export const blogPostURLS: blogPostURLSProps = {
   DISCLAIMER_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/disclaimer`,
   DISCLAIMER_PAGE_RELATIVE: "/disclaimer",
 
-  NEXTJS_INSTALLATION_RELATIVE: "/Blog/nextjs_installation",
   NEXTJS_INSTALLATION_ABSOLUTE: `${BASE_URL.BLOG_PAGE_BASE_URL}/nextjs_installation`,
+  NEXTJS_INSTALLATION_RELATIVE: "/Blog/nextjs_installation",
+
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE: `${BASE_URL}/nextjs_installation`,
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE: "/youtube-video-downloader",
 };
 
 export const SEO_OBJ: SEO_OBJ_Props = {
@@ -188,6 +196,24 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImage: nextjsInstallImage,
     featuredImageAltText: "a-person-with-computer",
   },
+
+  // Youtube Video Downloader
+  YOUTUBE_VIDEO_DOWNLOAD_PAGE: {
+    absoluteURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE,
+    title: "Youtube Video Downloader Page.",
+    description: "Youtube Video Downloader Page Description",
+    publishedTime: "2023-10-20T19:07:55+00:00",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "youtube-video-downloader", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
+      { tag: "Video", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: nextjsInstallImage,
+    featuredImageAltText: "a-person-with-computer",
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -201,5 +227,16 @@ export const blogPostsObj: blogPostsObjProps[] = [
     tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
     featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
     featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
+  },
+  {
+    id: 1,
+    url: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}`,
+    title: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.title}`,
+    description: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.description}`,
+    lastUpdateTime: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.publishedTime}`,
+    tags: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.tags!,
+    featuredImage: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImageAltText}`,
   },
 ];
