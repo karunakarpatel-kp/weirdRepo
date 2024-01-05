@@ -18,19 +18,20 @@ import DialogContainer from "@Components/UI/Dialogs/DialogContainer";
 import ModalContainer from "@Components/UI/Modals/ModalContainer";
 import Image from "next/image";
 import WelcomeSVG from "@Public/welcome.svg";
+import SingleVideoCardMP3 from "@Components/YTtoMP3/SingleVideoCardMP3";
 
-const YoutubeVideoDownloader: NextPageWithLayout = () => {
+const YoutubeVideoToMP3: NextPageWithLayout = () => {
   const getDataLoadingStatus = useSelector((state: RootState) => state.YTAPISlice.status);
   return (
     <>
       <ThemeProvider theme={Theme}>
         <HeaderSection
-          title={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.title}
-          description={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.description!}
-          image={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImage}
-          url={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.absoluteURL}
-          publishedTime={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.publishedTime}
-          lastUpdatedTime={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.lastUpdateTime}
+          title={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.title}
+          description={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.description!}
+          image={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImage}
+          url={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.absoluteURL}
+          publishedTime={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.publishedTime}
+          lastUpdatedTime={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.lastUpdateTime}
         />
         <Navigation />
         <Grid container direction="row" spacing={0} mt={8} border={0}>
@@ -49,7 +50,7 @@ const YoutubeVideoDownloader: NextPageWithLayout = () => {
               sx={{ mb: { xs: 2, sm: 2, md: 3, lg: 3, color: "white" } }}
               id="title"
             >
-              {SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.title}
+              {SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.title}
             </Typography>
             <Box
               margin="auto"
@@ -58,11 +59,11 @@ const YoutubeVideoDownloader: NextPageWithLayout = () => {
               sx={{ width: { xs: 5 / 5, sm: 5 / 5, md: 3 / 5, lg: 3 / 5 } }}
             >
               <Typography variant="blogPostBrandSubheading" mb={6} mt={5}>
-                {SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.description}
+                {SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.description}
               </Typography>
               <LastUpdateTags
-                lastUpdatedTime={DateMonthYearForBlogPost(SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.lastUpdateTime)}
-                tags={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.tags!}
+                lastUpdatedTime={DateMonthYearForBlogPost(SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.lastUpdateTime)}
+                tags={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.tags!}
               />
               <DownloadPlugin />
             </Box>
@@ -109,7 +110,8 @@ const YoutubeVideoDownloader: NextPageWithLayout = () => {
               </Grid>
             )}
 
-            <SingleVideoCard />
+            {/* <SingleVideoCard /> */}
+            <SingleVideoCardMP3 />
             {/* Center Content */}
 
             {/* Sharing Icon Container In Below */}
@@ -146,4 +148,4 @@ const YoutubeVideoDownloader: NextPageWithLayout = () => {
   );
 };
 
-export default YoutubeVideoDownloader;
+export default YoutubeVideoToMP3;

@@ -8,7 +8,7 @@ import { sendVideoURL, setOpenModal } from "store/utilitySlice";
 import EmptySVG from "@Public/empty.svg";
 import { CheckCircle } from "@mui/icons-material";
 
-const SingleVideoCard: any = () => {
+const SingleVideoCardMP3: any = () => {
   const dispatch = useDispatch<AppDispatch>();
   const ytAPIServiceOBJ = useSelector((state: RootState) => state.YTAPISlice);
 
@@ -92,7 +92,10 @@ const SingleVideoCard: any = () => {
           <Box margin="auto" mb={2}>
             <Image src={EmptySVG} width={300} height={300} alt="Hi" />
           </Box>
-          <Paragraph>The URL That you had pasted was unable to fetch please enter some other url</Paragraph>
+          <Alert severity="error">
+            <AlertTitle>Error with the URL you have Entered</AlertTitle>
+            The URL that you had pasted was unable to fetch please enter some other url.
+          </Alert>
         </Grid>
       </>
     );
@@ -116,7 +119,7 @@ const SingleVideoCard: any = () => {
                 elevation={8}
                 sx={{ pl: { xs: 2, sm: 2, md: 0, lg: 0 }, pr: { xs: 2, sm: 2, md: 0, lg: 0 } }}
                 minHeight={200}
-                display={hasVideo && hasAudio ? "flex" : "none"}
+                display={hasAudio && !hasVideo ? "flex" : "none"}
               >
                 <Grid
                   item
@@ -223,7 +226,7 @@ const SingleVideoCard: any = () => {
                       sx={{ width: 4 / 5 }}
                       onClick={() => onDownloadClickHandler(url, index)}
                     >
-                      Download Video
+                      Download Audio
                     </Button>
                   </Box>
                 </Grid>
@@ -236,4 +239,4 @@ const SingleVideoCard: any = () => {
   }
 };
 
-export default SingleVideoCard;
+export default SingleVideoCardMP3;

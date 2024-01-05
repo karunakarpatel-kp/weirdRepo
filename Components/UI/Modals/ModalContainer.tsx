@@ -7,10 +7,11 @@ import HeadingSix from "@Components/Elements/Headings/HeadingSix";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "store/centralStore";
 import { setOpenModal } from "store/utilitySlice";
-import { Alert, AlertTitle, IconButton } from "@mui/material";
+import { Alert, AlertTitle, CircularProgress, IconButton } from "@mui/material";
 import { Close, CloseOutlined } from "@mui/icons-material";
 import Image from "next/image";
 import downlaodIMG from "@Public/download.png";
+import { useRouter } from "next/router";
 
 const style = {
   position: "absolute" as "absolute",
@@ -26,10 +27,14 @@ const style = {
 };
 
 const ModalContainer = () => {
+  const iframeRef = React.useRef<any>();
+  const loadingRef = React.useRef<any>();
   const dispatch = useDispatch<AppDispatch>();
   const openModalStatus = useSelector((state: RootState) => state.utilitySlice.openModal);
   const getVideoURL = useSelector((state: RootState) => state.utilitySlice.videoURL);
   const [showMessage, setShowMessage] = React.useState<boolean>(false);
+
+  const router = useRouter();
 
   const handleClose = () => {
     dispatch(setOpenModal(false));
@@ -50,6 +55,22 @@ const ModalContainer = () => {
       setShowMessage(true);
     }
   }, [openModalStatus]);
+
+  // Query the elements
+  const iframeEle = iframeRef!;
+  const loadingEle = loadingRef.current!;
+
+  useEffect(() => {
+    const handleLoad = () => {
+      console.log("Ifram Loaded");
+      loadingEle.style.display = "none";
+      iframeEle.current.style.opacity = "1";
+    };
+
+    if (iframeEle.current) {
+      iframeEle.current.addEventListener("load", handleLoad);
+    }
+  }, [iframeEle, loadingEle]);
 
   return (
     <Modal
@@ -74,12 +95,62 @@ const ModalContainer = () => {
         <Box sx={{ textAlign: "center" }}>
           {/* Mobile Devices */}
           <Box display={{ xs: "block", sm: "block", md: "none", lg: "none" }}>
-            <iframe src={getVideoURL} width={350} height={250} allowFullScreen title="VideoURL" />
+            {/* <iframe src={getVideoURL} width={350} height={250} allowFullScreen title="VideoURL" loading="eager" /> */}
+
+            <Box
+              id="loading"
+              ref={loadingRef}
+              sx={{
+                position: "absolute",
+                top: 0,
+                height: "100%",
+                width: "100%",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <CircularProgress />
+            </Box>
+            <iframe
+              id="frame"
+              src={getVideoURL}
+              width={350}
+              height={250}
+              allowFullScreen
+              title="VideoURL"
+              loading="eager"
+              ref={iframeRef}
+            />
           </Box>
 
           {/* Desktop Devices */}
-          <Box display={{ xs: "none", sm: "none", md: "block", lg: "block" }}>
-            <iframe src={getVideoURL} width={600} height={300} allowFullScreen title="VideoURL" />
+          <Box display={{ xs: "none", sm: "none", md: "block", lg: "block" }} position="relative">
+            <Box
+              id="loading"
+              ref={loadingRef}
+              sx={{
+                position: "absolute",
+                top: 0,
+                height: "100%",
+                width: "100%",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <CircularProgress />
+            </Box>
+            <iframe
+              id="frame"
+              src={getVideoURL}
+              width={600}
+              height={300}
+              allowFullScreen
+              title="VideoURL"
+              loading="eager"
+              ref={iframeRef}
+            />
           </Box>
 
           {!showMessage && (
@@ -89,14 +160,14 @@ const ModalContainer = () => {
               sx={{ mt: 2, mb: 2, width: "70%" }}
               disableElevation
             >
-              Download Video
+              {`Download ${router.pathname === "/youtube-to-mp3" ? "Audio" : "Video"}`}
             </Button>
           )}
         </Box>
 
         {showMessage && (
           <>
-            <Alert severity="info">
+            <Alert severity="success">
               <AlertTitle>Click to start downloading</AlertTitle>
               Click on <strong>more icon</strong> in the iframe video and you can start downloading the full video.
               Please check the below image for reference.
@@ -104,6 +175,11 @@ const ModalContainer = () => {
             <Box sx={{ textAlign: "center", margin: "auto" }}>
               <Image src={downlaodIMG} width={300} height={200} alt="download-image" />
             </Box>
+            <Alert severity="info">
+              If there is any error loading{" "}
+              <strong> {` ${router.pathname === "/youtube-to-mp3" ? "Audio" : "Video"}`} </strong>, please reload the
+              browser.
+            </Alert>
           </>
         )}
       </Box>

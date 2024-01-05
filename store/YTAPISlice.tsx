@@ -3,13 +3,13 @@ import axios from "axios";
 
 interface initialStateProps {
   data: any;
-  status: "" | "PENDING" | "FULFILLED" | "REJECTED";
+  status: "" | "PENDING" | "FULFILLED" | "REJECTED" | null;
   error: any;
 }
 
 const initialState: initialStateProps = {
   data: null,
-  status: "",
+  status: null,
   error: null,
 };
 
@@ -26,7 +26,13 @@ export const callYTAPIService = createAsyncThunk("getDataFromYT", async (incomin
 const YTAPISlice = createSlice({
   name: "YTAPISlice",
   initialState,
-  reducers: {},
+  reducers: {
+    resetYTSlice: (state, action) => {
+      state.data = action.payload;
+      state.error = action.payload;
+      state.status = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(callYTAPIService.pending, (state, action) => {
       state.status = "PENDING";
@@ -49,3 +55,5 @@ const YTAPISlice = createSlice({
 });
 
 export default YTAPISlice.reducer;
+
+export const { resetYTSlice } = YTAPISlice.actions;
