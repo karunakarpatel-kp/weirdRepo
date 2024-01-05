@@ -212,7 +212,8 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Youtube Video Downloader | Best Place To Download Youtube Videos",
     description:
       "Here is the best place where you can use youtube video downloader, youtube video to mp3, download youtube videos for free. This is the best tool to download youtube videos.",
-    publishedTime: "2024-01-03T14:22:25+05:30",
+    // publishedTime: "2024-01-05T22:22:25+05:30",
+    publishedTime: "2024-01-05T23:01:17+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "youtube-video-downloader", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
@@ -231,7 +232,8 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Youtube Video MP3| Best Place To Convert Youtube Videos to MP3",
     description:
       "Here is the best place where you can convert youtube videos to mp3 and download youtube videos mp3 for free. This is the best tool to convert youtube videos to mp3.",
-    publishedTime: "2024-01-03T22:22:25+05:30",
+    // publishedTime: "2024-01-05T22:22:25+05:30",
+    publishedTime: "2024-01-05T23:01:17+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "youtube-mp3", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE}` },
