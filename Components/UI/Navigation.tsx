@@ -10,17 +10,26 @@ import Stack from "@mui/material/Stack";
 
 import Logo from ".././../public/Logo.svg";
 import ReadingProgressBar from "./ReadingProgressBar";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "store/centralStore";
+import { resetYTSlice } from "store/YTAPISlice";
 
 const Navigation = () => {
-  const [homePageActive, setHomePageActive] = useState(false);
-  const [blogPageActive, setBlogPageActive] = useState(false);
+  const [homePageActive, setHomePageActive] = useState<boolean>(false);
+  const [blogPageActive, setBlogPageActive] = useState<boolean>(false);
   const pathName = usePathname();
+  const dispatch = useDispatch<AppDispatch>();
+
+  const onLogoClickHandler = () => {
+    dispatch(resetYTSlice(null));
+  };
+
   useEffect(() => {
     if (pathName === "/") {
       setHomePageActive(true);
       setBlogPageActive(false);
     }
-    if (pathName.includes("/Blog")) {
+    if (pathName!.includes("/Blog")) {
       setHomePageActive(false);
       setBlogPageActive(true);
     }
@@ -42,20 +51,20 @@ const Navigation = () => {
                 <Grid container>
                   <Grid item xs={6} sm={6} md={10} lg={10}>
                     <Box sx={{ display: { xs: "none", lg: "block", md: "block" }, marginLeft: "-12px" }}>
-                      <Link href="/">
+                      <Link href="/" onClick={onLogoClickHandler}>
                         <Image alt="Logo" src={Logo} width={180} height={42} />
                       </Link>
                     </Box>
                     {/* For Mobile Phones */}
                     <Box sx={{ display: { xs: "block", md: "none", lg: "none" } }}>
-                      <Link href="/">
+                      <Link href="/" onClick={onLogoClickHandler}>
                         <Image alt="Logo" src={Logo} width={152} height={35} />
                       </Link>
                     </Box>
                   </Grid>
                   <Grid item xs={6} sm={6} md={2} lg={2}>
                     <Stack direction="row" spacing={4} sx={{ float: "right" }}>
-                      <Link href="/">
+                      <Link href="/" onClick={onLogoClickHandler}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="23.088"
@@ -70,7 +79,7 @@ const Navigation = () => {
                           />
                         </svg>
                       </Link>
-                      <Link href="/Blog">
+                      <Link href="/Blog" onClick={onLogoClickHandler}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="33" viewBox="0 0 43 43">
                           <path
                             id="blog"

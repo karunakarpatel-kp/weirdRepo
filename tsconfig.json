@@ -34,7 +34,7 @@
     "**/*.tsx",
     "pages/_app.tsx",
     "pages/index.tsx",
-    "Components/UI/Navigation.jsx",
+    "Components/UI/Navigation.tsx",
     "Components/UI/TableOfContents/TableOfContents.jsx"
   ],
 
