@@ -3,6 +3,7 @@ import nextjsInstallImage from "@Public/nextjs_install.png";
 import welcomePatelsImage from "@Public/welcome-page.png";
 import youtubeVideoDownloaderImage from "@Public/youtube-video-downloader.png";
 import youtubevideotomp3 from "@Public/youtube-to-mp3.png";
+import youtubevideotomp4 from "@Public/youtube-to-mp4.png";
 
 interface blogPostURLSProps {
   NEXTJS_INSTALLATION_RELATIVE: string;
@@ -13,6 +14,9 @@ interface blogPostURLSProps {
 
   YOUTUBE_VIDEO_TO_MP3_PAGE_ABSOLUTE: string;
   YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE: string;
+
+  YOUTUBE_VIDEO_TO_MP4_PAGE_ABSOLUTE: string;
+  YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE: string;
 
   HOME_PAGE_ABSOLUTE: string;
   HOME_PAGE_RELATIVE: string;
@@ -122,6 +126,9 @@ export const blogPostURLS: blogPostURLSProps = {
 
   YOUTUBE_VIDEO_TO_MP3_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-to-mp3`,
   YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE: "/youtube-to-mp3",
+
+  YOUTUBE_VIDEO_TO_MP4_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-to-mp4`,
+  YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE: "/youtube-to-mp4",
 };
 
 export const SEO_OBJ: SEO_OBJ_Props = {
@@ -244,6 +251,25 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImage: youtubevideotomp3,
     featuredImageAltText: "youtube-video-to-mp3",
   },
+
+  // Youtube Video Convert MP3
+  YOUTUBE_VIDEO_TO_MP4_PAGE: {
+    absoluteURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE,
+    title: "Youtube To MP4| Best Place To Convert Youtube Videos to MP4",
+    description:
+      "Here is the best place where you can convert youtube videos to mp4 and download youtube videos mp4 for free. This is the best tool to convert youtube videos to mp4.",
+    publishedTime: "2024-01-06T22:04:03+05:30",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "youtube-mp4", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE}` },
+      { tag: "video-to-mp4", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: youtubevideotomp4,
+    featuredImageAltText: "youtube-video-to-mp4",
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -279,5 +305,16 @@ export const blogPostsObj: blogPostsObjProps[] = [
     tags: SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.tags!,
     featuredImage: SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImage,
     featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImageAltText}`,
+  },
+  {
+    id: 3,
+    url: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE}`,
+    title: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.title}`,
+    description: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.description}`,
+    lastUpdateTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.publishedTime}`,
+    tags: SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.tags!,
+    featuredImage: SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.featuredImageAltText}`,
   },
 ];
