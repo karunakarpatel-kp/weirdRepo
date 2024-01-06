@@ -33,6 +33,7 @@ const ModalContainer = () => {
   const openModalStatus = useSelector((state: RootState) => state.utilitySlice.openModal);
   const getVideoURL = useSelector((state: RootState) => state.utilitySlice.videoURL);
   const [showMessage, setShowMessage] = React.useState<boolean>(false);
+  const [modalName, setModalName] = React.useState<string>("");
 
   const router = useRouter();
 
@@ -72,6 +73,18 @@ const ModalContainer = () => {
     }
   }, [iframeEle, loadingEle]);
 
+  // Setting Modal Name Below
+  useEffect(() => {
+    console.log(router, "ROUTER");
+    if (router.pathname === "/youtube-to-mp3") {
+      setModalName(" MP3");
+    } else if (router.pathname === "/youtube-to-mp4") {
+      setModalName("MP4");
+    } else if (router.pathname === "/youtube-video-downloader") {
+      setModalName("Video");
+    }
+  }, [router]);
+
   return (
     <Modal
       open={openModalStatus}
@@ -95,8 +108,6 @@ const ModalContainer = () => {
         <Box sx={{ textAlign: "center" }}>
           {/* Mobile Devices */}
           <Box display={{ xs: "block", sm: "block", md: "none", lg: "none" }}>
-            {/* <iframe src={getVideoURL} width={350} height={250} allowFullScreen title="VideoURL" loading="eager" /> */}
-
             <Box
               id="loading"
               ref={loadingRef}
@@ -160,7 +171,8 @@ const ModalContainer = () => {
               sx={{ mt: 2, mb: 2, width: "70%" }}
               disableElevation
             >
-              {`Download ${router.pathname === "/youtube-to-mp3" ? "Audio" : "Video"}`}
+              {/* {`Download ${router.pathname === "/youtube-to-mp3" ? "Audio" : "Video"}`} */}
+              Download{`${modalName}`}
             </Button>
           )}
         </Box>
@@ -176,9 +188,7 @@ const ModalContainer = () => {
               <Image src={downlaodIMG} width={300} height={200} alt="download-image" />
             </Box>
             <Alert severity="info">
-              If there is any error loading{" "}
-              <strong> {` ${router.pathname === "/youtube-to-mp3" ? "Audio" : "Video"}`} </strong>, please reload the
-              browser.
+              If there is any error loading <strong> {modalName} </strong>, please reload the browser.
             </Alert>
           </>
         )}
