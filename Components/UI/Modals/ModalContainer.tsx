@@ -63,7 +63,6 @@ const ModalContainer = () => {
 
   useEffect(() => {
     const handleLoad = () => {
-      console.log("Ifram Loaded");
       loadingEle.style.display = "none";
       iframeEle.current.style.opacity = "1";
     };
@@ -75,7 +74,6 @@ const ModalContainer = () => {
 
   // Setting Modal Name Below
   useEffect(() => {
-    console.log(router, "ROUTER");
     if (router.pathname === "/youtube-to-mp3") {
       setModalName(" MP3");
     } else if (router.pathname === "/youtube-to-mp4") {

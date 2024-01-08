@@ -20,7 +20,7 @@ const ContactMePage: NextPageWithLayout = () => {
       <HeaderSection
         title={SEO_OBJ.CONTACT_PAGE.title}
         description={SEO_OBJ.CONTACT_PAGE.description!}
-        image={SEO_OBJ.CONTACT_PAGE.featuredImage}
+        image={SEO_OBJ.CONTACT_PAGE.ogImageURL}
         url={SEO_OBJ.CONTACT_PAGE.absoluteURL}
         publishedTime={SEO_OBJ.CONTACT_PAGE.publishedTime}
         lastUpdatedTime={SEO_OBJ.CONTACT_PAGE.lastUpdateTime}

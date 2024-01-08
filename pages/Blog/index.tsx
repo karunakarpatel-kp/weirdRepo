@@ -18,7 +18,7 @@ const Blog: NextPageWithLayout = () => {
       <HeaderSection
         title={SEO_OBJ.BLOG_PAGE.title}
         description={SEO_OBJ.BLOG_PAGE.description!}
-        image={SEO_OBJ.BLOG_PAGE.featuredImage}
+        image={SEO_OBJ.BLOG_PAGE.ogImageURL}
         url={SEO_OBJ.BLOG_PAGE.absoluteURL}
         publishedTime={SEO_OBJ.BLOG_PAGE.publishedTime}
         lastUpdatedTime={SEO_OBJ.BLOG_PAGE.lastUpdateTime}

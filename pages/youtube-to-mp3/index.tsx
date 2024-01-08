@@ -28,7 +28,7 @@ const YoutubeVideoToMP3: NextPageWithLayout = () => {
         <HeaderSection
           title={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.title}
           description={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.description!}
-          image={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImage}
+          image={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.ogImageURL}
           url={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.absoluteURL}
           publishedTime={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.publishedTime}
           lastUpdatedTime={SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.lastUpdateTime}

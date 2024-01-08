@@ -4,6 +4,7 @@ import welcomePatelsImage from "@Public/welcome-page.png";
 import youtubeVideoDownloaderImage from "@Public/youtube-video-downloader.png";
 import youtubevideotomp3 from "@Public/youtube-to-mp3.png";
 import youtubevideotomp4 from "@Public/youtube-to-mp4.png";
+import reduceImageSizeInKB from "@Public/reduce-image-size-to-kb.png";
 
 interface blogPostURLSProps {
   NEXTJS_INSTALLATION_RELATIVE: string;
@@ -17,6 +18,9 @@ interface blogPostURLSProps {
 
   YOUTUBE_VIDEO_TO_MP4_PAGE_ABSOLUTE: string;
   YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE: string;
+
+  REDUCE_IMAGE_SIZE_IN_KB_PAGE_ABSOLUTE: string;
+  REDUCE_IMAGE_SIZE_IN_KB_PAGE_RELATIVE: string;
 
   HOME_PAGE_ABSOLUTE: string;
   HOME_PAGE_RELATIVE: string;
@@ -45,6 +49,7 @@ interface blogPostsObjProps {
   tags: { tag: string; href: string }[];
   featuredImage: any;
   featuredImageAltText: string;
+  ogImageURL: string;
 }
 
 interface SEO_OBJ_Props {
@@ -59,6 +64,7 @@ interface SEO_OBJ_Props {
     tags?: { tag: string; href: string }[];
     featuredImage: any;
     featuredImageAltText: string;
+    ogImageURL: string;
   };
 }
 
@@ -129,6 +135,9 @@ export const blogPostURLS: blogPostURLSProps = {
 
   YOUTUBE_VIDEO_TO_MP4_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-to-mp4`,
   YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE: "/youtube-to-mp4",
+
+  REDUCE_IMAGE_SIZE_IN_KB_PAGE_ABSOLUTE: `${BASE_URL.HOME_PAGE_BASE_URL}/reduce-image-size-in-kb`,
+  REDUCE_IMAGE_SIZE_IN_KB_PAGE_RELATIVE: "/reduce-image-size-in-kb",
 };
 
 export const SEO_OBJ: SEO_OBJ_Props = {
@@ -143,6 +152,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2023-10-20T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/welcome-page.png`,
   },
   // BlogPage  /Blog/
   BLOG_PAGE: {
@@ -155,6 +165,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2023-10-20T19:19:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/welcome-page.png`,
   },
 
   POLICY_PAGE: {
@@ -167,6 +178,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2023-12-09T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/welcome-page.png`,
   },
 
   CONTACT_PAGE: {
@@ -179,6 +191,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2023-12-09T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/welcome-page.png`,
   },
 
   DISCLAIMER_PAGE: {
@@ -191,6 +204,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     publishedTime: "2023-12-09T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/welcome-page.png`,
   },
 
   // nextjs_installation
@@ -210,6 +224,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     ],
     featuredImage: nextjsInstallImage,
     featuredImageAltText: "a-person-with-computer",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/nextjs_install.png`,
   },
 
   // Youtube Video Downloader
@@ -230,6 +245,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     ],
     featuredImage: youtubeVideoDownloaderImage,
     featuredImageAltText: "a-simple-youtube-image",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-video-downloader.png`,
   },
 
   // Youtube Video Convert MP3
@@ -250,6 +266,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     ],
     featuredImage: youtubevideotomp3,
     featuredImageAltText: "youtube-video-to-mp3",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-to-mp3.png`,
   },
 
   // Youtube Video Convert MP3
@@ -269,6 +286,27 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     ],
     featuredImage: youtubevideotomp4,
     featuredImageAltText: "youtube-video-to-mp4",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-to-mp4.png`,
+  },
+
+  REDUCE_IMAGE_SIZE_TO_KB_PAGE: {
+    absoluteURL: blogPostURLS.REDUCE_IMAGE_SIZE_IN_KB_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.REDUCE_IMAGE_SIZE_IN_KB_PAGE_RELATIVE,
+    title: "Reduce Image Size In KB - Compress Images Online in Seconds For Free.",
+    description:
+      "Reduce image size in kb without compromising image quality, enhancing web performance. Easily reduce the image size to your desired kb using this free tool. Upload the image and compress it with ease in seconds in just a few clicks.",
+    // publishedTime: "2024-01-06T22:04:03+05:30",
+    publishedTime: "2024-01-08T23:54:44+05:30",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "compress-image-online", href: `${blogPostURLS.REDUCE_IMAGE_SIZE_IN_KB_PAGE_RELATIVE}` },
+      { tag: "reduce-image-size-to-kb", href: `${blogPostURLS.REDUCE_IMAGE_SIZE_IN_KB_PAGE_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: reduceImageSizeInKB,
+    featuredImageAltText: "reduce-image-size-in-kb",
+    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
   },
 };
 
@@ -283,6 +321,7 @@ export const blogPostsObj: blogPostsObjProps[] = [
     tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
     featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
     featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
   },
   {
     id: 1,
@@ -294,6 +333,7 @@ export const blogPostsObj: blogPostsObjProps[] = [
     tags: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.tags!,
     featuredImage: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImage,
     featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.ogImageURL}`,
   },
   {
     id: 2,
@@ -305,6 +345,7 @@ export const blogPostsObj: blogPostsObjProps[] = [
     tags: SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.tags!,
     featuredImage: SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImage,
     featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.ogImageURL}`,
   },
   {
     id: 3,
@@ -316,5 +357,18 @@ export const blogPostsObj: blogPostsObjProps[] = [
     tags: SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.tags!,
     featuredImage: SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.featuredImage,
     featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.ogImageURL}`,
+  },
+  {
+    id: 4,
+    url: `${blogPostURLS.REDUCE_IMAGE_SIZE_IN_KB_PAGE_RELATIVE}`,
+    title: `${SEO_OBJ.REDUCE_IMAGE_SIZE_TO_KB_PAGE.title}`,
+    description: `${SEO_OBJ.REDUCE_IMAGE_SIZE_TO_KB_PAGE.description}`,
+    lastUpdateTime: `${SEO_OBJ.REDUCE_IMAGE_SIZE_TO_KB_PAGE.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.REDUCE_IMAGE_SIZE_TO_KB_PAGE.publishedTime}`,
+    tags: SEO_OBJ.REDUCE_IMAGE_SIZE_TO_KB_PAGE.tags!,
+    featuredImage: SEO_OBJ.REDUCE_IMAGE_SIZE_TO_KB_PAGE.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.REDUCE_IMAGE_SIZE_TO_KB_PAGE.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.REDUCE_IMAGE_SIZE_TO_KB_PAGE.ogImageURL}`,
   },
 ];

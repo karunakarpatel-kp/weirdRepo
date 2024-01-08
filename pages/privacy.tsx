@@ -22,7 +22,7 @@ const PrivacyPage: NextPageWithLayout = () => {
       <HeaderSection
         title={SEO_OBJ.POLICY_PAGE.title}
         description={SEO_OBJ.POLICY_PAGE.description!}
-        image={SEO_OBJ.POLICY_PAGE.featuredImage}
+        image={SEO_OBJ.POLICY_PAGE.ogImageURL}
         url={SEO_OBJ.POLICY_PAGE.absoluteURL}
         publishedTime={SEO_OBJ.POLICY_PAGE.publishedTime}
         lastUpdatedTime={SEO_OBJ.POLICY_PAGE.lastUpdateTime}
