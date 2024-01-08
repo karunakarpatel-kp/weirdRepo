@@ -20,7 +20,7 @@ const DisclaimerPage: NextPageWithLayout = () => {
       <HeaderSection
         title={SEO_OBJ.DISCLAIMER_PAGE.title}
         description={SEO_OBJ.DISCLAIMER_PAGE.description!}
-        image={SEO_OBJ.DISCLAIMER_PAGE.featuredImage}
+        image={SEO_OBJ.DISCLAIMER_PAGE.ogImageURL}
         url={SEO_OBJ.DISCLAIMER_PAGE.absoluteURL}
         publishedTime={SEO_OBJ.DISCLAIMER_PAGE.publishedTime}
         lastUpdatedTime={SEO_OBJ.DISCLAIMER_PAGE.lastUpdateTime}

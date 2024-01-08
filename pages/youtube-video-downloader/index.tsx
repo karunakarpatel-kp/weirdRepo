@@ -27,7 +27,7 @@ const YoutubeVideoDownloader: NextPageWithLayout = () => {
         <HeaderSection
           title={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.title}
           description={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.description!}
-          image={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImage}
+          image={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.ogImageURL}
           url={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.absoluteURL}
           publishedTime={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.publishedTime}
           lastUpdatedTime={SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.lastUpdateTime}

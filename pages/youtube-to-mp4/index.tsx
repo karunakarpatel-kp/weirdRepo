@@ -28,7 +28,7 @@ const YoutubeVideoToMP4: NextPageWithLayout = () => {
         <HeaderSection
           title={SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.title}
           description={SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.description!}
-          image={SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.featuredImage}
+          image={SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.ogImageURL}
           url={SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.absoluteURL}
           publishedTime={SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.publishedTime}
           lastUpdatedTime={SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.lastUpdateTime}
