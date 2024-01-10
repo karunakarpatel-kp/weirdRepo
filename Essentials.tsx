@@ -147,7 +147,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.HOME_PAGE_RELATIVE,
     title: "Karunakar Patel: Navigating the landscape of programming knowledge",
     description:
-      "Explore the world of programming with Karunakar Patel, where we delve into the exciting landscape of programming knowledge. Here, you'll find simplified explanations, hands-on tutorials, practical tips, and personal experiences about programming. let's learn together step by step.",
+      "Explore programming with Karunakar Patel. Find simplified explanations, hands-on tutorials, practical tips, and personal experiences about programming",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2023-10-20T19:07:55+00:00",
     featuredImage: welcomePatelsImage,
@@ -160,7 +160,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     relativeURL: blogPostURLS.BLOG_PAGE_RELATIVE,
     title: "Karunakar Patel Blog: A hub for programming enthusiasts.",
     description:
-      "Welcome to Karunakar Patel's Blog! This is the perfect place for people who love programming. You'll find easy-to-understand articles and tutorials for beginners and experienced coders alike. Join our community and let's learn and grow together in the world of coding!",
+      "Welcome to Karunakar Patels Blog! This is the perfect place for people who love programming. You'll find easy-to-understand articles and tutorials for beginners and experienced coders alike. Join our community and let's learn and grow together in the world of coding!",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2023-10-20T19:19:55+00:00",
     featuredImage: welcomePatelsImage,
@@ -231,9 +231,9 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   YOUTUBE_VIDEO_DOWNLOAD_PAGE: {
     absoluteURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE,
-    title: "Youtube Video Downloader | Best Place To Download Youtube Videos",
+    title: "Youtube Video Downloader: Download Youtube Videos For Free",
     description:
-      "Here is the best place where you can use youtube video downloader, youtube video to mp3, download youtube videos for free. This is the best tool to download youtube videos.",
+      "Download YouTube videos for free in high quality with our YouTube video downloader tool. Paste the copied link and start downloading your videos in various formats for free",
     // publishedTime: "2024-01-05T22:22:25+05:30",
     publishedTime: "2024-01-05T23:01:17+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
@@ -252,9 +252,9 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   YOUTUBE_VIDEO_TO_MP3_PAGE: {
     absoluteURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE,
-    title: "Youtube Video MP3| Best Place To Convert Youtube Videos to MP3",
+    title: "Youtube Videos to MP3: Convert and Download For Free",
     description:
-      "Here is the best place where you can convert youtube videos to mp3 and download youtube videos mp3 for free. This is the best tool to convert youtube videos to mp3.",
+      "Download YouTube videos as MP3 for free with our most powerful YouTube videos to MP3 converter. No app or software is needed.",
     // publishedTime: "2024-01-05T22:22:25+05:30",
     publishedTime: "2024-01-05T23:01:17+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
@@ -273,9 +273,9 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   YOUTUBE_VIDEO_TO_MP4_PAGE: {
     absoluteURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE,
-    title: "Youtube To MP4| Best Place To Convert Youtube Videos to MP4",
+    title: "Youtube Videos To MP4: Convert and Download For Free",
     description:
-      "Here is the best place where you can convert youtube videos to mp4 and download youtube videos mp4 for free. This is the best tool to convert youtube videos to mp4.",
+      "Download YouTube videos as MP4 for free with our most powerful YouTube videos to MP4 converter. No app or software required",
     publishedTime: "2024-01-06T22:04:03+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
@@ -292,9 +292,9 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   REDUCE_IMAGE_SIZE_TO_KB_PAGE: {
     absoluteURL: blogPostURLS.REDUCE_IMAGE_SIZE_IN_KB_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.REDUCE_IMAGE_SIZE_IN_KB_PAGE_RELATIVE,
-    title: "Reduce Image Size In KB - Compress Images Online in Seconds For Free.",
+    title: "Reduce Image Size In KB: Compress Images Online For Free.",
     description:
-      "Reduce image size in kb without compromising image quality, enhancing web performance. Easily reduce the image size to your desired kb using this free tool. Upload the image and compress it with ease in seconds in just a few clicks.",
+      "Reduce any image size in kb without losing quality. Upload the image and reduce it and download in seconds",
     // publishedTime: "2024-01-06T22:04:03+05:30",
     publishedTime: "2024-01-08T23:54:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
