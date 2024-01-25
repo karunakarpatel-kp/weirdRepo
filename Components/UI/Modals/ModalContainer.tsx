@@ -28,7 +28,8 @@ const style = {
 
 const ModalContainer = () => {
   const iframeRef = React.useRef<any>();
-  const loadingRef = React.useRef<any>();
+  const mobileLoadingRef = React.useRef<any>();
+  const desktopLoadingRef = React.useRef<any>();
   const dispatch = useDispatch<AppDispatch>();
   const openModalStatus = useSelector((state: RootState) => state.utilitySlice.openModal);
   const getVideoURL = useSelector((state: RootState) => state.utilitySlice.videoURL);
@@ -59,18 +60,21 @@ const ModalContainer = () => {
 
   // Query the elements
   const iframeEle = iframeRef!;
-  const loadingEle = loadingRef.current!;
+  const mobileLoadingEle = mobileLoadingRef.current!;
+  const desktopLoadingEle = desktopLoadingRef.current!;
 
   useEffect(() => {
     const handleLoad = () => {
-      loadingEle.style.display = "none";
+      // loadingEle.style.display = "none";
+      desktopLoadingEle.style.display = "none";
+      mobileLoadingEle.style.display = "none";
       iframeEle.current.style.opacity = "1";
     };
 
     if (iframeEle.current) {
       iframeEle.current.addEventListener("load", handleLoad);
     }
-  }, [iframeEle, loadingEle]);
+  }, [iframeEle, mobileLoadingEle, desktopLoadingEle]);
 
   // Setting Modal Name Below
   useEffect(() => {
@@ -108,7 +112,7 @@ const ModalContainer = () => {
           <Box display={{ xs: "block", sm: "block", md: "none", lg: "none" }}>
             <Box
               id="loading"
-              ref={loadingRef}
+              ref={mobileLoadingRef}
               sx={{
                 position: "absolute",
                 top: 0,
@@ -137,7 +141,7 @@ const ModalContainer = () => {
           <Box display={{ xs: "none", sm: "none", md: "block", lg: "block" }} position="relative">
             <Box
               id="loading"
-              ref={loadingRef}
+              ref={desktopLoadingRef}
               sx={{
                 position: "absolute",
                 top: 0,
