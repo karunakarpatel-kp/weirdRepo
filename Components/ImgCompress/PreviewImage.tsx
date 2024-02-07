@@ -1,11 +1,12 @@
 import HeadingThree from "@Components/Elements/Headings/HeadingThree";
-import { Alert, AlertTitle, Box, Button, Grid, Slider, Stack } from "@mui/material";
+import { Alert, AlertTitle, Box, Button, Grid, Paper, Slider, Stack } from "@mui/material";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "store/centralStore";
 import { blobToURL, fromBlob } from "image-resize-compress";
 import { sendReducedFile, sendSliderValue } from "store/imgReducerSlice";
+import { CheckCircleOutline, Download, DownloadOutlined } from "@mui/icons-material";
 
 function formatBytes(bytes: any) {
   var marker = 1024; // Change to 1000 if required
@@ -75,7 +76,7 @@ const PreviewImage = () => {
   const getCentralFileName = useSelector((state: RootState) => state.imgReducerSlice.file.fileName);
 
   useEffect(() => {
-    console.log("REGENERATED");
+    // console.log("REGENERATED", getCentralFile);
     if (getCentralFile.fileURL !== null) {
       const response = fromBlob(
         getCentralFile.inputFileUploaded!,
@@ -113,16 +114,16 @@ const PreviewImage = () => {
 
   return (
     <>
-      <Box p={{ xs: 1, sm: 1, md: 3, lg: 3 }}>
+      <Box p={{ xs: 1, sm: 1, md: 3, lg: 3 }} mb={5}>
         <Alert severity="info" sx={{ mt: 3, width: { xs: 5 / 5, sm: 5 / 5, md: 3 / 5, lg: 3 / 5 }, margin: "auto" }}>
           <AlertTitle>Note</AlertTitle>
           Change the slider to get your desired compression
         </Alert>
 
-        <Grid container border={0} mt={2}>
+        <Grid container border={0} mt={2} mb={{ xs: 2, sm: 33, md: 30, lg: 30 }}>
           <Grid item border={1} xs={12} sm={12} md={6} lg={6} borderColor="lightgrey">
             <Box textAlign="center" mt={1}>
-              <HeadingThree id="three" title="Before" />
+              <HeadingThree id="three" title="Before Compression" />
             </Box>
             <Box textAlign="center" display={{ xs: "none", sm: "none", md: "none", lg: "block" }}>
               {getCentralFile?.fileURL !== null && (
@@ -145,21 +146,19 @@ const PreviewImage = () => {
               spacing={2}
             >
               <Box sx={{ flexGrow: 1 }}>
-                <Alert severity={"success"}>
-                  <AlertTitle>Size</AlertTitle>
-                  {formatBytes(getCentralFile.fileSize)}
+                <Alert severity={"success"} variant="outlined">
+                  <AlertTitle>Before Compression </AlertTitle>
+                  Size: {formatBytes(getCentralFile.fileSize)}
                 </Alert>
-                {/* <Paragraph>Has Video: {hasVideo ? "True" : "False"}</Paragraph> */}
               </Box>
-              <Box sx={{ flexGrow: 1 }}>
+              {/* <Box sx={{ flexGrow: 1 }}>
                 <Alert severity={"info"}>
                   <AlertTitle>Type</AlertTitle>
                   {getCentralFile.fileType}
                 </Alert>
-                {/* <Paragraph>Has Video: {hasVideo ? "True" : "False"}</Paragraph> */}
-              </Box>
+              </Box> */}
             </Stack>
-            <Box textAlign="center">
+            {/* <Box textAlign="center">
               <Button
                 variant="contained"
                 fullWidth
@@ -169,19 +168,23 @@ const PreviewImage = () => {
               >
                 Download Previous Image
               </Button>
-            </Box>
+            </Box> */}
           </Grid>
           {/* After */}
           <Grid item border={1} xs={12} sm={12} md={6} lg={6} borderColor="lightgrey">
             <Box textAlign="center" mt={1}>
-              <HeadingThree id="three" title="After" />
+              <HeadingThree id="three" title="After Compression" />
             </Box>
+            {/* For Desktops */}
             <Box textAlign="center" display={{ xs: "none", sm: "none", md: "none", lg: "block" }}>
+              {/* <Box sx={{ position: "relative", width: 500, height: 330, margin: "auto" }}> */}
               {getCompressedFile?.fileURL !== null && (
                 <Image src={getCompressedFile.fileURL!} width={500} height={330} alt="Before-reduced-image" />
+                // <Image src={getCompressedFile.fileURL!} alt="Before-reduced-image" fill />
               )}
+              {/* </Box> */}
             </Box>
-
+            {/* For Mobiles*/}
             <Box textAlign="center" display={{ xs: "block", sm: "block", md: "block", lg: "none" }}>
               {getCompressedFile?.fileURL !== null && (
                 <Image src={getCompressedFile.fileURL!} width={360} height={230} alt="Before-reduced-image" />
@@ -197,19 +200,17 @@ const PreviewImage = () => {
               spacing={2}
             >
               <Box sx={{ flexGrow: 1 }}>
-                <Alert severity={"success"}>
-                  <AlertTitle>Size</AlertTitle>
-                  {formatBytes(getCompressedFile.fileSize)}
+                <Alert severity={"success"} variant="outlined">
+                  <AlertTitle>After Compression</AlertTitle>
+                  Size: {formatBytes(getCompressedFile.fileSize)}
                 </Alert>
-                {/* <Paragraph>Has Video: {hasVideo ? "True" : "False"}</Paragraph> */}
               </Box>
-              <Box sx={{ flexGrow: 1 }}>
+              {/* <Box sx={{ flexGrow: 1 }}>
                 <Alert severity={"info"}>
                   <AlertTitle>Type</AlertTitle>
                   {getCompressedFile.fileType}
                 </Alert>
-                {/* <Paragraph>Has Video: {hasVideo ? "True" : "False"}</Paragraph> */}
-              </Box>
+              </Box> */}
             </Stack>
             <Box textAlign="center">
               <Button
@@ -225,7 +226,20 @@ const PreviewImage = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box p={3} sx={{ width: { xs: 5 / 5, sm: 5 / 5, md: 4.5 / 5, lg: 4.5 / 5 }, border: 0, margin: "auto" }}>
+      <Box
+        p={3}
+        boxShadow={{ xs: 0, sm: 20, md: 20, lg: 20 }}
+        sx={{
+          width: "100%",
+          backgroundColor: "white",
+          margin: "auto",
+          zIndex: 999,
+          position: { xs: "none", sm: "fixed", md: "fixed", lg: "fixed" },
+          bottom: 1,
+          right: 0,
+          left: 0,
+        }}
+      >
         <Stack direction="column">
           <Slider
             size="medium"
@@ -237,23 +251,39 @@ const PreviewImage = () => {
           />
         </Stack>
 
-        <Stack direction="row" display="flex" flexWrap="wrap" spacing={2} mt={2}>
+        <Alert variant="filled" severity="error" sx={{ width: 5 / 5, margin: "auto" }}>
+          Change the slider value to get your desired image compression in realtime and click on below download button
+          to downloading the compressed image.
+        </Alert>
+
+        <Stack direction="row" display="flex" flexWrap="wrap" spacing={{ xs: 0, sm: 2, md: 2, lg: 2 }} mt={2}>
           <Box flexGrow={1}>
-            <Alert severity="info">
-              <AlertTitle>Original Size </AlertTitle>
-              {formatBytes(getCentralFile.fileSize)}
+            <Alert severity="info" variant="filled">
+              <AlertTitle color="white">Before compression </AlertTitle>
+              Original Size: {formatBytes(getCentralFile.fileSize)}
             </Alert>
           </Box>
           <Box flexGrow={1}>
-            <Alert>
+            {/* <Alert>
               <AlertTitle>Reduced Size By</AlertTitle>
               {formatBytes(getCentralFile.fileSize - getCompressedFile.fileSize)}
-            </Alert>
+            </Alert> */}
+            <Button
+              variant="contained"
+              // size="large"
+              fullWidth
+              sx={{ mt: { xs: 2, sm: 0, md: 0, lg: 0 }, mb: { xs: 2, sm: 0, md: 0, lg: 0 }, height: "100%" }}
+              disableElevation
+              onClick={() => onAfterBtnClickHandler(getCompressedFile.fileURL)}
+              // startIcon={<DownloadOutlined />}
+            >
+              Click me to Download Compressed Image <br /> Size: {formatBytes(getCompressedFile.fileSize)}
+            </Button>
           </Box>
           <Box flexGrow={1}>
-            <Alert severity="warning">
-              <AlertTitle>Compressed Size</AlertTitle>
-              {formatBytes(getCompressedFile.fileSize)}
+            <Alert severity="success" variant="filled" sx={{ mt: { xs: 4, sm: 2, md: 0, lg: 0 } }}>
+              <AlertTitle color="white">After Compressed </AlertTitle>
+              Size: {formatBytes(getCompressedFile.fileSize)}
             </Alert>
           </Box>
         </Stack>

@@ -104,8 +104,8 @@ export const dynamicLastUpdatedTime = () => {
 };
 
 export const BASE_URL: { HOME_PAGE_BASE_URL: string; BLOG_PAGE_BASE_URL: string } = {
-  HOME_PAGE_BASE_URL: "https://www.karunakarpatel.com",
-  BLOG_PAGE_BASE_URL: "https://www.karunakarpatel.com/Blog",
+  HOME_PAGE_BASE_URL: process.env.HOME_PAGE_BASE_URL!,
+  BLOG_PAGE_BASE_URL: process.env.BLOG_PAGE_BASE_URL!,
 };
 
 export const blogPostURLS: blogPostURLSProps = {

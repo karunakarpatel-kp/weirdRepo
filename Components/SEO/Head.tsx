@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 interface HeaderSectionProps {
   title: string;
@@ -11,6 +12,7 @@ interface HeaderSectionProps {
 }
 
 const HeaderSection = (props: HeaderSectionProps) => {
+  const router = useRouter();
   const { title, description, image, url, publishedTime, lastUpdatedTime } = props;
   return (
     <>
@@ -36,6 +38,7 @@ const HeaderSection = (props: HeaderSectionProps) => {
         <meta property="og:url" content={url} />
         <meta property="article:published_time" content={publishedTime} />
         <meta property="article:modified_time" content={lastUpdatedTime} />
+        <link rel="canonical" href={process.env.HOME_PAGE_BASE_URL + router.route} />
       </Head>
     </>
   );
