@@ -25,26 +25,26 @@ const NextjsVsReactjs: NextPageWithLayout = () => {
   return (
     <>
       <HeaderSection
-        title={SEO_OBJ.NEXTJS_INSTALLATION.title}
-        description={SEO_OBJ.NEXTJS_INSTALLATION.description!}
-        image={SEO_OBJ.NEXTJS_INSTALLATION.featuredImage}
-        url={SEO_OBJ.NEXTJS_INSTALLATION.absoluteURL}
-        publishedTime={SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}
-        lastUpdatedTime={SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}
+        title={SEO_OBJ.NEXTJS_VS_REACTJS.title}
+        description={SEO_OBJ.NEXTJS_VS_REACTJS.description!}
+        image={SEO_OBJ.NEXTJS_VS_REACTJS.featuredImage}
+        url={SEO_OBJ.NEXTJS_VS_REACTJS.absoluteURL}
+        publishedTime={SEO_OBJ.NEXTJS_VS_REACTJS.publishedTime}
+        lastUpdatedTime={SEO_OBJ.NEXTJS_VS_REACTJS.lastUpdateTime}
       />
       <Box sx={{ mt: { xs: 1, sm: 1, md: 4, lg: 4 } }}>{/* Added Extra Space Under Toolbar */}</Box>
       <Grid container direction="row" sx={{ pl: { xs: 2, sm: 2, md: 0, lg: 0 }, pr: { xs: 2, sm: 2, md: 0, lg: 0 } }}>
         <Grid item md={10} lg={8}>
-          <HeadingOne title={SEO_OBJ.NEXTJS_INSTALLATION.title} id="title" />
-          <Subtitle text={SEO_OBJ.NEXTJS_INSTALLATION.description!} />
+          <HeadingOne title={SEO_OBJ.NEXTJS_VS_REACTJS.title} id="title" />
+          <Subtitle text={SEO_OBJ.NEXTJS_VS_REACTJS.description!} />
           <LastUpdateTags
-            lastUpdatedTime={DateMonthYearForBlogPost(SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime)}
-            tags={SEO_OBJ.NEXTJS_INSTALLATION.tags!}
+            lastUpdatedTime={DateMonthYearForBlogPost(SEO_OBJ.NEXTJS_VS_REACTJS.lastUpdateTime)}
+            tags={SEO_OBJ.NEXTJS_VS_REACTJS.tags!}
           />
           {/* Image For Desktop Screens */}
           <HeaderImageFullBlogPost
-            image={SEO_OBJ.NEXTJS_INSTALLATION.featuredImage}
-            alt={SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}
+            image={SEO_OBJ.NEXTJS_VS_REACTJS.featuredImage}
+            alt={SEO_OBJ.NEXTJS_VS_REACTJS.featuredImageAltText}
           />
         </Grid>
         <Grid item md={2} lg={4}>
