@@ -227,27 +227,6 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/nextjs_install.png`,
   },
 
-  // Youtube Video Downloader
-  YOUTUBE_VIDEO_DOWNLOAD_PAGE: {
-    absoluteURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE,
-    relativeURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE,
-    title: "Youtube Video Downloader: Download Youtube Videos For Free",
-    description:
-      "Download YouTube videos for free in high quality with our YouTube video downloader tool. Paste the copied link and start downloading your videos in various formats for free",
-    // publishedTime: "2024-01-05T22:22:25+05:30",
-    publishedTime: "2024-01-05T23:01:17+05:30",
-    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    tags: [
-      { tag: "youtube-video-downloader", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
-      { tag: "Video", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
-      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
-      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
-    ],
-    featuredImage: youtubeVideoDownloaderImage,
-    featuredImageAltText: "a-simple-youtube-image",
-    ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-video-downloader.png`,
-  },
-
   // Youtube Video Convert MP3
   YOUTUBE_VIDEO_TO_MP3_PAGE: {
     absoluteURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_ABSOLUTE,
@@ -323,18 +302,7 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
   },
-  {
-    id: 1,
-    url: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}`,
-    title: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.title}`,
-    description: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.description}`,
-    lastUpdateTime: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.publishedTime}`,
-    tags: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.tags!,
-    featuredImage: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.ogImageURL}`,
-  },
+
   {
     id: 2,
     url: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE}`,
@@ -372,3 +340,36 @@ export const blogPostsObj: blogPostsObjProps[] = [
     ogImageURL: `${SEO_OBJ.REDUCE_IMAGE_SIZE_TO_KB_PAGE.ogImageURL}`,
   },
 ];
+
+// ? Youtube Video Downloader Reference
+// YOUTUBE_VIDEO_DOWNLOAD_PAGE: {
+//   absoluteURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE,
+//   relativeURL: blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE,
+//   title: "Youtube Video Downloader: Download Youtube Videos For Free",
+//   description:
+//     "Download YouTube videos for free in high quality with our YouTube video downloader tool. Paste the copied link and start downloading your videos in various formats for free",
+//   publishedTime: "2024-01-05T23:01:17+05:30",
+//   lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+//   tags: [
+//     { tag: "youtube-video-downloader", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
+//     { tag: "Video", href: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}` },
+//     { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+//     { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+//   ],
+//   featuredImage: youtubeVideoDownloaderImage,
+//   featuredImageAltText: "a-simple-youtube-image",
+//   ogImageURL: `${BASE_URL.HOME_PAGE_BASE_URL}/youtube-video-downloader.png`,
+// },
+// ? 2
+// {
+//   id: 1,
+//   url: `${blogPostURLS.YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE}`,
+//   title: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.title}`,
+//   description: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.description}`,
+//   lastUpdateTime: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.lastUpdateTime}`,
+//   publishedTime: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.publishedTime}`,
+//   tags: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.tags!,
+//   featuredImage: SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImage,
+//   featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.featuredImageAltText}`,
+//   ogImageURL: `${SEO_OBJ.YOUTUBE_VIDEO_DOWNLOAD_PAGE.ogImageURL}`,
+// },
