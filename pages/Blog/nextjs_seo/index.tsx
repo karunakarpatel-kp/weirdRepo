@@ -1,5 +1,7 @@
 import HeadingOne from "@Components/Elements/Headings/HeadingOne";
-import { Paragraph } from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph as P } from "@Components/Elements/Paragraph/Paragraph";
+import { Ccode as C } from "@Components/SyntaxHighlighter/Ccode";
+import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightTexts";
 import Subtitle from "@Components/Elements/Subtitle/Subtitle";
 import FullPageBlogPostLayout from "@Components/Layout/FullPageBlogPostLayout";
 import MainLayout from "@Components/Layout/MainLayout";
@@ -13,6 +15,10 @@ import { DateMonthYearForBlogPost, SEO_OBJ } from "Essentials";
 import { NextPageWithLayout } from "pages/_app";
 import React from "react";
 import Scrollspy from "react-scrollspy";
+import HeadingTwo from "@Components/Elements/Headings/HeadingTwo";
+import Link from "next/link";
+import SyntaxHighlight from "@Components/SyntaxHighlighter/SyntaxHighlight";
+import HeadingThree from "@Components/Elements/Headings/HeadingThree";
 
 const NextjsSEO: NextPageWithLayout = () => {
   const scrollIntoView = () => {
@@ -62,12 +68,150 @@ const NextjsSEO: NextPageWithLayout = () => {
       >
         <Grid item md={8} lg={8}>
           {/* Content Goes Here...! */}
-          <Paragraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore hic tenetur, eaque dolor dignissimos
-            error, nihil consequuntur ducimus consequatur earum explicabo harum dicta praesentium ratione deserunt
-            corrupti dolore magni voluptatibus quibusdam cupiditate perspiciatis! Ipsa veniam dolorum eum debitis
-            laboriosam cupiditate!
-          </Paragraph>
+
+          <HeadingTwo title="Introduction" id="introduction" />
+          <P>
+            <Link href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide#:~:text=SEO%E2%80%94short%20for%20search%20engine,site%20through%20a%20search%20engine.">
+              Search Engine Optimization (SEO)
+            </Link>{" "}
+            plays an important role in driving organic traffic to your website and increasing its visibility in search
+            engine results. With Next.js, a popular React framework for building web applications, you have powerful
+            tool to optimize your website for SEO. In this article, we'll explore advanced <B>SEO techniques</B> and
+            best practices specifically adapted for Next.js websites, helping you improve your website's search engine
+            rankings and attract more visitors.
+          </P>
+          <HeadingTwo title="1. Optimize Metadata" id="optimize-metadata" />
+          <P>
+            Metadata plays a crucial role in SEO, providing search engines with information about your website's
+            content. In <B>Next.js</B>, you can optimize metadata using the <C>`Head`</C> component to add meta tags,
+            titles, and descriptions to your pages.
+          </P>
+          <SyntaxHighlight>
+            {`
+import Head from 'next/head';
+const Home = () => (
+  <>
+    <Head>
+      <title>Next.js SEO Guide</title>
+      <meta name="description" content="Learn advanced SEO techniques for optimizing Next.js websites." />
+    </Head>
+    {/* Your content here */}
+  </>
+);
+export default Home;
+`}
+          </SyntaxHighlight>
+
+          <HeadingTwo title="2. Improve Site Structure" id="improve-site-structure" />
+          <P>
+            A well-structured website not only enhances user experience but also makes it easier for search engines to
+            <B>crawl</B> and index your content. In Next.js, you can improve site structure by organizing pages
+            logically and using meaningful URLs.
+          </P>
+          <SyntaxHighlight>
+            {`jsx
+// pages/products/[category]/[product].js
+
+const ProductPage = ({ category, product }) => (
+  <div>
+    <h1>{product} in {category}</h1>
+    {/* Product details */}
+  </div>
+);
+export default ProductPage;
+`}
+          </SyntaxHighlight>
+
+          <HeadingTwo title="3. Leverage Next.js Features" id="nextjs-features" />
+          <P>
+            Next.js offers features that can directly impact SEO, such as{" "}
+            <Link href="https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering">
+              server-side rendering (SSR)
+            </Link>
+            ,{" "}
+            <Link href="https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation">
+              static site generation (SSG)
+            </Link>
+            , and automatic code splitting. By implementing these features, you can improve page load times, enhance
+            user experience, and boost <B>search engine rankings</B>.
+          </P>
+          <SyntaxHighlight>
+            {`
+// pages/index.js
+const HomePage = ({ data }) => (
+  <div>
+    {/* Render dynamic content */}
+  </div>
+);
+
+export async function getStaticProps() {
+  // Fetch data for static rendering
+  return {
+    props: {
+      data: /* fetched data */,
+    },
+  };
+}
+export default HomePage;
+`}
+          </SyntaxHighlight>
+
+          <HeadingTwo title="4. Submit Sitemap to Search Engines" id="submit-sitemap-to-search-engines" />
+          <P>
+            A sitemap is a file that lists all the pages on your website, helping search engines discover and index your
+            content more efficiently. In Next.js, you can generate a sitemap using third-party packages and submit it to
+            search engines like <B>Google</B> and <B>Bing</B> through their webmaster tools.
+          </P>
+          <SyntaxHighlight>
+            {` // using npm
+npm install --save next-sitemap
+
+// next.config.js
+module.exports = {
+  siteUrl: 'https://example.com',
+  generateRobotsTxt: true,
+};
+`}
+          </SyntaxHighlight>
+          <HeadingTwo title="Conclusion" id="conclusion" />
+          <P>
+            By implementing these advanced SEO techniques and best practices in your Next.js website, you can enhance
+            its visibility in search engine results and attract more organic traffic. From optimizing metadata to
+            improving site structure and using these <B>Next.js features</B>, there are many strategies you can employ
+            to improve your website's <B>SEO</B> and drive sustainable growth.
+          </P>
+          <HeadingTwo title="FAQs (Frequently Asked Questions)" id="faq" />
+
+          <HeadingThree title="How does Next.js impact SEO?" id="" />
+          <P>
+            Next.js offers features like <B>server-side rendering (SSR)</B>, static site generation (SSG), and automatic
+            code splitting, which can improve SEO by enhancing page load times, user experience, and search engine
+            crawlability.
+          </P>
+          <HeadingThree title="What are some common SEO downsides to avoid in Next.js?" id="" />
+          <P>
+            Common SEO drawbacks in Next.js include neglecting metadata optimization, ignoring site structure, failing
+            to learn and implement Next.js features like <B>SSR</B> and <B>SSG</B>, and overlooking technical SEO
+            aspects such as sitemap generation and canonical URLs.
+          </P>
+          <HeadingThree title="Can I use third-party SEO tools with Next.js?" id="" />
+          <P>
+            Yes, you can use third-party SEO tools and services with Next.js to further optimize your{" "}
+            <B>website's SEO</B>. Many SEO tools offer integrations or APIs that can be easily integrated into Next.js
+            applications.
+          </P>
+          <HeadingThree title="Is it necessary to submit a sitemap to search engines for Next.js websites?" id="" />
+          <P>
+            While not strictly necessary, <B>submitting a sitemap to search engines</B> can help them discover and index
+            your content more efficiently, especially for larger or dynamically generated websites. It's a recommended
+            practice for improving SEO.
+          </P>
+          <HeadingThree title="How can I monitor the SEO performance of my Next.js website?" id="" />
+          <P>
+            You can monitor the SEO performance of your Next.js website using various tools and analytics platforms,
+            such as <B>Google Analytics</B>, <B>Google Search Console</B>, and third-party SEO monitoring tools. These
+            tools provide insights into traffic, rankings, and user behavior.
+          </P>
         </Grid>
         <Grid item md={4} lg={4} sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block" } }}>
           <Box position="sticky" top={70}>
@@ -80,14 +224,12 @@ const NextjsSEO: NextPageWithLayout = () => {
               <Scrollspy
                 items={[
                   "introduction",
-                  "what_is_next.js",
-                  "install_next.js",
-                  "automatic_installation_of_next.js",
-                  "manual_installation_of_next.js",
-                  "create_app_directory",
-                  "run_the_development_server_of_next.js",
-                  "frequently_asked_questions",
-                  "discussions",
+                  "optimize-metadata",
+                  "improve-site-structure",
+                  "nextjs-features",
+                  "submit-sitemap-to-search-engines",
+                  "conclusion",
+                  "faq",
                 ]}
                 currentClassName="activeScrollItem"
                 componentTag="ol"
@@ -99,49 +241,37 @@ const NextjsSEO: NextPageWithLayout = () => {
                   </a>
                 </li>
                 <li className="listItemContent">
-                  <a href="#what_is_next.js" onClick={scrollIntoView} className="listItemLinkContent">
-                    What is Next.js?
+                  <a href="#optimize-metadata" onClick={scrollIntoView} className="listItemLinkContent">
+                    1. Optimize Metadata
                   </a>
                 </li>
                 <li className="listItemContent">
-                  <a href="#install_next.js" onClick={scrollIntoView} className="listItemLinkContent">
-                    Install Next.js
-                  </a>
-                </li>
-                {/* Inner Container */}
-                <li className="listItemContent inside_ele">
-                  <a href="#automatic_installation_of_next.js" onClick={scrollIntoView} className="listItemLinkContent">
-                    Automatic installation of Next.js
+                  <a href="#improve-site-structure" onClick={scrollIntoView} className="listItemLinkContent">
+                    2. Improve Site Structure
                   </a>
                 </li>
 
-                <li className="listItemContent inside_ele">
-                  <a href="#manual_installation_of_next.js" onClick={scrollIntoView} className="listItemLinkContent">
-                    Manual installation of Next.js
+                <li className="listItemContent ">
+                  <a href="#nextjs-features" onClick={scrollIntoView} className="listItemLinkContent">
+                    3. Leverage Next.Js Features
                   </a>
                 </li>
-                <li className="listItemContent">
-                  <a href="#create_app_directory" onClick={scrollIntoView} className="listItemLinkContent">
-                    Create App Directory
+
+                <li className="listItemContent ">
+                  <a href="#submit-sitemap-to-search-engines" onClick={scrollIntoView} className="listItemLinkContent">
+                    4. Submit Sitemap To Search Engines
                   </a>
                 </li>
-                <li className="listItemContent">
-                  <a
-                    href="#run_the_development_server_of_next.js"
-                    onClick={scrollIntoView}
-                    className="listItemLinkContent"
-                  >
-                    Run the development server
+
+                <li className="listItemContent ">
+                  <a href="#conclusion" onClick={scrollIntoView} className="listItemLinkContent">
+                    Conclusion
                   </a>
                 </li>
+
                 <li className="listItemContent">
-                  <a href="#frequently_asked_questions" onClick={scrollIntoView} className="listItemLinkContent">
+                  <a href="#faq" onClick={scrollIntoView} className="listItemLinkContent">
                     Frequently Asked Questions
-                  </a>
-                </li>
-                <li className="listItemContent">
-                  <a href="#discussions" onClick={scrollIntoView} className="listItemLinkContent">
-                    Discussions
                   </a>
                 </li>
               </Scrollspy>
