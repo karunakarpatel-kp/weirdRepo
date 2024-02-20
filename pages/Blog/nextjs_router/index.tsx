@@ -1,7 +1,7 @@
 import HeadingOne from "@Components/Elements/Headings/HeadingOne";
 import HeadingThree from "@Components/Elements/Headings/HeadingThree";
 import HeadingTwo from "@Components/Elements/Headings/HeadingTwo";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph as P, Paragraph } from "@Components/Elements/Paragraph/Paragraph";
 import Subtitle from "@Components/Elements/Subtitle/Subtitle";
 import FullPageBlogPostLayout from "@Components/Layout/FullPageBlogPostLayout";
 import MainLayout from "@Components/Layout/MainLayout";
@@ -160,7 +160,7 @@ const MyComponent = () => (
 `}
           </SyntaxHighlight>
 
-          <HeadingThree title="3. Dynamic Routing" id="dynamic-routing" />
+          <HeadingThree title="3. Dynamic Routing" id="dynamic-routing2" />
           <Paragraph>
             For dynamic routes with parameters, define the route using square brackets (`[]`) in the file name. Inside
             the component, access the route parameters using the <C>`useRouter`</C> hook or the <C>`router`</C> object
@@ -245,7 +245,7 @@ export default Post;
                   "getting-started",
                   "creating-pages",
                   "linking-pages",
-                  "dynamic-routing",
+                  "dynamic-routing2",
                   "conclusion",
                   "faq",
                 ]}
@@ -311,7 +311,7 @@ export default Post;
                   </a>
                 </li>
                 <li className="listItemContent inside_ele">
-                  <a href="#dynamic-routing" onClick={scrollIntoView} className="listItemLinkContent">
+                  <a href="#dynamic-routing2" onClick={scrollIntoView} className="listItemLinkContent">
                     3. Dynamic Routing
                   </a>
                 </li>
