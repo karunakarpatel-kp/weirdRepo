@@ -8,7 +8,7 @@ import { Box, Grid, Divider, List, ListItem, ListItemText } from "@mui/material"
 import FullPageBlogPostLayout from "@Components/Layout/FullPageBlogPostLayout";
 import HeadingOne from "@Components/Elements/Headings/HeadingOne";
 import Subtitle from "@Components/Elements/Subtitle/Subtitle";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph } from "@Components/Elements/Paragraph/Paragraph";
 import LastUpdateTags from "@Components/UI/LastUpdate&Tags/LastUpdateTags";
 import HeaderImageFullBlogPost from "@Components/UI/ImageCards/HeaderImageFullBlogPost";
 import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightTexts";

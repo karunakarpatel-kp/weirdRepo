@@ -9,7 +9,7 @@ import HeadingOne from "@Components/Elements/Headings/HeadingOne";
 import Subtitle from "@Components/Elements/Subtitle/Subtitle";
 import LastUpdateTags from "@Components/UI/LastUpdate&Tags/LastUpdateTags";
 import HeaderImageFullBlogPost from "@Components/UI/ImageCards/HeaderImageFullBlogPost";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph } from "@Components/Elements/Paragraph/Paragraph";
 import HeadingTwo from "@Components/Elements/Headings/HeadingTwo";
 import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightTexts";
 import Sharing from "@Components/SocialShare/Sharing";

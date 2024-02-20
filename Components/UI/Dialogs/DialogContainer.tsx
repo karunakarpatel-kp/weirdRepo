@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "store/centralStore";
 import { setOpenDialogBox } from "store/utilitySlice";
 import HeadingThree from "@Components/Elements/Headings/HeadingThree";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph } from "@Components/Elements/Paragraph/Paragraph";
 import HeadingFour from "@Components/Elements/Headings/HeadingFour";
 
 const DialogContainer = () => {

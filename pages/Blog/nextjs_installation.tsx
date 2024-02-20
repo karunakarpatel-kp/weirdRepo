@@ -6,7 +6,7 @@ import { Box, Stack } from "@mui/system";
 
 import coding from "@Public/coding.jpg";
 
-import Paragraph from "@Elements/Paragraph/Paragraph";
+import { Paragraph } from "@Elements/Paragraph/Paragraph";
 import Subtitle from "@Elements/Subtitle/Subtitle";
 
 import FullPageBlogPostLayout from "@Layout/FullPageBlogPostLayout";

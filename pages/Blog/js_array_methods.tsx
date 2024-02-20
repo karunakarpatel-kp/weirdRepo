@@ -1,5 +1,5 @@
 import HeadingOne from "@Components/Elements/Headings/HeadingOne";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph } from "@Components/Elements/Paragraph/Paragraph";
 import Subtitle from "@Components/Elements/Subtitle/Subtitle";
 import FullPageBlogPostLayout from "@Components/Layout/FullPageBlogPostLayout";
 import MainLayout from "@Components/Layout/MainLayout";

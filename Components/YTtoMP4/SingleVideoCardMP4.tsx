@@ -1,4 +1,4 @@
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph } from "@Components/Elements/Paragraph/Paragraph";
 import { Alert, AlertTitle, Box, Button, ButtonGroup, Grid, IconButton, Paper, Skeleton, Stack } from "@mui/material";
 import Image from "next/image";
 import React from "react";

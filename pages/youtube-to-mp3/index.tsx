@@ -6,7 +6,7 @@ import Theme, { themeColors } from "@Theme/Theme";
 import { NextPageWithLayout } from "pages/_app";
 import { DateMonthYearForBlogPost, SEO_OBJ, blogPostsObj } from "Essentials";
 import LastUpdateTags from "@Components/UI/LastUpdate&Tags/LastUpdateTags";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph } from "@Components/Elements/Paragraph/Paragraph";
 import DownloadPlugin from "@Components/YTDownloader/DownloadPlugin";
 import Footer from "@Components/UI/Footer";
 import Navigation from "@Components/UI/Navigation";
