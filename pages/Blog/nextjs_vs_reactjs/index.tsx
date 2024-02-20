@@ -2,7 +2,7 @@ import HeadingFour from "@Components/Elements/Headings/HeadingFour";
 import HeadingOne from "@Components/Elements/Headings/HeadingOne";
 import HeadingThree from "@Components/Elements/Headings/HeadingThree";
 import HeadingTwo from "@Components/Elements/Headings/HeadingTwo";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph } from "@Components/Elements/Paragraph/Paragraph";
 import Subtitle from "@Components/Elements/Subtitle/Subtitle";
 import FullPageBlogPostLayout from "@Components/Layout/FullPageBlogPostLayout";
 import MainLayout from "@Components/Layout/MainLayout";
@@ -78,11 +78,11 @@ const NextjsVsReactjs: NextPageWithLayout = () => {
           </Paragraph>
           <HeadingTwo id="what-is-reactjs" title="What is React.js?" />
           <Paragraph>
-            React.js, commonly referred to as React, is an open-source JavaScript library for building user interfaces,
-            particularly for single-page applications. React.js was developed by Facebook, which allows developers to
-            create reusable UI components that can efficiently update when data changes. The main feature of React.js is
-            its <B>virtual DOM</B> (Document Object Model) which enables high performance by minimizing the need for
-            direct manipulation of the DOM.
+            <Link href="https://react.dev/learn">React.js</Link>, commonly referred to as React, is an open-source
+            JavaScript library for building user interfaces, particularly for single-page applications. React.js was
+            developed by Facebook, which allows developers to create reusable UI components that can efficiently update
+            when data changes. The main feature of React.js is its <B>virtual DOM</B> (Document Object Model) which
+            enables high performance by minimizing the need for direct manipulation of the DOM.
           </Paragraph>
           <HeadingTwo id="what-is-nextjs" title="What is Next.js" />
           <Paragraph>
@@ -95,33 +95,41 @@ const NextjsVsReactjs: NextPageWithLayout = () => {
           <HeadingTwo title="Next.js vs React.js: Understanding the Differences" id="nextjs-vs-reactjs" />
           <HeadingThree title="Performance" id="performance" />
           <Paragraph>
-            Next.js excels in performance due to its server-side rendering and static site generation capabilities. By
-            pre-rendering pages on the server side and serving them as <B>static assets</B>, Next.js reduces the
-            time-to-interactivity and improves load times, resulting in a smoother user experience. React, on the other
-            hand, relies on client-side rendering by default, which can lead to slower initial page loads, especially
-            for content-rich applications.
+            <B>Next.js</B> excels in performance due to its server-side rendering and static site generation
+            capabilities. By pre-rendering pages on the server side and serving them as <B>static assets</B>, Next.js
+            reduces the time-to-interactivity and improves load times, resulting in a smoother user experience. React,
+            on the other hand, relies on client-side rendering by default, which can lead to slower initial page loads,
+            especially for content-rich applications.
           </Paragraph>
           <HeadingThree title="Server Side Rendering" id="server-side-rendering" />
           <Paragraph>
             One of the key advantages of Next.js is its built-in support for <B>server-side rendering (SSR)</B>, which
             allows pages to be generated on the server and sent to the client as fully rendered HTML. This not only
-            improves performance but also enhances SEO by ensuring that search engine crawlers can index the content
-            accurately. While React can achieve SSR through additional configurations or third-party libraries, Next.js
-            simplifies the process with its integrated SSR support.
+            improves performance but also enhances{" "}
+            <Link href="https://www.karunakarpatel.com/Blog/nextjs_seo">SEO</Link> by ensuring that search engine
+            crawlers can index the content accurately. While React can achieve SSR through additional configurations or
+            third-party libraries, Next.js simplifies the process with its integrated SSR support.
           </Paragraph>
           <HeadingThree title="Static site generation" id="static-site-generation" />
           <Paragraph>
-            Next.js goes a step further by offering static site generation (SSG), where pages are pre-built at build
-            time and served as static files. This approach is ideal for content-driven websites or blogs that don't
-            require real-time data updates. React, being a client-side library, does not natively support SSG, although
-            it can be implemented with tools like Gatsby.js or Next.js.
+            Next.js goes a step further by offering{" "}
+            <Link href="https://nextjs.org/docs/app/building-your-application/upgrading/app-router-migration#static-site-generation-getstaticprops">
+              static site generation (SSG)
+            </Link>
+            , where pages are pre-built at build time and served as static files. This approach is ideal for
+            content-driven websites or blogs that don't require real-time data updates. React, being a client-side
+            library, does not natively support SSG, although it can be implemented with tools like Gatsby.js or{" "}
+            <B>Next.js</B>.
           </Paragraph>
           <HeadingThree title="Routing" id="routing" />
           <Paragraph>
-            <B>Routing</B> is another area where Next.js shines, providing simple and intuitive routing out of the box.
-            With Next.js, developers can define routes directly within the project structure, making it easy to create
-            dynamic and nested routes. React, while capable of handling routing with libraries like <B>React Router</B>,
-            requires additional setup and configuration for complex routing scenarios.
+            <Link href="https://nextjs.org/docs/app/building-your-application/routing">
+              <B>Routing</B>
+            </Link>{" "}
+            is another area where Next.js shines, providing simple and intuitive routing out of the box. With Next.js,
+            developers can define routes directly within the project structure, making it easy to create dynamic and
+            nested routes. React, while capable of handling routing with libraries like <B>React Router</B>, requires
+            additional setup and configuration for complex routing scenarios.
           </Paragraph>
           <HeadingThree title="Scalability" id="scalability" />
           <Paragraph>
@@ -135,8 +143,12 @@ const NextjsVsReactjs: NextPageWithLayout = () => {
             In terms of the learning curve, React.js is generally easier to grasp for beginners due to its simplicity
             and minimalistic approach. Developers familiar with JavaScript can quickly start building applications with
             React's component-based architecture. Next.js, while built on top of React, introduces additional concepts
-            like <B>server-side rendering</B> and <B>routing</B>, which may require some time to master for beginner
-            developers. React.js and Next.js both provide documentation in their official websites too.
+            like <B>server-side rendering</B> and{" "}
+            <Link href="https://nextjs.org/docs/app/building-your-application/routing">
+              <B>routing</B>
+            </Link>
+            , which may require some time to master for beginner developers. React.js and Next.js both provide
+            documentation in their official websites too.
           </Paragraph>
           <HeadingTwo title="Use Cases: When to Choose Next.js" id="use-case-nextjs" />
           <Paragraph>
@@ -148,7 +160,8 @@ const NextjsVsReactjs: NextPageWithLayout = () => {
               <ListItemText>
                 <Paragraph>
                   <B>SEO-friendly applications</B>: Next.js' built-in support for server-side rendering makes it ideal
-                  for applications that rely heavily on search engine visibility or Search Engine Optimization.
+                  for applications that rely heavily on search engine visibility or{" "}
+                  <Link href="https://www.karunakarpatel.com/Blog/nextjs_seo">search Engine Optimization</Link>.
                 </Paragraph>
               </ListItemText>
             </ListItem>
@@ -234,8 +247,11 @@ const NextjsVsReactjs: NextPageWithLayout = () => {
           <HeadingTwo title="FAQs (Frequently Asked Questions)" id="faq" />
           <HeadingThree title="Which is best for Search engine optimization: Next.js or React?" id="q1" />
           <Paragraph>
-            Next.js usually has higher <B>Search engine optimization</B> capabilities as a result of its built-in
-            server-side rendering (SSR).
+            Next.js usually has higher{" "}
+            <Link href="https://www.karunakarpatel.com/Blog/nextjs_seo">
+              <B>Search engine optimization</B>
+            </Link>{" "}
+            capabilities as a result of its built-in server-side rendering (SSR).
           </Paragraph>
 
           <HeadingThree title="How does Next.js deal with routing in comparison with React?" id="q2" />
