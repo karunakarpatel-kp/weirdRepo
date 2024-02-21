@@ -19,6 +19,7 @@ import ModalContainer from "@Components/UI/Modals/ModalContainer";
 import Image from "next/image";
 import WelcomeSVG from "@Public/welcome.svg";
 import SingleVideoCardMP4 from "@Components/YTtoMP4/SingleVideoCardMP4";
+import YoutubeToMP4Content from "@Components/Content/YoutubeToMP4Content";
 
 const YoutubeVideoToMP4: NextPageWithLayout = () => {
   const getDataLoadingStatus = useSelector((state: RootState) => state.YTAPISlice.status);
@@ -113,6 +114,8 @@ const YoutubeVideoToMP4: NextPageWithLayout = () => {
             <SingleVideoCardMP4 />
             {/* Center Content */}
 
+            <YoutubeToMP4Content />
+
             {/* Sharing Icon Container In Below */}
             <Grid
               container
@@ -128,7 +131,7 @@ const YoutubeVideoToMP4: NextPageWithLayout = () => {
             >
               <Grid item md={8} lg={8}>
                 {/* Please remove the title and make it dynamic....! */}
-                <Sharing />
+                {/* <Sharing /> */}
               </Grid>
             </Grid>
             {/* End of Sharing Container */}

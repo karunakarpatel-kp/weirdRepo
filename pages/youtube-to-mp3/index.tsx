@@ -19,6 +19,7 @@ import ModalContainer from "@Components/UI/Modals/ModalContainer";
 import Image from "next/image";
 import WelcomeSVG from "@Public/welcome.svg";
 import SingleVideoCardMP3 from "@Components/YTtoMP3/SingleVideoCardMP3";
+import YoutubeToMP3Content from "@Components/Content/YoutubeToMp3Content";
 
 const YoutubeVideoToMP3: NextPageWithLayout = () => {
   const getDataLoadingStatus = useSelector((state: RootState) => state.YTAPISlice.status);
@@ -113,6 +114,7 @@ const YoutubeVideoToMP3: NextPageWithLayout = () => {
             {/* <SingleVideoCard /> */}
             <SingleVideoCardMP3 />
             {/* Center Content */}
+            <YoutubeToMP3Content />
 
             {/* Sharing Icon Container In Below */}
             <Grid
@@ -129,7 +131,7 @@ const YoutubeVideoToMP3: NextPageWithLayout = () => {
             >
               <Grid item md={8} lg={8}>
                 {/* Please remove the title and make it dynamic....! */}
-                <Sharing />
+                {/* <Sharing /> */}
               </Grid>
             </Grid>
             {/* End of Sharing Container */}
