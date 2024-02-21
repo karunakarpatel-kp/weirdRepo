@@ -114,13 +114,13 @@ const PreviewImage = () => {
 
   return (
     <>
-      <Box p={{ xs: 1, sm: 1, md: 3, lg: 3 }} mb={5}>
+      <Box p={{ xs: 1, sm: 1, md: 3, lg: 3 }} mb={2}>
         <Alert severity="info" sx={{ mt: 3, width: { xs: 5 / 5, sm: 5 / 5, md: 3 / 5, lg: 3 / 5 }, margin: "auto" }}>
           <AlertTitle>Note</AlertTitle>
           Change the slider to get your desired compression
         </Alert>
 
-        <Grid container border={0} mt={2} mb={{ xs: 2, sm: 33, md: 30, lg: 30 }}>
+        <Grid container border={0} mt={2}>
           <Grid item border={1} xs={12} sm={12} md={6} lg={6} borderColor="lightgrey">
             <Box textAlign="center" mt={1}>
               <HeadingThree id="three" title="Before Compression" />
