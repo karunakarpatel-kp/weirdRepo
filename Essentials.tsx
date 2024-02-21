@@ -324,7 +324,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Next.js vs React.js: Choosing the Right Framework for Your Project",
     description:
       "In the world of web development, choosing the right framework can make all the difference in the success of your project. Next.js and React.js are two popular options for building modern web applications. In this article, we'll explore the differences between Next.js and React.js to help you make a standalone decision for your next project.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_vs_Reactjs", href: `${blogPostURLS.NEXTJS_VS_REACTJS_RELATIVE}` },
@@ -343,7 +343,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Next.js Router: A Comprehensive Guide",
     description:
       "Next.js, a popular React framework, comes with its built-in routing system known as the Next.js Router. Routing is a fundamental aspect of web development, allowing users to navigate between different pages within a web application seamlessly. In this comprehensive guide, we'll explore the Next.js Router, its features, and how to power it effectively in your Next.js projects.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -363,7 +363,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Install Tailwindcss in Next.js: A Comprehensive Guide",
     description:
       "Learn how to install Tailwind CSS in your Next.js project to improve your web development experience. Follow our step-by-step guide and solve the potential of Tailwind CSS with Next.js.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -383,7 +383,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Enhance Your Website with Next.js Image: A Comprehensive Guide with Code Examples",
     description:
       "Next.js Image is a powerful component provided by Next.js, a popular React framework, for optimizing images in web applications. It addresses common challenges faced by developers when dealing with images, such as performance optimization, responsive design, and accessibility.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -403,7 +403,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Next.js App Router: Maximizing Efficiency and Performance",
     description:
       "Learn how Next.js App Router can develop your web development experience, offering unparalleled productivity and performance. Learn everything you need to know about implementing and optimizing the Next.js App Router for your projects.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -423,7 +423,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Mastering Next.js Dynamic Routing: A Complete Guide",
     description:
       "In this comprehensive article, you will learn about Next.js dynamic routing. Learn how to create dynamic routes, pass parameters, and handle dynamic content effectively using Next.js.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -443,7 +443,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Exploring Essential JavaScript Array Methods: A Comprehensive Overview",
     description:
       "Discover the power of JavaScript array methods in this comprehensive guide. Learn about essential array methods like map, filter, reduce, and more, and how to use them effectively to manipulate and transform arrays in your JavaScript projects.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -463,7 +463,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Utilizing Next.js Link Component for Seamless Navigation",
     description:
       "Learn how to develop navigation in your Next.js applications using the Link component. This comprehensive blog post covers the usage of Next.js Link for client-side routing, prefetching, and improving user experience.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -483,7 +483,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Configuring Next.js: A Guide to the Next.js Configuration File",
     description:
       "Unlock the full potential of Next.js by mastering its configuration options. This comprehensive guide walks you through the Next.js configuration file, covering essential settings and advanced customization techniques.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -503,7 +503,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Integrating Google Analytics with Next.js: A Step-by-Step Guide",
     description:
       "Learn how to set up and integrate Google Analytics with your Next.js application to track user behavior, monitor website performance, and gain valuable insights. This informative blog post provides a step-by-step tutorial for implementing Google Analytics in Next.js.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -523,7 +523,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Optimizing SEO in Next.js: Best Practices and Strategies",
     description:
       "Increase the visibility of your Next.js website in search engine results by following and implementing these advanced SEO techniques. Learn how to optimize metadata, improve site structure, and use these Next.js features for better search engine rankings.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -543,7 +543,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Working with APIs in Next.js: A Comprehensive Guide",
     description:
       "Reveal the full potential of Next.js by integrating APIs into your applications. Learn how to fetch data from external APIs, handle server-side and client-side data fetching, and optimize API usage for better performance in Next.js projects.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
@@ -563,7 +563,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "Creating Dynamic Forms with Next.js: A Complete Guide",
     description:
       "Learn how to build interactive and user-friendly forms in your Next.js applications. This comprehensive guide covers form creation, validation, handling form submissions, and integrating forms with Next.js features.",
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-02-21T11:05:57+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs_router", href: `${blogPostURLS.NEXTJS_ROUTER_RELATIVE}` },
