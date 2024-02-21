@@ -6,7 +6,7 @@ import Theme, { themeColors } from "@Theme/Theme";
 import { NextPageWithLayout } from "pages/_app";
 import { DateMonthYearForBlogPost, SEO_OBJ, blogPostsObj } from "Essentials";
 import LastUpdateTags from "@Components/UI/LastUpdate&Tags/LastUpdateTags";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph as P } from "@Components/Elements/Paragraph/Paragraph";
 import DownloadPlugin from "@Components/YTDownloader/DownloadPlugin";
 import Footer from "@Components/UI/Footer";
 import Navigation from "@Components/UI/Navigation";
@@ -19,6 +19,8 @@ import Image from "next/image";
 import WelcomeSVG from "@Public/welcome.svg";
 import UploadImg from "@Components/ImgCompress/UploadImg";
 import PreviewImage from "@Components/ImgCompress/PreviewImage";
+import HeadingTwo from "@Components/Elements/Headings/HeadingTwo";
+import ReduceImageSizeInKbContent from "@Components/Content/ReduceImageSizeInKbContent";
 
 const ReduceImageSizeInKB: NextPageWithLayout = () => {
   const getCentralFile = useSelector((state: RootState) => state.imgReducerSlice.file);
@@ -90,12 +92,14 @@ const ReduceImageSizeInKB: NextPageWithLayout = () => {
                 <Box margin="auto" mb={2}>
                   <Image src={WelcomeSVG} width={300} height={300} alt="Hi" />
                 </Box>
-                <Paragraph>Please upload any image to start compressing</Paragraph>
+                <P>Please upload any image to start compressing</P>
               </Grid>
             )}
 
             {getCentralFile.fileURL !== null && <PreviewImage />}
             {/* Center Content */}
+
+            <ReduceImageSizeInKbContent />
 
             {/* Sharing Icon Container In Below */}
             <Grid
@@ -112,7 +116,7 @@ const ReduceImageSizeInKB: NextPageWithLayout = () => {
             >
               <Grid item md={8} lg={8}>
                 {/* Please remove the title and make it dynamic....! */}
-                <Sharing />
+                {/* <Sharing /> */}
               </Grid>
             </Grid>
             {/* End of Sharing Container */}

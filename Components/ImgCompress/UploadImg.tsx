@@ -1,4 +1,4 @@
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph } from "@Components/Elements/Paragraph/Paragraph";
 import {
   AddLink,
   Backspace,
