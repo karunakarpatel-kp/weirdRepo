@@ -23,3 +23,7 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+// BLOG_PAGE_BASE_URL=https://www.karunakarpatel.com/Blog
+// HOME_PAGE_BASE_URL=https://www.karunakarpatel.com
+// GOOGLE_ADSENSE_ID=ca-pub-2687924945894784
