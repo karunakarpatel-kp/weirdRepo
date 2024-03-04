@@ -28,6 +28,8 @@ const Document: React.FC = () => {
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2687924945894784"
             crossOrigin="anonymous"
           ></script>
+          {/* Google Adsense Verification */}
+          <meta name="google-adsense-account" content={process.env.GOOGLE_ADSENSE_ID}></meta>
         </Head>
         <body>
           <Main />
