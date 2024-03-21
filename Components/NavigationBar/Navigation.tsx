@@ -154,34 +154,31 @@ const Navigation = () => {
               data-name="Path 7"
               d="M64,5H10A10,10,0,0,0,0,15V62A10,10,0,0,0,10,72H64A10,10,0,0,0,74,62V15A10,10,0,0,0,64,5Z"
               transform="translate(0 11)"
-              // fill="#ffca3c"
-              fill="white"
+              fill="#ffca3c"
             />
             <text
               id="Text_2_Image"
               data-name="Karunakar Patel"
               transform="translate(89)"
-              // fill="#ffca3c"
-              fill="white"
+              fill="#ffca3c"
               fontSize="35"
               fontFamily="SegoeUI-Semibold, Segoe UI"
               fontWeight="600"
             >
               <tspan x="0" y="40">
-                Vehicle
+                Karunakar
               </tspan>
             </text>
             <text
               id="Converter"
               transform="translate(89 79)"
-              // fill="#ffca3c"
-              fill="white"
+              fill="#ffca3c"
               fontSize="35"
               fontFamily="SegoeUI-Semibold, Segoe UI"
               fontWeight="600"
             >
               <tspan x="0" y="0">
-                Masti
+                Patel
               </tspan>
             </text>
             <path
@@ -226,7 +223,7 @@ const Navigation = () => {
               <span>
                 <FaBlog size={25} className="pt-0" />
               </span>
-              Cars Blog
+              Blog
             </Link>
           </li>
           {/* <li className="p-3 m-0 -mt-2">
