@@ -111,7 +111,7 @@ const Navigation = () => {
             <li>
               <Link
                 href="/Blog"
-                className={`${pathName === "/Blog" || pathName.includes("/cars") ? "text-[#ffca3c] " : "text-white"}`}
+                className={`${pathName === "/Blog" || pathName!.includes("/Blog") ? "text-[#ffca3c] " : "text-white"}`}
               >
                 <FaBlog size={25} className="pt-0" />
               </Link>
@@ -219,7 +219,7 @@ const Navigation = () => {
             <Link
               href="/Blog"
               className={`${
-                pathName === "/cars" || pathName.includes("/cars") ? "text-[#ffca3c]" : "text-white"
+                pathName === "/cars" || pathName!.includes("/Blog") ? "text-[#ffca3c]" : "text-white"
               } border-b border-dotted no-underline pb-3 m-0 flex gap-3 ml-2 mr-2 `}
               onClick={onCloseClickHandler}
             >

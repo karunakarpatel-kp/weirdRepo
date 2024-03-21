@@ -234,6 +234,7 @@ interface SEO_OBJ_Props {
     featuredImageAltText: string;
     ogImageURL: string;
     changeFrequency?: "weekly" | "daily" | "monthly" | "yearly";
+    category?: string;
   };
 }
 
@@ -594,45 +595,45 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   },
 
   // Youtube Video Convert MP3
-  YOUTUBE_VIDEO_TO_MP3_PAGE: {
-    absoluteURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_ABSOLUTE,
-    relativeURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE,
-    title: "Youtube Videos to MP3: Convert and Download For Free",
-    description:
-      "Download YouTube videos as MP3 for free with our most powerful YouTube videos to MP3 converter. No app or software is needed.",
-    // publishedTime: "2024-01-05T22:22:25+05:30",
-    publishedTime: "2024-01-05T23:01:17+05:30",
-    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    tags: [
-      { tag: "youtube-mp3", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE}` },
-      { tag: "video-to-mp3", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE}` },
-      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
-      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
-    ],
-    featuredImage: youtubevideotomp3,
-    featuredImageAltText: "youtube-video-to-mp3",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/youtube-to-mp3.png`,
-  },
+  // YOUTUBE_VIDEO_TO_MP3_PAGE: {
+  //   absoluteURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_ABSOLUTE,
+  //   relativeURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE,
+  //   title: "Youtube Videos to MP3: Convert and Download For Free",
+  //   description:
+  //     "Download YouTube videos as MP3 for free with our most powerful YouTube videos to MP3 converter. No app or software is needed.",
+  //   // publishedTime: "2024-01-05T22:22:25+05:30",
+  //   publishedTime: "2024-01-05T23:01:17+05:30",
+  //   lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+  //   tags: [
+  //     { tag: "youtube-mp3", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE}` },
+  //     { tag: "video-to-mp3", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE}` },
+  //     { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+  //     { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+  //   ],
+  //   featuredImage: youtubevideotomp3,
+  //   featuredImageAltText: "youtube-video-to-mp3",
+  //   ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/youtube-to-mp3.png`,
+  // },
 
-  // Youtube Video Convert MP3
-  YOUTUBE_VIDEO_TO_MP4_PAGE: {
-    absoluteURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_ABSOLUTE,
-    relativeURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE,
-    title: "Youtube Videos To MP4: Convert and Download For Free",
-    description:
-      "Download YouTube videos as MP4 for free with our most powerful YouTube videos to MP4 converter. No app or software required",
-    publishedTime: "2024-01-06T22:04:03+05:30",
-    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    tags: [
-      { tag: "youtube-mp4", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE}` },
-      { tag: "video-to-mp4", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE}` },
-      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
-      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
-    ],
-    featuredImage: youtubevideotomp4,
-    featuredImageAltText: "youtube-video-to-mp4",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/youtube-to-mp4.png`,
-  },
+  // // Youtube Video Convert MP3
+  // YOUTUBE_VIDEO_TO_MP4_PAGE: {
+  //   absoluteURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_ABSOLUTE,
+  //   relativeURL: blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE,
+  //   title: "Youtube Videos To MP4: Convert and Download For Free",
+  //   description:
+  //     "Download YouTube videos as MP4 for free with our most powerful YouTube videos to MP4 converter. No app or software required",
+  //   publishedTime: "2024-01-06T22:04:03+05:30",
+  //   lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+  //   tags: [
+  //     { tag: "youtube-mp4", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE}` },
+  //     { tag: "video-to-mp4", href: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE}` },
+  //     { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+  //     { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+  //   ],
+  //   featuredImage: youtubevideotomp4,
+  //   featuredImageAltText: "youtube-video-to-mp4",
+  //   ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/youtube-to-mp4.png`,
+  // },
 
   REDUCE_IMAGE_SIZE_TO_KB_PAGE: {
     absoluteURL: blogPostURLS.REDUCE_IMAGE_SIZE_IN_KB_PAGE_ABSOLUTE,
@@ -680,30 +681,30 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImageAltText: `${SEO_OBJ.NEXTJS_VS_REACTJS.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.NEXTJS_VS_REACTJS.ogImageURL}`,
   },
-  {
-    id: 2,
-    url: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE}`,
-    title: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.title}`,
-    description: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.description}`,
-    lastUpdateTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.publishedTime}`,
-    tags: SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.tags!,
-    featuredImage: SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.ogImageURL}`,
-  },
-  {
-    id: 3,
-    url: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE}`,
-    title: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.title}`,
-    description: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.description}`,
-    lastUpdateTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.publishedTime}`,
-    tags: SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.tags!,
-    featuredImage: SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.ogImageURL}`,
-  },
+  // {
+  //   id: 2,
+  //   url: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP3_PAGE_RELATIVE}`,
+  //   title: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.title}`,
+  //   description: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.description}`,
+  //   lastUpdateTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.lastUpdateTime}`,
+  //   publishedTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.publishedTime}`,
+  //   tags: SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.tags!,
+  //   featuredImage: SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImage,
+  //   featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.featuredImageAltText}`,
+  //   ogImageURL: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.ogImageURL}`,
+  // },
+  // {
+  //   id: 3,
+  //   url: `${blogPostURLS.YOUTUBE_VIDEO_TO_MP4_PAGE_RELATIVE}`,
+  //   title: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.title}`,
+  //   description: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.description}`,
+  //   lastUpdateTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.lastUpdateTime}`,
+  //   publishedTime: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.publishedTime}`,
+  //   tags: SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.tags!,
+  //   featuredImage: SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.featuredImage,
+  //   featuredImageAltText: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.featuredImageAltText}`,
+  //   ogImageURL: `${SEO_OBJ.YOUTUBE_VIDEO_TO_MP4_PAGE.ogImageURL}`,
+  // },
   {
     id: 4,
     url: `${blogPostURLS.REDUCE_IMAGE_SIZE_IN_KB_PAGE_RELATIVE}`,

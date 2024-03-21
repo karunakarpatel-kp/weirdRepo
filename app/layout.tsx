@@ -1,4 +1,5 @@
 "use client";
+
 import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "Components/NavigationBar/Navigation";
