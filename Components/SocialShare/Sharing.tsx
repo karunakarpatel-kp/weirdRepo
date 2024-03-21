@@ -1,12 +1,10 @@
+"use client";
 import React, { useState, useEffect } from "react";
-import Box from "@mui/material/Box";
 import {
   EmailIcon,
   EmailShareButton,
   FacebookIcon,
   FacebookMessengerShareButton,
-  LineIcon,
-  LineShareButton,
   LinkedinIcon,
   LinkedinShareButton,
   TwitterIcon,
@@ -14,40 +12,42 @@ import {
   WhatsappIcon,
   WhatsappShareButton,
 } from "next-share";
-import { Stack } from "@mui/material";
 import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
+import { SEO_OBJ, blogPostsObj } from "Essential";
 
 const Sharing = () => {
-  const router = useRouter();
+  const pathName = usePathname();
   const [grabbedTitle, setGrabbedTitle] = useState("");
   const [grabbedURL, setGrabbedURL] = useState("");
+  const filteredSinglePost = blogPostsObj.filter((singleBlogPost) => singleBlogPost.url === pathName);
 
   useEffect(() => {
-    const grabTitleID = document.getElementById("title");
-    const grabTitle = grabTitleID!.innerText;
-    setGrabbedTitle(grabTitle);
-    setGrabbedURL("https://www.karunakarpatel.com" + router.route);
+    // setGrabbedTitle(filteredSinglePost[0].title);
+    // setGrabbedURL(process.env.HOME_PAGE_BASE_URL + pathName);
+    setGrabbedTitle("hi");
+    setGrabbedURL("/");
   }, []);
 
   return (
     <>
-      <Stack direction="row" spacing={2} mt={3}>
+      <div className="border-0 flex gap-5 pl-8">
         <FacebookMessengerShareButton appId="" url={grabbedURL} title={grabbedTitle}>
-          <FacebookIcon size={30} />
+          <FacebookIcon size={40} className="rounded-md" />
         </FacebookMessengerShareButton>
         <WhatsappShareButton url={grabbedURL} title={grabbedTitle}>
-          <WhatsappIcon size={30} />
+          <WhatsappIcon size={40} className="rounded-md" />
         </WhatsappShareButton>
         <TwitterShareButton url={grabbedURL} title={grabbedTitle}>
-          <TwitterIcon size={30} />
+          <TwitterIcon size={40} className="rounded-md" />
         </TwitterShareButton>
         <LinkedinShareButton url={grabbedURL} title={grabbedTitle}>
-          <LinkedinIcon size={30} />
+          <LinkedinIcon size={40} className="rounded-md" />
         </LinkedinShareButton>
         <EmailShareButton url={grabbedURL} title={grabbedTitle}>
-          <EmailIcon size={30} />
+          <EmailIcon size={40} className="rounded-md" />
         </EmailShareButton>
-      </Stack>
+      </div>
     </>
   );
 };
