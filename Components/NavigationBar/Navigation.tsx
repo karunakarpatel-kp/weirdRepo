@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Logo from "public/Logo.svg";
 import Image from "next/image";
@@ -8,6 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { usePathname, useRouter } from "next/navigation";
 import { IoMdClose } from "react-icons/io";
 import KarunakarPatelImage from "@Public/karunakarImage.svg";
+import Link from "next/link";
 
 const Navigation = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState<boolean>(false);

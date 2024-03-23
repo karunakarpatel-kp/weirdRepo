@@ -6,6 +6,9 @@ import Navigation from "Components/NavigationBar/Navigation";
 import { useState } from "react";
 import Footer from "Components/Footer/Footer";
 import { MdLightMode } from "react-icons/md";
+import { Router } from "next/router";
+import { AppProgressBar } from "next-nprogress-bar";
+import ReadingProgressBar from "Components/UI/ReadingProgressBar/ReadingProgressBar";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -20,6 +23,8 @@ const RootLayout = (props: RootLayoutProps) => {
   return (
     <html lang="en" className={darkMode ? "dark transition-colors duration-100" : "transition-all duration-300"}>
       <body className="relative p-0 m-0 bg-white dark:bg-slate-900 dark:prose-invert prose prose-stone min-h-[65vh] max-w-full border-0 border-sky-400  h-full overflow-x-hidden">
+        <ReadingProgressBar />
+        <AppProgressBar height="1px" color="#ffca3c" options={{ showSpinner: true }} shallowRouting />
         <header>
           <Navigation />
         </header>
