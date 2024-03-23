@@ -74,6 +74,9 @@ interface Blog_Post_URL_Props {
   NEXTJS_ROUTER_ABSOLUTE: string;
   NEXTJS_ROUTER_RELATIVE: string;
 
+  NEXTJS_METATAGS_ABSOLUTE: string;
+  NEXTJS_METATAGS_RELATIVE: string;
+
   INSTALL_TAILWINDCSS_IN_NEXTJS_ABSOLUTE: string;
   INSTALL_TAILWINDCSS_IN_NEXTJS_RELATIVE: string;
 
@@ -156,6 +159,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   NEXTJS_VS_REACTJS_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/nextjs_vs_reactjs`,
   NEXTJS_VS_REACTJS_RELATIVE: "/Blog/nextjs_vs_reactjs",
+
+  NEXTJS_METATAGS_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/nextjs_metatags`,
+  NEXTJS_METATAGS_RELATIVE: "/Blog/nextjs_metatags",
 
   NEXTJS_ROUTER_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/nextjs_router`,
   NEXTJS_ROUTER_RELATIVE: "/Blog/nextjs_router",
@@ -654,6 +660,24 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "reduce-image-size-in-kb",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
   },
+
+  NEXTJS_METATAGS: {
+    absoluteURL: blogPostURLS.NEXTJS_METATAGS_ABSOLUTE,
+    relativeURL: blogPostURLS.NEXTJS_METATAGS_RELATIVE,
+    title: "A Comprehensive Guide to Next.js Metatags: Enhancing SEO for Your Website",
+    description: "Learn more about the Nextjs metatags and their important role in SEO of the websites",
+    // publishedTime: "2024-01-06T22:04:03+05:30",
+    publishedTime: "2024-03-23T07:54:44+05:30",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: reduceImageSizeInKB,
+    featuredImageAltText: "reduce-image-size-in-kb",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -860,5 +884,18 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.NEXTJS_FORMS.featuredImage,
     featuredImageAltText: `${SEO_OBJ.NEXTJS_FORMS.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.NEXTJS_FORMS.ogImageURL}`,
+  },
+
+  {
+    id: 16,
+    url: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}`,
+    title: `${SEO_OBJ.NEXTJS_METATAGS.title}`,
+    description: `${SEO_OBJ.NEXTJS_METATAGS.description}`,
+    lastUpdateTime: `${SEO_OBJ.NEXTJS_METATAGS.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.NEXTJS_METATAGS.publishedTime}`,
+    tags: SEO_OBJ.NEXTJS_METATAGS.tags!,
+    featuredImage: SEO_OBJ.NEXTJS_METATAGS.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.NEXTJS_METATAGS.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.NEXTJS_METATAGS.ogImageURL}`,
   },
 ];
