@@ -18,6 +18,12 @@ import googleAnalyticsInNextjsImage from "/public/google-analytics-nextjs.png";
 import nextjsSeoImage from "/public/nextjs-seo.png";
 import nextjsAPIImage from "/public/nextjs-api.png";
 import nextjsFormsImage from "/public/nextjs-forms.png";
+import nextjsMetaTagsImage from "/public/nextjs_meta_tags.png";
+import jsMapImage from "/public/Javascript_map.png";
+import reduxToolkitSliceImage from "/public/Redux_Toolkit_slice.png";
+import buildTodoImage from "/public/Todo_app_redux_toolkit_reactjs.png";
+import mdxInNextjsImage from "/public/mdx_in_nextjs.png";
+import deployOnVercelImage from "/public/deploy_vercel.png";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -697,16 +703,16 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "A Comprehensive Guide to Next.js Metatags: Enhancing SEO for Your Website",
     description: "Learn more about the Nextjs metatags and their important role in SEO of the websites",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-03-23T07:54:44+05:30",
+    publishedTime: "2024-03-23T18:54:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
       { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
       { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
     ],
-    featuredImage: reduceImageSizeInKB,
-    featuredImageAltText: "reduce-image-size-in-kb",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+    featuredImage: nextjsMetaTagsImage,
+    featuredImageAltText: "nextjs_meta_tags",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/nextjs_meta_tags.png`,
   },
 
   JS_MAP_FUNCTIONS: {
@@ -716,16 +722,16 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Unlock the full potential of the JavaScript map function with this comprehensive guide. Learn how to use map effectively in your projects, with examples and best practices included.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-05-03T09:25:44+05:30",
+    publishedTime: "2024-03-23T18:54:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
       { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
       { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
     ],
-    featuredImage: reduceImageSizeInKB,
-    featuredImageAltText: "reduce-image-size-in-kb",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+    featuredImage: jsMapImage,
+    featuredImageAltText: "js-map-image",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Javascript_map.png`,
   },
 
   REDUX_TOOLKIT_SLICE_REACTJS: {
@@ -735,16 +741,16 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to efficiently create Redux Toolkit slices in your React.js applications, optimizing state management for better scalability and maintainability. Dive into detailed examples and expert tips to streamline your development process.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-05-03T09:25:44+05:30",
+    publishedTime: "2024-03-23T18:54:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
       { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
       { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
     ],
-    featuredImage: reduceImageSizeInKB,
-    featuredImageAltText: "reduce-image-size-in-kb",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+    featuredImage: reduxToolkitSliceImage,
+    featuredImageAltText: "redux-toolkit-slice",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Redux_Toolkit_slice.png`,
   },
 
   BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS: {
@@ -754,16 +760,16 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to create a powerful Todo application using Redux Toolkit Slice in React.js. Follow this step-by-step guide, complete with code examples and explanations, to master Redux integration in your React projects.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-05-03T09:25:44+05:30",
+    publishedTime: "2024-03-23T18:54:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
       { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
       { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
     ],
-    featuredImage: reduceImageSizeInKB,
-    featuredImageAltText: "reduce-image-size-in-kb",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+    featuredImage: buildTodoImage,
+    featuredImageAltText: "build-todo-app-using-redux-toolkit",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/Todo_app_redux_toolkit_reactjs.png`,
   },
 
   MDX_IN_NEXTJS: {
@@ -773,16 +779,16 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to leverage MDX in Next.js to create dynamic and interactive content for your web applications. Dive deep into MDX syntax, integration with Next.js, and practical examples to enhance your development skills.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-05-03T09:25:44+05:30",
+    publishedTime: "2024-03-23T18:54:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
       { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
       { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
     ],
-    featuredImage: reduceImageSizeInKB,
-    featuredImageAltText: "reduce-image-size-in-kb",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+    featuredImage: mdxInNextjsImage,
+    featuredImageAltText: "mdx-in-nextjs",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/mdx_in_nextjs.png`,
   },
 
   DEPLOY_NEXTJS_PROJECT_ON_VERCEL: {
@@ -792,16 +798,16 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to deploy your Next.js application on Vercel effortlessly. This comprehensive guide covers everything from setting up your project to optimizing performance and scaling. Get step-by-step instructions and examples for a smooth deployment process.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-05-03T09:25:44+05:30",
+    publishedTime: "2024-03-23T18:54:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
       { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
       { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
     ],
-    featuredImage: reduceImageSizeInKB,
-    featuredImageAltText: "reduce-image-size-in-kb",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+    featuredImage: deployOnVercelImage,
+    featuredImageAltText: "deploy-on-vercel",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/deploy_vercel.png`,
   },
 };
 
