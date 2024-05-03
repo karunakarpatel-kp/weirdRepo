@@ -125,6 +125,18 @@ interface Blog_Post_URL_Props {
   JS_MAP_FUNCTIONS_PAGE_ABSOLUTE: string;
   JS_MAP_FUNCTIONS_PAGE_RELATIVE: string;
 
+  CREATE_REDUX_TOOLKIT_SLICE_REACTJS_PAGE_ABSOLUTE: string;
+  CREATE_REDUX_TOOLKIT_SLICE_REACTJS_PAGE_RELATIVE: string;
+
+  BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS_ABSOLUTE: string;
+  BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS_RELATIVE: string;
+
+  MDX_IN_NEXTJS_PAGE_ABSOLUTE: string;
+  MDX_IN_NEXTJS_PAGE_RELATIVE: string;
+
+  DEPLOY_NEXTJS_PROJECT_ON_VERCE_PAGE_ABSOLUTE: string;
+  DEPLOY_NEXTJS_PROJECT_ON_VERCE_PAGE_RELATIVE: string;
+
   HOME_PAGE_ABSOLUTE: string;
   HOME_PAGE_RELATIVE: string;
 
@@ -204,6 +216,18 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   JS_MAP_FUNCTIONS_PAGE_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/js_map_function`,
   JS_MAP_FUNCTIONS_PAGE_RELATIVE: "/Blog/js_map_function",
+
+  CREATE_REDUX_TOOLKIT_SLICE_REACTJS_PAGE_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/create_redux_toolkit_slice_reactjs`,
+  CREATE_REDUX_TOOLKIT_SLICE_REACTJS_PAGE_RELATIVE: "/Blog/create_redux_toolkit_slice_reactjs",
+
+  BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/build_todo_app_using_redux_toolkit_slice_reactjs`,
+  BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS_RELATIVE: "/Blog/build_todo_app_using_redux_toolkit_slice_reactjs",
+
+  MDX_IN_NEXTJS_PAGE_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/mdx_in_nextjs`,
+  MDX_IN_NEXTJS_PAGE_RELATIVE: "/Blog/mdx_in_nextjs",
+
+  DEPLOY_NEXTJS_PROJECT_ON_VERCE_PAGE_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/deploy_nextjs_project_on_vercel`,
+  DEPLOY_NEXTJS_PROJECT_ON_VERCE_PAGE_RELATIVE: "/Blog/deploy_nextjs_project_on_vercel",
 
   YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/youtube-video-downloader`,
   YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE: "/youtube-video-downloader",
@@ -684,6 +708,101 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     featuredImageAltText: "reduce-image-size-in-kb",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
   },
+
+  JS_MAP_FUNCTIONS: {
+    absoluteURL: blogPostURLS.JS_MAP_FUNCTIONS_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.JS_MAP_FUNCTIONS_PAGE_RELATIVE,
+    title: "Mastering the JavaScript Map Function: A Comprehensive Guide",
+    description:
+      "Unlock the full potential of the JavaScript map function with this comprehensive guide. Learn how to use map effectively in your projects, with examples and best practices included.",
+    // publishedTime: "2024-01-06T22:04:03+05:30",
+    publishedTime: "2024-05-03T09:25:44+05:30",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: reduceImageSizeInKB,
+    featuredImageAltText: "reduce-image-size-in-kb",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+  },
+
+  REDUX_TOOLKIT_SLICE_REACTJS: {
+    absoluteURL: blogPostURLS.CREATE_REDUX_TOOLKIT_SLICE_REACTJS_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.CREATE_REDUX_TOOLKIT_SLICE_REACTJS_PAGE_RELATIVE,
+    title: "How to Create Redux Toolkit Slice in React.js: A Comprehensive Guide",
+    description:
+      "Learn how to efficiently create Redux Toolkit slices in your React.js applications, optimizing state management for better scalability and maintainability. Dive into detailed examples and expert tips to streamline your development process.",
+    // publishedTime: "2024-01-06T22:04:03+05:30",
+    publishedTime: "2024-05-03T09:25:44+05:30",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: reduceImageSizeInKB,
+    featuredImageAltText: "reduce-image-size-in-kb",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+  },
+
+  BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS: {
+    absoluteURL: blogPostURLS.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS_ABSOLUTE,
+    relativeURL: blogPostURLS.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS_RELATIVE,
+    title: "Building a Todo App Using Redux Toolkit Slice in React.js: A Comprehensive Guide",
+    description:
+      "Learn how to create a powerful Todo application using Redux Toolkit Slice in React.js. Follow this step-by-step guide, complete with code examples and explanations, to master Redux integration in your React projects.",
+    // publishedTime: "2024-01-06T22:04:03+05:30",
+    publishedTime: "2024-05-03T09:25:44+05:30",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: reduceImageSizeInKB,
+    featuredImageAltText: "reduce-image-size-in-kb",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+  },
+
+  MDX_IN_NEXTJS: {
+    absoluteURL: blogPostURLS.MDX_IN_NEXTJS_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.MDX_IN_NEXTJS_PAGE_RELATIVE,
+    title: "Mastering MDX in Next.js: A Comprehensive Guide for Developers",
+    description:
+      "Learn how to leverage MDX in Next.js to create dynamic and interactive content for your web applications. Dive deep into MDX syntax, integration with Next.js, and practical examples to enhance your development skills.",
+    // publishedTime: "2024-01-06T22:04:03+05:30",
+    publishedTime: "2024-05-03T09:25:44+05:30",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: reduceImageSizeInKB,
+    featuredImageAltText: "reduce-image-size-in-kb",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+  },
+
+  DEPLOY_NEXTJS_PROJECT_ON_VERCEL: {
+    absoluteURL: blogPostURLS.DEPLOY_NEXTJS_PROJECT_ON_VERCE_PAGE_ABSOLUTE,
+    relativeURL: blogPostURLS.DEPLOY_NEXTJS_PROJECT_ON_VERCE_PAGE_RELATIVE,
+    title: "Deploying a Next.js Application on Vercel: A Comprehensive Guide for Seamless Deployment",
+    description:
+      "Learn how to deploy your Next.js application on Vercel effortlessly. This comprehensive guide covers everything from setting up your project to optimizing performance and scaling. Get step-by-step instructions and examples for a smooth deployment process.",
+    // publishedTime: "2024-01-06T22:04:03+05:30",
+    publishedTime: "2024-05-03T09:25:44+05:30",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    tags: [
+      { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+    ],
+    featuredImage: reduceImageSizeInKB,
+    featuredImageAltText: "reduce-image-size-in-kb",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/reduce-image-size-to-kb.png`,
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -907,14 +1026,62 @@ export const blogPostsObj: blogPostsObjProps[] = [
   {
     id: 17,
     url: `${blogPostURLS.JS_MAP_FUNCTIONS_PAGE_RELATIVE}`,
-    // title: `${SEO_OBJ.NEXTJS_METATAGS.title}`,
-    title: "JS MAP FUNCTIONS",
-    description: `${SEO_OBJ.NEXTJS_METATAGS.description}`,
-    lastUpdateTime: `${SEO_OBJ.NEXTJS_METATAGS.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.NEXTJS_METATAGS.publishedTime}`,
-    tags: SEO_OBJ.NEXTJS_METATAGS.tags!,
-    featuredImage: SEO_OBJ.NEXTJS_METATAGS.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.NEXTJS_METATAGS.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.NEXTJS_METATAGS.ogImageURL}`,
+    title: `${SEO_OBJ.JS_MAP_FUNCTIONS.title}`,
+    description: `${SEO_OBJ.JS_MAP_FUNCTIONS.description}`,
+    lastUpdateTime: `${SEO_OBJ.JS_MAP_FUNCTIONS.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.JS_MAP_FUNCTIONS.publishedTime}`,
+    tags: SEO_OBJ.JS_MAP_FUNCTIONS.tags!,
+    featuredImage: SEO_OBJ.JS_MAP_FUNCTIONS.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.JS_MAP_FUNCTIONS.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.JS_MAP_FUNCTIONS.ogImageURL}`,
+  },
+  {
+    id: 18,
+    url: `${blogPostURLS.CREATE_REDUX_TOOLKIT_SLICE_REACTJS_PAGE_RELATIVE}`,
+    title: `${SEO_OBJ.REDUX_TOOLKIT_SLICE_REACTJS.title}`,
+    description: `${SEO_OBJ.REDUX_TOOLKIT_SLICE_REACTJS.description}`,
+    lastUpdateTime: `${SEO_OBJ.REDUX_TOOLKIT_SLICE_REACTJS.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.REDUX_TOOLKIT_SLICE_REACTJS.publishedTime}`,
+    tags: SEO_OBJ.REDUX_TOOLKIT_SLICE_REACTJS.tags!,
+    featuredImage: SEO_OBJ.REDUX_TOOLKIT_SLICE_REACTJS.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.REDUX_TOOLKIT_SLICE_REACTJS.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.REDUX_TOOLKIT_SLICE_REACTJS.ogImageURL}`,
+  },
+
+  {
+    id: 19,
+    url: `${blogPostURLS.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS_RELATIVE}`,
+    title: `${SEO_OBJ.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS.title}`,
+    description: `${SEO_OBJ.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS.description}`,
+    lastUpdateTime: `${SEO_OBJ.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS.publishedTime}`,
+    tags: SEO_OBJ.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS.tags!,
+    featuredImage: SEO_OBJ.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.BUILD_TODO_APP_USING_REDUX_TOOLKIT_SLICE_REACTJS.ogImageURL}`,
+  },
+  {
+    id: 20,
+    url: `${blogPostURLS.MDX_IN_NEXTJS_PAGE_RELATIVE}`,
+    title: `${SEO_OBJ.MDX_IN_NEXTJS.title}`,
+    description: `${SEO_OBJ.MDX_IN_NEXTJS.description}`,
+    lastUpdateTime: `${SEO_OBJ.MDX_IN_NEXTJS.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.MDX_IN_NEXTJS.publishedTime}`,
+    tags: SEO_OBJ.MDX_IN_NEXTJS.tags!,
+    featuredImage: SEO_OBJ.MDX_IN_NEXTJS.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.MDX_IN_NEXTJS.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.MDX_IN_NEXTJS.ogImageURL}`,
+  },
+  {
+    id: 21,
+    url: `${blogPostURLS.DEPLOY_NEXTJS_PROJECT_ON_VERCE_PAGE_RELATIVE}`,
+    title: `${SEO_OBJ.DEPLOY_NEXTJS_PROJECT_ON_VERCEL.title}`,
+    description: `${SEO_OBJ.DEPLOY_NEXTJS_PROJECT_ON_VERCEL.description}`,
+    lastUpdateTime: `${SEO_OBJ.DEPLOY_NEXTJS_PROJECT_ON_VERCEL.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.DEPLOY_NEXTJS_PROJECT_ON_VERCEL.publishedTime}`,
+    tags: SEO_OBJ.DEPLOY_NEXTJS_PROJECT_ON_VERCEL.tags!,
+    featuredImage: SEO_OBJ.DEPLOY_NEXTJS_PROJECT_ON_VERCEL.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.DEPLOY_NEXTJS_PROJECT_ON_VERCEL.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.DEPLOY_NEXTJS_PROJECT_ON_VERCEL.ogImageURL}`,
   },
 ];
