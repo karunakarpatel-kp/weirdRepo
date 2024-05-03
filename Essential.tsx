@@ -122,6 +122,9 @@ interface Blog_Post_URL_Props {
   REDUCE_IMAGE_SIZE_IN_KB_PAGE_ABSOLUTE: string;
   REDUCE_IMAGE_SIZE_IN_KB_PAGE_RELATIVE: string;
 
+  JS_MAP_FUNCTIONS_PAGE_ABSOLUTE: string;
+  JS_MAP_FUNCTIONS_PAGE_RELATIVE: string;
+
   HOME_PAGE_ABSOLUTE: string;
   HOME_PAGE_RELATIVE: string;
 
@@ -198,6 +201,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   NEXTJS_FORMS_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/nextjs_forms`,
   NEXTJS_FORMS_RELATIVE: "/Blog/nextjs_forms",
+
+  JS_MAP_FUNCTIONS_PAGE_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/js_map_function`,
+  JS_MAP_FUNCTIONS_PAGE_RELATIVE: "/Blog/js_map_function",
 
   YOUTUBE_VIDEO_DOWNLOAD_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/youtube-video-downloader`,
   YOUTUBE_VIDEO_DOWNLOAD_PAGE_RELATIVE: "/youtube-video-downloader",
@@ -890,6 +896,19 @@ export const blogPostsObj: blogPostsObjProps[] = [
     id: 16,
     url: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}`,
     title: `${SEO_OBJ.NEXTJS_METATAGS.title}`,
+    description: `${SEO_OBJ.NEXTJS_METATAGS.description}`,
+    lastUpdateTime: `${SEO_OBJ.NEXTJS_METATAGS.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.NEXTJS_METATAGS.publishedTime}`,
+    tags: SEO_OBJ.NEXTJS_METATAGS.tags!,
+    featuredImage: SEO_OBJ.NEXTJS_METATAGS.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.NEXTJS_METATAGS.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.NEXTJS_METATAGS.ogImageURL}`,
+  },
+  {
+    id: 17,
+    url: `${blogPostURLS.JS_MAP_FUNCTIONS_PAGE_RELATIVE}`,
+    // title: `${SEO_OBJ.NEXTJS_METATAGS.title}`,
+    title: "JS MAP FUNCTIONS",
     description: `${SEO_OBJ.NEXTJS_METATAGS.description}`,
     lastUpdateTime: `${SEO_OBJ.NEXTJS_METATAGS.lastUpdateTime}`,
     publishedTime: `${SEO_OBJ.NEXTJS_METATAGS.publishedTime}`,
