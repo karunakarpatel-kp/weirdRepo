@@ -20,7 +20,7 @@ export function CustomMetaData(props: any) {
     title: filteredOBJ[0].title,
     description: filteredOBJ[0].description,
     verification: {
-      google: "G-PH29P82N32",
+      google: process.env.GOOGLE_ANALYTICS_TAG,
     },
     category: filteredOBJ[0].category,
     keywords: ["Karunakar Patel", "karunakarpatel", "coding", "nextjs"],

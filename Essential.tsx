@@ -703,7 +703,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     title: "A Comprehensive Guide to Next.js Metatags: Enhancing SEO for Your Website",
     description: "Learn more about the Nextjs metatags and their important role in SEO of the websites",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-03-23T18:54:44+05:30",
+    publishedTime: "2024-05-04T16:14:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
@@ -722,7 +722,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Unlock the full potential of the JavaScript map function with this comprehensive guide. Learn how to use map effectively in your projects, with examples and best practices included.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-03-23T18:54:44+05:30",
+    publishedTime: "2024-05-04T16:14:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
@@ -741,7 +741,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to efficiently create Redux Toolkit slices in your React.js applications, optimizing state management for better scalability and maintainability. Dive into detailed examples and expert tips to streamline your development process.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-03-23T18:54:44+05:30",
+    publishedTime: "2024-05-04T16:14:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
@@ -760,7 +760,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to create a powerful Todo application using Redux Toolkit Slice in React.js. Follow this step-by-step guide, complete with code examples and explanations, to master Redux integration in your React projects.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-03-23T18:54:44+05:30",
+    publishedTime: "2024-05-04T16:14:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
@@ -779,7 +779,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to leverage MDX in Next.js to create dynamic and interactive content for your web applications. Dive deep into MDX syntax, integration with Next.js, and practical examples to enhance your development skills.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-03-23T18:54:44+05:30",
+    publishedTime: "2024-05-04T16:14:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },
@@ -798,7 +798,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Learn how to deploy your Next.js application on Vercel effortlessly. This comprehensive guide covers everything from setting up your project to optimizing performance and scaling. Get step-by-step instructions and examples for a smooth deployment process.",
     // publishedTime: "2024-01-06T22:04:03+05:30",
-    publishedTime: "2024-03-23T18:54:44+05:30",
+    publishedTime: "2024-05-04T16:14:44+05:30",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
       { tag: "Nextjs", href: `${blogPostURLS.NEXTJS_METATAGS_RELATIVE}` },

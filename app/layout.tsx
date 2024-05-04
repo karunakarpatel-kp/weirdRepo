@@ -9,6 +9,7 @@ import { MdLightMode } from "react-icons/md";
 import { Router } from "next/router";
 import { AppProgressBar } from "next-nprogress-bar";
 import ReadingProgressBar from "Components/UI/ReadingProgressBar/ReadingProgressBar";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -47,6 +48,8 @@ const RootLayout = (props: RootLayoutProps) => {
           <Footer />
         </footer>
       </body>
+      {/* Adding Google Analytics Code Below */}
+      <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_TAG!} />
     </html>
   );
 };

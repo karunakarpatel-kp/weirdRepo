@@ -8,6 +8,7 @@ const nextConfig = {
   // Optionally, add any other Next.js config below
   env: {
     HOME_PAGE_BASE_URL: process.env.HOME_PAGE_BASE_URL,
+    GOOGLE_ANALYTICS_TAG: process.env.GOOGLE_ANALYTICS_TAG,
   },
 };
 
