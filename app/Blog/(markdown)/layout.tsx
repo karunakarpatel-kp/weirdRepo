@@ -4,6 +4,7 @@ import { FaArrowCircleUp } from "react-icons/fa";
 import Link from "next/link";
 import TypedAnimation from "Components/Animations/TypedAnimation";
 import Sharing from "../../../Components/SocialShare/Sharing";
+import RecentBlogPost from "Components/RecentBlogPost/RecentBlogPost";
 // import Sharing from "@Components/SocialShare/Sharing";
 // import TypedAnimation from "@Components/Animations/TypedAnimation";
 
@@ -29,6 +30,7 @@ const BlogPostLayoutUI = (props: any) => {
           </div>
         </Link>
       </section>
+      <RecentBlogPost />
     </>
   );
 };
