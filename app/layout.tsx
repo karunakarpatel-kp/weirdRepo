@@ -1,24 +1,46 @@
 "use client";
-
 import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "Components/NavigationBar/Navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Footer from "Components/Footer/Footer";
 import { MdLightMode } from "react-icons/md";
 import { Router } from "next/router";
 import { AppProgressBar } from "next-nprogress-bar";
 import ReadingProgressBar from "Components/UI/ReadingProgressBar/ReadingProgressBar";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { useTheme } from "next-themes";
 
 interface RootLayoutProps {
   children: React.ReactNode;
 }
 
 const RootLayout = (props: RootLayoutProps) => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [localStorageStatus, setLocalStorageStatus] = useState(null);
+  const [darkMode, setDarkMode] = useState<any>(localStorageStatus);
+
+  // On very first Initital Render == Runs only on First Render
+  // useEffect(() => {
+  //   if (localStorageStatus) {
+  //     setDarkMode(localStorageStatus);
+  //   } else if (localStorageStatus === null) {
+  //     localStorage.setItem("darkMode", "false");
+  //   }
+  // }, []);
+
+  useEffect(() => {
+    if (localStorage.getItem("darkMode")) {
+      const parsedLocalStorage = JSON.parse(localStorage.getItem("darkMode")!);
+      setLocalStorageStatus(parsedLocalStorage);
+      setDarkMode(parsedLocalStorage);
+    } else {
+      localStorage.setItem("darkMode", JSON.stringify(!darkMode));
+    }
+  }, []);
+
   const onDarkModeBtnClickHandler = () => {
     setDarkMode(!darkMode);
+    localStorage.setItem("darkMode", JSON.stringify(!darkMode));
   };
 
   return (

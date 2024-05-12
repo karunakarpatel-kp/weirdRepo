@@ -16,12 +16,10 @@ const Navigation = () => {
   const pathName = usePathname();
 
   const onOpenClickHandler = () => {
-    console.log(openMobileMenu, "OPEN");
     setOpenMobileMenu(true);
   };
 
   const onCloseClickHandler = () => {
-    console.log(openMobileMenu, "CLOSE");
     setOpenMobileMenu(false);
   };
 
