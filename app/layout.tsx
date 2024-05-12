@@ -36,7 +36,7 @@ const RootLayout = (props: RootLayoutProps) => {
     } else {
       localStorage.setItem("darkMode", JSON.stringify(!darkMode));
     }
-  }, []);
+  }, [darkMode]);
 
   const onDarkModeBtnClickHandler = () => {
     setDarkMode(!darkMode);
@@ -49,7 +49,7 @@ const RootLayout = (props: RootLayoutProps) => {
         <ReadingProgressBar />
         <AppProgressBar height="1px" color="#ffca3c" options={{ showSpinner: true }} shallowRouting />
         <header>
-          <Navigation />
+          <Navigation darkMode={localStorageStatus} />
         </header>
         <main className="border-0 border-red-900 grid grid-cols-12">
           <section className="hidden md:invisible md:block md:col-span-1 border-2 border-green-800">One</section>

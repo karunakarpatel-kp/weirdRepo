@@ -9,9 +9,14 @@ import { IoMdClose } from "react-icons/io";
 import KarunakarPatelImage from "@Public/karunakarImage.svg";
 import Link from "next/link";
 
-const Navigation = () => {
+interface NavigationProps {
+  darkMode: boolean | null;
+}
+
+const Navigation = (props: NavigationProps) => {
   const [openMobileMenu, setOpenMobileMenu] = useState<boolean>(false);
   const [homePage, setHomePage] = useState<boolean>(false);
+
   const navigate = useRouter();
   const pathName = usePathname();
 
@@ -97,7 +102,7 @@ const Navigation = () => {
                   y2="31.734"
                   transform="translate(18.605)"
                   fill="none"
-                  stroke="#284a98"
+                  stroke={props.darkMode ? "rgb(51,65,85)" : "#284a98"}
                   stroke-width="5"
                 />
                 <g id="Group_4" data-name="Group 4" transform="translate(0 8.071)">
@@ -107,7 +112,8 @@ const Navigation = () => {
                     d="M16,26.488,28.562,16.244,16,6"
                     transform="translate(13.311 -6)"
                     fill="none"
-                    stroke="#284a98"
+                    // stroke="#284a98"
+                    stroke={props.darkMode ? "rgb(51,65,85)" : "#284a98"}
                     stroke-linejoin="round"
                     stroke-width="5"
                   />
@@ -117,7 +123,8 @@ const Navigation = () => {
                     d="M14.562,6,2,16.244,14.562,26.488"
                     transform="translate(-2 -6)"
                     fill="none"
-                    stroke="#284a98"
+                    // stroke="#284a98"
+                    stroke={props.darkMode ? "rgb(51,65,85)" : "#284a98"}
                     stroke-linejoin="round"
                     stroke-width="5"
                   />
