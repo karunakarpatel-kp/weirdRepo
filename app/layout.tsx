@@ -19,15 +19,6 @@ const RootLayout = (props: RootLayoutProps) => {
   const [localStorageStatus, setLocalStorageStatus] = useState(null);
   const [darkMode, setDarkMode] = useState<any>(localStorageStatus);
 
-  // On very first Initital Render == Runs only on First Render
-  // useEffect(() => {
-  //   if (localStorageStatus) {
-  //     setDarkMode(localStorageStatus);
-  //   } else if (localStorageStatus === null) {
-  //     localStorage.setItem("darkMode", "false");
-  //   }
-  // }, []);
-
   useEffect(() => {
     if (localStorage.getItem("darkMode")) {
       const parsedLocalStorage = JSON.parse(localStorage.getItem("darkMode")!);
