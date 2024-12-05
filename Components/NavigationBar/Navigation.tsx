@@ -1,12 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Logo from "public/Logo.svg";
-import Image from "next/image";
 import { FaBlog, FaCar, FaCarSide, FaHome } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { usePathname, useRouter } from "next/navigation";
 import { IoMdClose } from "react-icons/io";
-import KarunakarPatelImage from "@Public/karunakarImage.svg";
 import Link from "next/link";
 
 interface NavigationProps {
@@ -65,11 +63,11 @@ const Navigation = (props: NavigationProps) => {
                 transform="translate(459 50)"
                 fill="#ffca3e"
                 font-size="35"
-                font-family="Georgia-Bold, Georgia"
-                font-weight="700"
+                // font-family="Georgia-Bold, Georgia"
+                font-weight="600"
               >
                 <tspan x="0" y="0">
-                  Karunakar
+                  Ibomma
                 </tspan>
               </text>
               <text
@@ -77,12 +75,12 @@ const Navigation = (props: NavigationProps) => {
                 data-name="Patel "
                 transform="translate(459 93)"
                 fill="#ffca3e"
-                font-size="35"
-                font-family="Georgia-Bold, Georgia"
-                font-weight="700"
+                font-size="33"
+                // font-family="Georgia-Bold, Georgia"
+                font-weight="500"
               >
                 <tspan x="0" y="0">
-                  Patel
+                  Movies
                 </tspan>
               </text>
               <rect
@@ -311,15 +309,15 @@ const Navigation = (props: NavigationProps) => {
         }`}
       >
         <div className="border-0 border-white text-white   max-w-7xl m-auto pt-14">
-          <div className="kpImage border-0 border-sky-800 flex justify-center">
+          {/* <div className="kpImage border-0 border-sky-800 flex justify-center">
             <Image src={KarunakarPatelImage} alt="Karunakar Patel Image" className="ring-2  rounded-full" />
-          </div>
-          <div className="text-white border-0 text-center pb-6">
-            <h1 className="text-white font-bold text-3xl md:text-4xl">Hi, Karunakar Patel</h1>
-            <p className="text-white font-semibold text-xl">
-              A front-end engineer focused on building top-notch web apps and helping developers improve their skills
+          </div> */}
+          <div className="text-white border-0 text-center py-9 mt-10">
+            <h1 className="text-white font-bold text-3xl md:text-4xl">Welcome to Ibomma</h1>
+            <p className="text-white font-semibold text-xl capitalize">
+              A place where you learn about the latest news, updates, upcoming releases at Ibomma.
             </p>
-            <p className="text-white font-semibold text-xl">
+            {/* <p className="text-white font-semibold text-xl">
               Find more about my{" "}
               <Link href="/" className="text-[#ffca3c] underline underline-offset-4">
                 work{" "}
@@ -328,7 +326,7 @@ const Navigation = (props: NavigationProps) => {
               <Link href="/" className="text-[#ffca3c] underline underline-offset-4">
                 article
               </Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
