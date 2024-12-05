@@ -361,7 +361,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   NEXTJS_INSTALLATION: {
     absoluteURL: blogPostURLS.NEXTJS_INSTALLATION_ABSOLUTE,
     relativeURL: blogPostURLS.NEXTJS_INSTALLATION_RELATIVE,
-    title: "Next.js Installation: Everything You Need to Know to Get Started",
+    title: "Next.js Installation: Everything You Started",
     description:
       "Learn how to install Next.js in an easy way. This guide provides step-by-step instructions for a smooth setup. If you are looking for seamless Next.js installation,  this tutorial has got you covered. Start building efficient and powerful web applications with Next.js today!",
     publishedTime: "2023-10-20T19:07:55+00:00",
@@ -814,18 +814,6 @@ export const SEO_OBJ: SEO_OBJ_Props = {
 export const blogPostsObj: blogPostsObjProps[] = [
   {
     id: 0,
-    url: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}`,
-    title: `${SEO_OBJ.NEXTJS_INSTALLATION.title}`,
-    description: `${SEO_OBJ.NEXTJS_INSTALLATION.description}`,
-    lastUpdateTime: `${SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}`,
-    tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
-    featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
-  },
-  {
-    id: 1,
     url: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}`,
     title: `${SEO_OBJ.NEXTJS_INSTALLATION.title}`,
     description: `${SEO_OBJ.NEXTJS_INSTALLATION.description}`,

@@ -38,7 +38,7 @@ const RootLayout = (props: RootLayoutProps) => {
     <html lang="en" className={darkMode ? "dark transition-colors duration-100" : "transition-all duration-300"}>
       <body className="relative p-0 m-0 bg-white dark:bg-slate-900 dark:prose-invert prose prose-stone min-h-[65vh] max-w-full border-0 border-sky-400  h-full overflow-x-hidden">
         <ReadingProgressBar />
-        <AppProgressBar height="1px" color="#ffca3c" options={{ showSpinner: true }} shallowRouting />
+        <AppProgressBar height="1px" color="#ffffff" options={{ showSpinner: true }} shallowRouting />
         <header>
           <Navigation darkMode={localStorageStatus} />
         </header>
@@ -49,14 +49,14 @@ const RootLayout = (props: RootLayoutProps) => {
           </section>
           <section className="hidden md:col-span-1 md:block md:invisible border border-slate-500">Two</section>
         </main>
-        <section>
+        {/* <section>
           <div
             className="darkMode fixed bottom-52 left-0 border bg-brandColor text-white border-slate-700 p-2 px-4 cursor-pointer rounded-e-2xl dark:bg-slate-900  dark:text-black shadow-inner z-50"
             onClick={onDarkModeBtnClickHandler}
           >
             {!darkMode ? <MdLightMode size={25} fill="white" /> : <MdLightMode size={25} fill="white" />}
           </div>
-        </section>
+        </section> */}
         <footer>
           <Footer />
         </footer>

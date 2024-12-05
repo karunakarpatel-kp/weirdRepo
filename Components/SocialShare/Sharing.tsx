@@ -31,7 +31,7 @@ const Sharing = () => {
 
   return (
     <>
-      <div className="border-0 flex gap-5 pl-8">
+      <div className="border-0 flex gap-5 py-5 flex-wrap">
         <FacebookMessengerShareButton appId="" url={grabbedURL} title={grabbedTitle}>
           <FacebookIcon size={40} className="rounded-md" />
         </FacebookMessengerShareButton>

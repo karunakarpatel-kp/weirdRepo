@@ -5,23 +5,17 @@ import Link from "next/link";
 import TypedAnimation from "Components/Animations/TypedAnimation";
 import Sharing from "../../../Components/SocialShare/Sharing";
 import RecentBlogPost from "Components/RecentBlogPost/RecentBlogPost";
+import Sidebar from "Components/Sidebar/Sidebar";
+import Article from "Components/Article/Article";
 // import Sharing from "@Components/SocialShare/Sharing";
 // import TypedAnimation from "@Components/Animations/TypedAnimation";
 
 const BlogPostLayoutUI = (props: any) => {
   return (
     <>
-      <section
-        className="p-7 mt-20 md:mt-20 mb-4 prose-lg prose-slate md:prose-lg lg:prose-xl prose-img:ring-1 dark:prose-invert  lg:max-w-screen-lg m-auto   prose-h1:leading-slug md:prose-img:h-[520px]  prose-img:rounded-lg min-h-[64vh] prose-img:relative"
-        id="top"
-      >
-        {props.children}
-        <section>
-          <TypedAnimation />
-        </section>
-      </section>
-      <section className=" max-w-screen-lg m-auto ">
-        <Sharing />
+      <section className="border-0 border-green-900 w-full grid grid-cols-12 mt-11 md:mt-20 prose prose-slate prose-xl prose-headings:text-3xl  prose-headings:my-4 md:prose-lg md:prose-h1:text-4xl md:prose-h1:leading-tight lg:prose-xl md:prose-img:h-[520px] lg:max-w-screen-2xl">
+        <Article incomingProps={props} />
+        <Sidebar />
       </section>
       <section>
         <Link href="#top" className=" scroll-smooth ">
@@ -30,7 +24,7 @@ const BlogPostLayoutUI = (props: any) => {
           </div>
         </Link>
       </section>
-      <RecentBlogPost />
+      {/* <RecentBlogPost /> */}
     </>
   );
 };
