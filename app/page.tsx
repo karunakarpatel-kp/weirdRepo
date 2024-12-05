@@ -9,7 +9,7 @@ export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.HOME_PAGE.abso
 export default function Home() {
   return (
     <>
-      <div className="LoadingUI grid  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-11 md:gap-14 mt-20 mb-8 mx-2 ">
+      <div className="LoadingUI grid  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-11 md:gap-14 mt-10 mb-8 mx-2 ">
         {blogPostsObj.map((singleBlogPost, index) => {
           return (
             <div
