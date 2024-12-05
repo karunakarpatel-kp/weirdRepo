@@ -824,4 +824,16 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
   },
+  {
+    id: 1,
+    url: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}`,
+    title: `${SEO_OBJ.NEXTJS_INSTALLATION.title}`,
+    description: `${SEO_OBJ.NEXTJS_INSTALLATION.description}`,
+    lastUpdateTime: `${SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}`,
+    tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
+    featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
+  },
 ];
