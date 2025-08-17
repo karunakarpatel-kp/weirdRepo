@@ -20,13 +20,9 @@ import { SEO_OBJ } from "Essential";
 const Footer = () => {
   return (
     <>
-      <div
-        className={
-          " bg-brandColor dark:bg-slate-900 dark:border-t dark:border-t-slate-800 md:ml-0 pl-2 md:grid grid-cols-12 w-full "
-        }
-      >
+      <div className={" bg-slate-800  md:ml-0 pl-2 md:grid grid-cols-12 w-full "}>
         {/* Desktop */}
-        <div className="Left border-0 border-white col-span-1 invisible">Left</div>
+        <div className="Left border-0 border-white col-span-1 invisible"></div>
         <div className="copyrightMessage border-0 border-green-500 col-span-3 cursor-pointer text-white flex items-center font-semibold text-base justify-center md:justify-start">
           Karunakar Patel @All Rights Reserved
         </div>
