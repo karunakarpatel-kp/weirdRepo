@@ -1,10 +1,4 @@
-"use client";
-
 import "./globals.css";
-import Navigation from "Components/NavigationBar/Navigation";
-import Footer from "Components/Footer/Footer";
-import { AppProgressBar } from "next-nprogress-bar";
-import ReadingProgressBar from "Components/UI/ReadingProgressBar/ReadingProgressBar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 interface RootLayoutProps {
@@ -13,7 +7,7 @@ interface RootLayoutProps {
 
 const RootLayout = (props: RootLayoutProps) => {
   return (
-    <html lang="en" className={"transition-all duration-300"}>
+    <html lang="en" className="transition-all duration-300">
       <link
         rel="stylesheet"
         type="text/css"
@@ -24,30 +18,7 @@ const RootLayout = (props: RootLayoutProps) => {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      <body className="relative p-0 m-0 bg-slate-900 prose prose-stone min-h-[65vh] max-w-full border-0 border-sky-400  h-full overflow-x-hidden">
-        <ReadingProgressBar />
-        <AppProgressBar height="1px" color="#ffffff" options={{ showSpinner: true }} shallowRouting />
-        <header>
-          <Navigation />
-        </header>
-        <main className="border-0 border-red-900 grid grid-cols-12">
-          <section className="hidden md:invisible md:block md:col-span-1 border-2 border-green-800">
-            {/* First Section */}
-          </section>
-          <section className="col-span-12 md:col-span-10 border-0 border-red-500 m-auto w-full mb-32">
-            <article>{props.children}</article>
-          </section>
-          <section className="hidden md:col-span-1 md:block md:invisible border border-slate-500">
-            {/* Second Section */}
-          </section>
-        </main>
-
-        <footer>
-          <Footer />
-        </footer>
-      </body>
-      {/* Adding Google Analytics Code Below */}
-      <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_TAG!} />
+      {props.children}
     </html>
   );
 };
