@@ -22,16 +22,15 @@ const Navigation = () => {
         {/* Desktop */}
         <div className="hidden md:invisible lg:flex col-span-1 border-0 border-white self-stretch justify-center items-center "></div>
         <div
-          className="col-span-5 md:col-span-4  border-0 border-green-800 mt-1 ml-2 md:ml-0 lg:ml-0 cursor-pointer"
+          className="col-span-5 md:col-span-4  border-0 border-green-800 mt-1 ml-2 md:ml-0 lg:ml-0 cursor-pointer  "
           onClick={onLogoClickHandler}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="170" height="48" viewBox="0 0 345 88">
+          <svg xmlns="http://www.w3.org/2000/svg" width="220" height="48" viewBox="30 0 345 88">
             <path
               id="Path_7"
               data-name="Path 7"
               d="M64,5H10A10,10,0,0,0,0,15V62A10,10,0,0,0,10,72H64A10,10,0,0,0,74,62V15A10,10,0,0,0,64,5Z"
               transform="translate(0 11)"
-              // fill="#ffca3c"
               fill="white"
             />
             <text
@@ -44,23 +43,11 @@ const Navigation = () => {
               fontFamily="SegoeUI-Semibold, Segoe UI"
               fontWeight="600"
             >
-              <tspan x="0" y="40">
-                Logo Name
+              <tspan x="0" y="58">
+                Crazy Poki Games
               </tspan>
             </text>
-            <text
-              id="Converter"
-              transform="translate(89 79)"
-              // fill="#ffca3c"
-              fill="white"
-              fontSize="35"
-              fontFamily="SegoeUI-Semibold, Segoe UI"
-              fontWeight="600"
-            >
-              <tspan x="0" y="0">
-                Subname
-              </tspan>
-            </text>
+
             <path
               id="Path_8"
               data-name="Path 8"
@@ -75,14 +62,12 @@ const Navigation = () => {
             <li>
               <Link href="/" className="text-white">
                 <FaHome size={27} />
-                {/* Login */}
               </Link>
             </li>
 
             <li>
-              <Link href="/" className="text-white">
-                <FaBlog size={27} />
-                {/* Login */}
+              <Link href="/Games" className="text-white">
+                <FaCar size={27} />
               </Link>
             </li>
           </ul>

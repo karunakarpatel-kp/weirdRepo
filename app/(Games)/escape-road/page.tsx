@@ -1,6 +1,6 @@
 import React from "react";
 import escapeRoadImg from "@Public/escape-road.webp";
-import GameImage from "./GameComponents/GameImage";
+import GameImage from "../_GamesList/GameComponents/GameImage";
 
 const EscapeRoad = () => {
   return (

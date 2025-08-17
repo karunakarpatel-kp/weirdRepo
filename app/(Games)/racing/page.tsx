@@ -1,6 +1,6 @@
 import React from "react";
 import racingImage from "@Public/racing.avif";
-import GameImage from "./GameComponents/GameImage";
+import GameImage from "../_GamesList/GameComponents/GameImage";
 
 const Racing = () => {
   return (

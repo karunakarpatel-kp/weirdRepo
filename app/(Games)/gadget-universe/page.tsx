@@ -1,6 +1,6 @@
 import React from "react";
-import GameImage from "./GameComponents/GameImage";
 import anotherImage from "@Public/gadget-universe_16x9-cover.avif";
+import GameImage from "../_GamesList/GameComponents/GameImage";
 
 const GadgetUniverse = () => {
   return (
