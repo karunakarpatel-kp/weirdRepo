@@ -22,7 +22,7 @@ const Home = () => {
           <h1 className="text-white text-2xl font-semibold">Trending Games</h1>
           <ol className="list-none grid grid-cols-9 gap-1 list-outside p-0 m-0">
             <GameCard
-              linkHref="/escape-road"
+              linkHref="/racing"
               imgSrc={escapeRoadImage}
               imgAlt="Escape-Road"
               gameTitle="Escape Road "
