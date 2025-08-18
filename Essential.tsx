@@ -1,6 +1,7 @@
 import seoImage from "/public/seo.jpg";
 import nextjsInstallImage from "/public/nextjs_install.png";
 import welcomePatelsImage from "/public/welcome-page.png";
+import americanRdTrpImg from "@Public/escape-road.png";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -63,8 +64,8 @@ interface Blog_Post_URL_Props {
   DISCLAIMER_PAGE_ABSOLUTE: string;
   DISCLAIMER_PAGE_RELATIVE: string;
 
-  NEXTJS_INSTALLATION_RELATIVE: string;
-  NEXTJS_INSTALLATION_ABSOLUTE: string;
+  AMERICAN_ROAD_TRIP_RELATIVE: string;
+  AMERICAN_ROAD_TRIP_ABSOLUTE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -83,8 +84,8 @@ export const blogPostURLS: Blog_Post_URL_Props = {
   DISCLAIMER_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/disclaimer`,
   DISCLAIMER_PAGE_RELATIVE: "/disclaimer",
 
-  NEXTJS_INSTALLATION_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/nextjs_installation`,
-  NEXTJS_INSTALLATION_RELATIVE: "/Blog/nextjs_installation",
+  AMERICAN_ROAD_TRIP_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/racing`,
+  AMERICAN_ROAD_TRIP_RELATIVE: "/racing",
 };
 
 interface blogPostsObjProps {
@@ -197,61 +198,62 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   },
 
   // nextjs_installation
-  NEXTJS_INSTALLATION: {
-    absoluteURL: blogPostURLS.NEXTJS_INSTALLATION_ABSOLUTE,
-    relativeURL: blogPostURLS.NEXTJS_INSTALLATION_RELATIVE,
-    title: "Next.js Installation: Everything You Started",
-    description:
-      "Learn how to install Next.js in an easy way. This guide provides step-by-step instructions for a smooth setup. If you are looking for seamless Next.js installation,  this tutorial has got you covered. Start building efficient and powerful web applications with Next.js today!",
+  RACING: {
+    absoluteURL: blogPostURLS.AMERICAN_ROAD_TRIP_ABSOLUTE,
+    relativeURL: blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE,
+    title: "AMERICAN GAME",
+    description: "AMERICAN GAME IN HERE",
     publishedTime: "2023-10-20T19:07:55+00:00",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     tags: [
-      { tag: "Next.js Install", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },
-      { tag: "Next.js", href: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}` },
-      { tag: "Blog", href: `${blogPostURLS.BLOG_PAGE_RELATIVE}` },
-      { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "Next.js Install", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
+      { tag: "Next.js", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
+      { tag: "Blog", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
+      { tag: "Karunakar Patel", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
     ],
-    featuredImage: nextjsInstallImage,
+    featuredImage: americanRdTrpImg,
     featuredImageAltText: "a-person-with-computer",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/nextjs_install.png`,
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/racing.png`,
   },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
   {
     id: 0,
-    url: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}`,
-    title: `${SEO_OBJ.NEXTJS_INSTALLATION.title}`,
-    description: `${SEO_OBJ.NEXTJS_INSTALLATION.description}`,
-    lastUpdateTime: `${SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}`,
-    tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
-    featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
+    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
+    title: `${SEO_OBJ.RACING.title}`,
+    description: `${SEO_OBJ.RACING.description}`,
+    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
+    tags: SEO_OBJ.RACING.tags!,
+    featuredImage: SEO_OBJ.RACING.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
   },
+
   {
     id: 1,
-    url: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}`,
-    title: `${SEO_OBJ.NEXTJS_INSTALLATION.title}`,
-    description: `${SEO_OBJ.NEXTJS_INSTALLATION.description}`,
-    lastUpdateTime: `${SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}`,
-    tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
-    featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
+    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
+    title: `${SEO_OBJ.RACING.title}`,
+    description: `${SEO_OBJ.RACING.description}`,
+    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
+    tags: SEO_OBJ.RACING.tags!,
+    featuredImage: SEO_OBJ.RACING.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
   },
+
   {
     id: 2,
-    url: `${blogPostURLS.NEXTJS_INSTALLATION_RELATIVE}`,
-    title: `${SEO_OBJ.NEXTJS_INSTALLATION.title}`,
-    description: `${SEO_OBJ.NEXTJS_INSTALLATION.description}`,
-    lastUpdateTime: `${SEO_OBJ.NEXTJS_INSTALLATION.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.NEXTJS_INSTALLATION.publishedTime}`,
-    tags: SEO_OBJ.NEXTJS_INSTALLATION.tags!,
-    featuredImage: SEO_OBJ.NEXTJS_INSTALLATION.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.NEXTJS_INSTALLATION.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.NEXTJS_INSTALLATION.ogImageURL}`,
+    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
+    title: `${SEO_OBJ.RACING.title}`,
+    description: `${SEO_OBJ.RACING.description}`,
+    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
+    tags: SEO_OBJ.RACING.tags!,
+    featuredImage: SEO_OBJ.RACING.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
   },
 ];

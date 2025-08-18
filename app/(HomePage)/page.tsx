@@ -18,186 +18,20 @@ const Home = () => {
   return (
     <>
       <div className="masonry  mt-20 text-white">
-        <div className="firstMasonryGrid p-0 m-0">
-          <h1 className="text-white text-2xl font-semibold">Trending Games</h1>
+        <div className="firstSection">
           <ol className="list-none grid grid-cols-9 gap-1 list-outside p-0 m-0">
-            <GameCard
-              linkHref="/racing"
-              imgSrc={escapeRoadImage}
-              imgAlt="Escape-Road"
-              gameTitle="Escape Road "
-              linkTitle="Escape-Road"
-            />
-
-            <GameCard
-              linkHref="/escape-road"
-              imgSrc={highwayRacerImage}
-              imgAlt="Escape-Road"
-              gameTitle="Escape Road "
-              linkTitle="Escape-Road"
-            />
-
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={highwayRacerImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white p-0 m-0  ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl " />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={highwayRacerImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white p-0 m-0  ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl " />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-          </ol>
-        </div>
-
-        <div className="secondMasonryGrid p-0 mt-6">
-          <h1 className="text-white text-2xl font-semibold">Popular Games</h1>
-          <ol className="list-none grid grid-cols-9 gap-1 list-outside p-0 m-0">
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400 ">
-              <Link href={"/escape-road"} className="text-white block p-0 m-0 ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400 row-span-2 col-span-2">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={highwayRacerImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400 ">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white p-0 m-0  ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl " />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={highwayRacerImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={madalinImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
-            <li className="border-0 border-green-400">
-              <Link href={"/racing"} className="text-white block p-0 m-0 ">
-                <Image src={escapeRoadImage} alt="escape-image" className="p-0 m-0 rounded-2xl" />
-              </Link>
-            </li>
+            {blogPostsObj.map((singleGame) => {
+              const { url, title, featuredImage, featuredImageAltText } = singleGame;
+              return (
+                <GameCard
+                  linkHref={url}
+                  imgSrc={featuredImage}
+                  imgAlt={featuredImageAltText}
+                  gameTitle={title}
+                  linkTitle={title}
+                />
+              );
+            })}
           </ol>
         </div>
 
