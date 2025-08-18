@@ -14,7 +14,7 @@ interface GameCardProps {
 const GameCard = (props: GameCardProps) => {
   const { linkHref, linkTitle, imgSrc, imgAlt, gameTitle, scalVal } = props;
   return (
-    <li className="border-0 border-green-400 group relative   ">
+    <li className="border-0 border-green-400 group relative" key={new Date().getSeconds()}>
       <Link
         href={linkHref}
         className={`text-white block p-0 m-0  duration-300 ${scalVal ? `hover:scale-${scalVal}` : "hover:scale-110"}`}

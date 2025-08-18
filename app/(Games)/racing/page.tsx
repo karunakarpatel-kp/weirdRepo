@@ -11,7 +11,7 @@ import Slider from "react-slick";
 const Racing = () => {
   return (
     <>
-      <section className="col-span-3 border-0 border-green-800 mt-14 text-white ">
+      <div className="col-span-3 border-0 border-green-800 mt-14 text-white ">
         <div className="secondMasonryGrid p-0 mt-6 sticky top-16">
           <ol className="list-none grid grid-cols-3 gap-1 list-outside p-0 m-0  ">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((singleMap) => {
@@ -27,7 +27,7 @@ const Racing = () => {
             })}
           </ol>
         </div>
-      </section>
+      </div>
       <section className="col-span-6  border-0 border-red-500 m-auto w-full mb-32 mt-14">
         <div className="videoPlayer my-20 p-4">
           <GamePlayerBox />
