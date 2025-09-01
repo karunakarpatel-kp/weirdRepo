@@ -35,6 +35,7 @@ const SlickContainer = (props: SlickContainerProps) => {
                 imgAlt={featuredImageAltText}
                 gameTitle={title}
                 linkTitle={title}
+                key={new Date().getSeconds()}
               />
             );
           })}

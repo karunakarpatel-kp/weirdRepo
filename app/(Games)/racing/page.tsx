@@ -14,7 +14,7 @@ const Racing = () => {
       <div className="col-span-3 border-0 border-green-800 mt-14 text-white ">
         <div className="secondMasonryGrid p-0 mt-6 sticky top-16">
           <ol className="list-none grid grid-cols-3 gap-1 list-outside p-0 m-0  ">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((singleMap) => {
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((singleMap, index) => {
               return (
                 <GameCard
                   linkHref="/racing"
@@ -22,6 +22,7 @@ const Racing = () => {
                   imgAlt="Escape-Road"
                   gameTitle="Escape Road "
                   linkTitle="Escape-Road"
+                  key={index}
                 />
               );
             })}
@@ -67,7 +68,7 @@ const Racing = () => {
       <section className=" col-span-3 border-0 border-slate-500 mt-14">
         <div className="secondMasonryGrid p-0 mt-6 sticky top-16">
           <ol className="list-none grid grid-cols-2 gap-1 list-outside p-0 m-0">
-            {[1, 2, 3, 4].map((singleMap) => {
+            {[1, 2, 3, 4].map((singleMap, index) => {
               return (
                 <GameCard
                   linkHref="/"
@@ -76,6 +77,7 @@ const Racing = () => {
                   gameTitle="Escape Road "
                   linkTitle="Escape-Road"
                   scalVal={105}
+                  key={index}
                 />
               );
             })}
