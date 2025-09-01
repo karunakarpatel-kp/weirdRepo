@@ -9,12 +9,13 @@ interface GameCardProps {
   imgAlt: string;
   gameTitle: string;
   scalVal?: number;
+  index?: number;
 }
 
 const GameCard = (props: GameCardProps) => {
-  const { linkHref, linkTitle, imgSrc, imgAlt, gameTitle, scalVal } = props;
+  const { linkHref, linkTitle, imgSrc, imgAlt, gameTitle, scalVal, index } = props;
   return (
-    <li className="border-0 border-green-400 group relative" key={new Date().getSeconds()}>
+    <li className="border-0 border-green-400 group relative" key={index}>
       <Link
         href={linkHref}
         className={`text-white block p-0 m-0  duration-300 ${scalVal ? `hover:scale-${scalVal}` : "hover:scale-110"}`}

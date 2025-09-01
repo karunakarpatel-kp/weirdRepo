@@ -1,7 +1,7 @@
 import seoImage from "/public/seo.jpg";
 import nextjsInstallImage from "/public/nextjs_install.png";
 import welcomePatelsImage from "/public/welcome-page.png";
-import americanRdTrpImg from "@Public/escape-road.png";
+import escapeRoadImg from "@Public/escape-road.png";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -40,20 +40,17 @@ export const dynamicLastUpdatedTime = () => {
 
 interface Base_Url_Props {
   HOME_PAGE_BASE_URL: string;
-  BLOG_PAGE_BASE_URL: string;
+  // BLOG_PAGE_BASE_URL: string;
 }
 
 export const BASE_URLS: Base_Url_Props = {
   HOME_PAGE_BASE_URL: process.env.HOME_PAGE_BASE_URL!,
-  BLOG_PAGE_BASE_URL: `${process.env.HOME_PAGE_BASE_URL}/Blog`,
+  // BLOG_PAGE_BASE_URL: `${process.env.HOME_PAGE_BASE_URL}/Blog`,
 };
 
 interface Blog_Post_URL_Props {
   HOME_PAGE_ABSOLUTE: string;
   HOME_PAGE_RELATIVE: string;
-
-  // BLOG_PAGE_RELATIVE: string;
-  // BLOG_PAGE_ABSOLUTE: string;
 
   PRIVACY_PAGE_ABSOLUTE: string;
   PRIVACY_PAGE_RELATIVE: string;
@@ -64,16 +61,13 @@ interface Blog_Post_URL_Props {
   DISCLAIMER_PAGE_ABSOLUTE: string;
   DISCLAIMER_PAGE_RELATIVE: string;
 
-  // AMERICAN_ROAD_TRIP_RELATIVE: string;
-  // AMERICAN_ROAD_TRIP_ABSOLUTE: string;
+  ESCAPE_ROAD_ABSOLUTE: string;
+  ESCAPE_ROAD_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
   HOME_PAGE_ABSOLUTE: BASE_URLS.HOME_PAGE_BASE_URL,
   HOME_PAGE_RELATIVE: "/",
-
-  // BLOG_PAGE_ABSOLUTE: BASE_URLS.BLOG_PAGE_BASE_URL,
-  // BLOG_PAGE_RELATIVE: "/Blog",
 
   PRIVACY_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/privacy`,
   PRIVACY_PAGE_RELATIVE: "/privacy",
@@ -84,8 +78,8 @@ export const blogPostURLS: Blog_Post_URL_Props = {
   DISCLAIMER_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/disclaimer`,
   DISCLAIMER_PAGE_RELATIVE: "/disclaimer",
 
-  // AMERICAN_ROAD_TRIP_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/racing`,
-  // AMERICAN_ROAD_TRIP_RELATIVE: "/racing",
+  ESCAPE_ROAD_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/escape-road`,
+  ESCAPE_ROAD_RELATIVE: "/escape-road",
 };
 
 interface blogPostsObjProps {
@@ -136,21 +130,6 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     changeFrequency: "daily",
     tags: [{ tag: "HomePage", href: "/" }],
   },
-  // BlogPage  /Blog/
-  // BLOG_PAGE: {
-  //   absoluteURL: blogPostURLS.BLOG_PAGE_ABSOLUTE,
-  //   relativeURL: blogPostURLS.BLOG_PAGE_RELATIVE,
-  //   title: "Karunakar Patel Blog: A hub for programming enthusiasts.",
-  //   description:
-  //     "Welcome to Karunakar Patels Blog! This is the perfect place for people who love programming. You'll find easy-to-understand articles and tutorials for beginners and experienced coders alike. Join our community and let's learn and grow together in the world of coding!",
-  //   lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-  //   publishedTime: "2023-10-20T19:19:55+00:00",
-  //   featuredImage: welcomePatelsImage,
-  //   featuredImageAltText: "a-person-with-computer",
-  //   ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
-  //   changeFrequency: "daily",
-  //   tags: [{ tag: "Blog", href: "/Blog" }],
-  // },
 
   POLICY_PAGE: {
     absoluteURL: blogPostURLS.PRIVACY_PAGE_ABSOLUTE,
@@ -197,37 +176,33 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     tags: [{ tag: "disclaimer", href: "/disclaimer" }],
   },
 
-  // nextjs_installation
-  // RACING: {
-  //   absoluteURL: blogPostURLS.AMERICAN_ROAD_TRIP_ABSOLUTE,
-  //   relativeURL: blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE,
-  //   title: "AMERICAN GAME",
-  //   description: "AMERICAN GAME IN HERE",
-  //   publishedTime: "2023-10-20T19:07:55+00:00",
-  //   lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-  //   tags: [
-  //     { tag: "Next.js Install", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
-  //     { tag: "Next.js", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
-  //     { tag: "Blog", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
-  //     { tag: "Karunakar Patel", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
-  //   ],
-  //   featuredImage: americanRdTrpImg,
-  //   featuredImageAltText: "a-person-with-computer",
-  //   ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/racing.png`,
-  // },
+  ESCAPE_ROAD: {
+    absoluteURL: blogPostURLS.ESCAPE_ROAD_ABSOLUTE,
+    relativeURL: blogPostURLS.ESCAPE_ROAD_RELATIVE,
+    title: "Escape Road 🎮 Play on CrazyPokiGames",
+    description:
+      "This high-speed car chase game will get your adrenaline pumping as soon as you put your foot on the gas. Police cars will start tailing you from the moment you start the car.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2025-09-01T10:07:55+00:00",
+    featuredImage: escapeRoadImg,
+    featuredImageAltText: "a-person-with-computer",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+    changeFrequency: "daily",
+    tags: [{ tag: "disclaimer", href: "/disclaimer" }],
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
   {
     id: 0,
-    url: `${blogPostURLS.CONTACT_PAGE_RELATIVE}`,
-    title: `${SEO_OBJ.CONTACT_PAGE.title}`,
-    description: `${SEO_OBJ.CONTACT_PAGE.description}`,
-    lastUpdateTime: `${SEO_OBJ.CONTACT_PAGE.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.CONTACT_PAGE.publishedTime}`,
-    tags: SEO_OBJ.CONTACT_PAGE.tags!,
-    featuredImage: SEO_OBJ.CONTACT_PAGE.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.CONTACT_PAGE.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.CONTACT_PAGE.ogImageURL}`,
+    url: `${blogPostURLS.ESCAPE_ROAD_RELATIVE}`,
+    title: `${SEO_OBJ.ESCAPE_ROAD.title}`,
+    description: `${SEO_OBJ.ESCAPE_ROAD.description}`,
+    lastUpdateTime: `${SEO_OBJ.ESCAPE_ROAD.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.ESCAPE_ROAD.publishedTime}`,
+    tags: SEO_OBJ.ESCAPE_ROAD.tags!,
+    featuredImage: SEO_OBJ.ESCAPE_ROAD.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.ESCAPE_ROAD.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.ESCAPE_ROAD.ogImageURL}`,
   },
 ];

@@ -29,7 +29,7 @@ const Navigation = () => {
           onClick={onLogoClickHandler}
         >
           <SiEpicgames className="text-white text-6xl mr-3 animate-bounce animate duration-700 ease-in-out" />
-          <h1 className=" text-lg font-semibold mt-2 text-slate-300">CrazyPokiGames</h1>
+          <h1 className=" text-xl font-semibold mt-2 text-slate-300">CrazyPokiGames</h1>
         </div>
         <div className="col-span-7 md:col-span-6 border-0 border-purple-400 m-0 p-0 mr-3  ">
           <ul className="list-none flex space-x-2 md:space-x-6 text-white justify-end mt-2">

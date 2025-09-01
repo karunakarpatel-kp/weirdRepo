@@ -13,7 +13,7 @@ const HomePageLayout = (props: RootLayoutProps) => {
   return (
     <body className="relative p-0 m-0  prose prose-stone min-h-[65vh] max-w-full border-0 border-sky-400  h-full overflow-x-hidden bg-brandColor">
       <ReadingProgressBar />
-      <AppProgressBar height="1px" color="#ffffff" options={{ showSpinner: true }} shallowRouting />
+      <AppProgressBar height="1px" color="#0f0617" options={{ showSpinner: true }} shallowRouting />
       <header>
         <Navigation />
       </header>
