@@ -3,7 +3,7 @@ import React from "react";
 
 const AppLayoutLoadingUI = () => {
   return (
-    <div className="h-dvh bg-slate-700">
+    <div className="h-dvh bg-brandColor ">
       <div className="masonry  mt-20 text-white">
         <div className="firstSection">
           <h1 className="text-white text-2xl font-semibold animate-pulse duration-500 bg-slate-700 p-3 inline-block w-3/6 mb-0 rounded-lg"></h1>

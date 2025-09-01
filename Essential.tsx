@@ -52,8 +52,8 @@ interface Blog_Post_URL_Props {
   HOME_PAGE_ABSOLUTE: string;
   HOME_PAGE_RELATIVE: string;
 
-  BLOG_PAGE_RELATIVE: string;
-  BLOG_PAGE_ABSOLUTE: string;
+  // BLOG_PAGE_RELATIVE: string;
+  // BLOG_PAGE_ABSOLUTE: string;
 
   PRIVACY_PAGE_ABSOLUTE: string;
   PRIVACY_PAGE_RELATIVE: string;
@@ -64,16 +64,16 @@ interface Blog_Post_URL_Props {
   DISCLAIMER_PAGE_ABSOLUTE: string;
   DISCLAIMER_PAGE_RELATIVE: string;
 
-  AMERICAN_ROAD_TRIP_RELATIVE: string;
-  AMERICAN_ROAD_TRIP_ABSOLUTE: string;
+  // AMERICAN_ROAD_TRIP_RELATIVE: string;
+  // AMERICAN_ROAD_TRIP_ABSOLUTE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
   HOME_PAGE_ABSOLUTE: BASE_URLS.HOME_PAGE_BASE_URL,
   HOME_PAGE_RELATIVE: "/",
 
-  BLOG_PAGE_ABSOLUTE: BASE_URLS.BLOG_PAGE_BASE_URL,
-  BLOG_PAGE_RELATIVE: "/Blog",
+  // BLOG_PAGE_ABSOLUTE: BASE_URLS.BLOG_PAGE_BASE_URL,
+  // BLOG_PAGE_RELATIVE: "/Blog",
 
   PRIVACY_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/privacy`,
   PRIVACY_PAGE_RELATIVE: "/privacy",
@@ -84,8 +84,8 @@ export const blogPostURLS: Blog_Post_URL_Props = {
   DISCLAIMER_PAGE_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/disclaimer`,
   DISCLAIMER_PAGE_RELATIVE: "/disclaimer",
 
-  AMERICAN_ROAD_TRIP_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/racing`,
-  AMERICAN_ROAD_TRIP_RELATIVE: "/racing",
+  // AMERICAN_ROAD_TRIP_ABSOLUTE: `${BASE_URLS.BLOG_PAGE_BASE_URL}/racing`,
+  // AMERICAN_ROAD_TRIP_RELATIVE: "/racing",
 };
 
 interface blogPostsObjProps {
@@ -125,11 +125,11 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   HOME_PAGE: {
     absoluteURL: blogPostURLS.HOME_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.HOME_PAGE_RELATIVE,
-    title: "Karunakar Patel: Navigating the landscape of programming knowledge",
+    title: "Free Online Games on CrazyPokiGames🎮 | Play Now!",
     description:
-      "Explore programming with Karunakar Patel. Find simplified explanations, hands-on tutorials, practical tips, and personal experiences about programming",
+      "Crazypokigames features the latest and best free online games which are ready to play for free. You can enjoy gamesh without any interruptions from downloads and ads",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2025-09-01T10:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -137,29 +137,29 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     tags: [{ tag: "HomePage", href: "/" }],
   },
   // BlogPage  /Blog/
-  BLOG_PAGE: {
-    absoluteURL: blogPostURLS.BLOG_PAGE_ABSOLUTE,
-    relativeURL: blogPostURLS.BLOG_PAGE_RELATIVE,
-    title: "Karunakar Patel Blog: A hub for programming enthusiasts.",
-    description:
-      "Welcome to Karunakar Patels Blog! This is the perfect place for people who love programming. You'll find easy-to-understand articles and tutorials for beginners and experienced coders alike. Join our community and let's learn and grow together in the world of coding!",
-    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-10-20T19:19:55+00:00",
-    featuredImage: welcomePatelsImage,
-    featuredImageAltText: "a-person-with-computer",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
-    changeFrequency: "daily",
-    tags: [{ tag: "Blog", href: "/Blog" }],
-  },
+  // BLOG_PAGE: {
+  //   absoluteURL: blogPostURLS.BLOG_PAGE_ABSOLUTE,
+  //   relativeURL: blogPostURLS.BLOG_PAGE_RELATIVE,
+  //   title: "Karunakar Patel Blog: A hub for programming enthusiasts.",
+  //   description:
+  //     "Welcome to Karunakar Patels Blog! This is the perfect place for people who love programming. You'll find easy-to-understand articles and tutorials for beginners and experienced coders alike. Join our community and let's learn and grow together in the world of coding!",
+  //   lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+  //   publishedTime: "2023-10-20T19:19:55+00:00",
+  //   featuredImage: welcomePatelsImage,
+  //   featuredImageAltText: "a-person-with-computer",
+  //   ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+  //   changeFrequency: "daily",
+  //   tags: [{ tag: "Blog", href: "/Blog" }],
+  // },
 
   POLICY_PAGE: {
     absoluteURL: blogPostURLS.PRIVACY_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.PRIVACY_PAGE_RELATIVE,
-    title: "Privacy Policy | KarunakarPatel Blog",
+    title: "Privacy Policy | CrazyPokiGames🎮",
     description:
-      "Welcome to KarunakarPatel privacy policy. In here you can find all the details about privacy policy of Karunakar Patel",
+      "Welcome to crazypokigames privacy policy. In here you can find all the details about privacy policy of online crazypokigames in here.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-12-09T19:07:55+00:00",
+    publishedTime: "2025-09-01T10:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -170,11 +170,11 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   CONTACT_PAGE: {
     absoluteURL: blogPostURLS.CONTACT_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.CONTACT_PAGE_RELATIVE,
-    title: "Contact Us | KarunakarPatel",
+    title: "Contact Us | CrazyPokiGames🎮",
     description:
-      "Welcome to KarunakarPatel contact page. In here you can find all the details of about KarunakarPatel contact information and a way to contact administrator of the KarunakarPatel site.",
+      "Welcome to crazypokigames contact page. In here you can find all the details of about crazypokigames contact information and a way to contact administrator of the Crazypokigames site.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-12-09T19:07:55+00:00",
+    publishedTime: "2025-09-01T10:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -185,11 +185,11 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   DISCLAIMER_PAGE: {
     absoluteURL: blogPostURLS.DISCLAIMER_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.DISCLAIMER_PAGE_RELATIVE,
-    title: "Disclaimer | KarunakarPatel",
+    title: "Disclaimer | CrazyPokiGames🎮",
     description:
-      "Welcome to KarunakarPatel disclaimer page. In here you can find all the details of about KarunakarPatel's Disclaimer and its policies.",
+      "Welcome to CrazyPokiGames disclaimer page. In here you can find all the details of about KarunakarPatel's Disclaimer and its policies.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-12-09T19:07:55+00:00",
+    publishedTime: "2025-09-01T10:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -198,146 +198,36 @@ export const SEO_OBJ: SEO_OBJ_Props = {
   },
 
   // nextjs_installation
-  RACING: {
-    absoluteURL: blogPostURLS.AMERICAN_ROAD_TRIP_ABSOLUTE,
-    relativeURL: blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE,
-    title: "AMERICAN GAME",
-    description: "AMERICAN GAME IN HERE",
-    publishedTime: "2023-10-20T19:07:55+00:00",
-    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    tags: [
-      { tag: "Next.js Install", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
-      { tag: "Next.js", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
-      { tag: "Blog", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
-      { tag: "Karunakar Patel", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
-    ],
-    featuredImage: americanRdTrpImg,
-    featuredImageAltText: "a-person-with-computer",
-    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/racing.png`,
-  },
+  // RACING: {
+  //   absoluteURL: blogPostURLS.AMERICAN_ROAD_TRIP_ABSOLUTE,
+  //   relativeURL: blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE,
+  //   title: "AMERICAN GAME",
+  //   description: "AMERICAN GAME IN HERE",
+  //   publishedTime: "2023-10-20T19:07:55+00:00",
+  //   lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+  //   tags: [
+  //     { tag: "Next.js Install", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
+  //     { tag: "Next.js", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
+  //     { tag: "Blog", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
+  //     { tag: "Karunakar Patel", href: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}` },
+  //   ],
+  //   featuredImage: americanRdTrpImg,
+  //   featuredImageAltText: "a-person-with-computer",
+  //   ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/racing.png`,
+  // },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
   {
     id: 0,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
-  },
-
-  {
-    id: 1,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
-  },
-
-  {
-    id: 2,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
-  },
-  {
-    id: 3,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
-  },
-  {
-    id: 4,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
-  },
-  {
-    id: 5,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
-  },
-  {
-    id: 6,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
-  },
-  {
-    id: 2,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
-  },
-  {
-    id: 2,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
-  },
-  {
-    id: 2,
-    url: `${blogPostURLS.AMERICAN_ROAD_TRIP_RELATIVE}`,
-    title: `${SEO_OBJ.RACING.title}`,
-    description: `${SEO_OBJ.RACING.description}`,
-    lastUpdateTime: `${SEO_OBJ.RACING.lastUpdateTime}`,
-    publishedTime: `${SEO_OBJ.RACING.publishedTime}`,
-    tags: SEO_OBJ.RACING.tags!,
-    featuredImage: SEO_OBJ.RACING.featuredImage,
-    featuredImageAltText: `${SEO_OBJ.RACING.featuredImageAltText}`,
-    ogImageURL: `${SEO_OBJ.RACING.ogImageURL}`,
+    url: `${blogPostURLS.CONTACT_PAGE_RELATIVE}`,
+    title: `${SEO_OBJ.CONTACT_PAGE.title}`,
+    description: `${SEO_OBJ.CONTACT_PAGE.description}`,
+    lastUpdateTime: `${SEO_OBJ.CONTACT_PAGE.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.CONTACT_PAGE.publishedTime}`,
+    tags: SEO_OBJ.CONTACT_PAGE.tags!,
+    featuredImage: SEO_OBJ.CONTACT_PAGE.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.CONTACT_PAGE.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.CONTACT_PAGE.ogImageURL}`,
   },
 ];

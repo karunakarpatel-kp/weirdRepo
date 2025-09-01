@@ -12,7 +12,7 @@ interface RootLayoutProps {
 
 const GamesPageLayout = (props: RootLayoutProps) => {
   return (
-    <body className="relative p-0 m-0 bg-slate-900 prose prose-stone min-h-[65vh] max-w-full border-0 border-sky-400  h-full overflow-x-hidden">
+    <body className="relative p-0 m-0 bg-brandColor prose prose-stone min-h-[65vh] max-w-full border-0 border-sky-400  h-full overflow-x-hidden">
       <ReadingProgressBar />
       <AppProgressBar height="1px" color="#ffffff" options={{ showSpinner: true }} shallowRouting />
       <header>

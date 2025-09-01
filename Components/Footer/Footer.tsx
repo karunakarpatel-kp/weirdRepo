@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
@@ -20,7 +22,7 @@ import { SEO_OBJ } from "Essential";
 const Footer = () => {
   return (
     <>
-      <div className={" bg-slate-800  md:ml-0 pl-2 md:grid grid-cols-12 w-full "}>
+      <div className={"  md:ml-0 pl-2 md:grid grid-cols-12 w-full bg-brandColor border-t border-t-slate-800"}>
         {/* Desktop */}
         <div className="Left border-0 border-white col-span-1 invisible"></div>
         <div className="copyrightMessage border-0 border-green-500 col-span-3 cursor-pointer text-white flex items-center font-semibold text-base justify-center md:justify-start">
@@ -67,7 +69,7 @@ const Footer = () => {
             <EmailIcon size={34} className="rounded-md" />
           </EmailShareButton>
         </div>
-        <div className="Right border-0 border-white col-span-1 invisible">Right</div>
+        <div className="Right border-0 border-white col-span-1 invisible"></div>
       </div>
     </>
   );

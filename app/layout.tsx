@@ -7,7 +7,7 @@ interface RootLayoutProps {
 
 const RootLayout = (props: RootLayoutProps) => {
   return (
-    <html lang="en" className="transition-all duration-300">
+    <html lang="en" className="transition-all duration-300 bg-brandColor">
       <link
         rel="stylesheet"
         type="text/css"
