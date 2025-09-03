@@ -5,7 +5,7 @@ import GamePlayerBox from "../_GamesList/GameComponents/GamePlayerBox";
 
 const EscapeRoad = () => {
   return (
-    <>
+    <div className="grid grid-cols-12">
       <div className="col-span-3 border-0 border-green-800 mt-14 text-white ">
         <div className="secondMasonryGrid p-0 mt-6 sticky top-16">
           <ol className="list-none grid grid-cols-3 gap-1 list-outside p-0 m-0  ">
@@ -39,18 +39,6 @@ const EscapeRoad = () => {
             inventore molestias esse voluptatem explicabo beatae iusto? Voluptas ipsa dolorem esse nam facere non iste
             quam repellendus reiciendis blanditiis sunt id modi cumque quo sint corporis ex et nobis, nesciunt tenetur
             quod possimus tempore perferendis itaque. Accusantium delectus illum totam ipsa doloribus velit iure quam
-            quisquam at corrupti esse, eos est consequatur ullam rerum? Natus beatae voluptatibus quaerat minima
-            veritatis? Corporis, natus doloribus veritatis autem est, recusandae ea consequatur praesentium vero, earum
-            temporibus! Laudantium commodi, voluptates molestiae eaque quo aperiam consequatur distinctio beatae
-            incidunt vero optio nam obcaecati aliquid minima sit velit at illum deleniti nisi iusto ad maxime qui omnis!
-            Quidem eum sit dolor distinctio accusamus exercitationem fugiat autem quo veritatis quos explicabo voluptas
-            hic voluptates doloremque fuga expedita, vel doloribus sed reprehenderit perferendis iusto quas! Optio
-            magnam veritatis esse, nesciunt sapiente consequuntur ad magni, vero rem excepturi, deserunt error adipisci
-            blanditiis dicta laboriosam voluptatem voluptates repellendus molestiae voluptatum nobis accusamus quod.
-            Blanditiis fugiat, eveniet magni suscipit unde incidunt cum? Delectus repellendus natus reiciendis iusto,
-            quam facere numquam similique asperiores eaque consequatur voluptas consectetur obcaecati omnis, sed, sequi
-            iste autem! Enim nesciunt tempora suscipit maxime ab laborum beatae magnam sapiente laboriosam ducimus
-            voluptas perspiciatis omnis, esse eius distinctio ipsa. Natus enim, praesentium fuga itaque cum officiis
             ullam adipisci facilis deleniti aliquid! Vel, similique a laudantium doloremque culpa voluptatum pariatur!
             Quisquam fugit deserunt voluptas. Maiores, non aspernatur sit repellat, quae ipsum ratione fuga enim rem
             odio eius consectetur ab obcaecati eaque, ad beatae ullam? Hic libero quisquam cum reprehenderit, deserunt
@@ -79,7 +67,7 @@ const EscapeRoad = () => {
           </ol>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

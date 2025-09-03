@@ -18,7 +18,7 @@ const GamesPageLayout = (props: RootLayoutProps) => {
       <header>
         <Navigation />
       </header>
-      <main className="border-0 border-red-900 grid grid-cols-12 ">{props.children}</main>
+      <main className="border-0 border-red-900  ">{props.children}</main>
       <footer>
         <Footer />
       </footer>
