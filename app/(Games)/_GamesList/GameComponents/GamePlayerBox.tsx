@@ -12,7 +12,7 @@ const GamePlayerBox = () => {
         allowFullScreen
         className="w-full h-[500px] p-3"
       ></iframe>
-      <div className="controlContainer text-white grid grid-cols-12 bg-slate-800">
+      <div className="controlContainer text-white grid grid-cols-12 ">
         <div className="title border border-white col-span-4">
           <h1 className="text-lg text-white font-semibold my-1">Escape Road 2</h1>
         </div>
