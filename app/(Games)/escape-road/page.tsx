@@ -2,7 +2,7 @@ import React from "react";
 import escapeRoadImage from "@Public/escape-road.webp";
 import Link from "next/link";
 import { CustomMetaData } from "Components/MetaData/CustomMetaData";
-import { SEO_OBJ } from "Essential";
+import { blogPostsObj, SEO_OBJ } from "Essential";
 import GameCard from "../_GamesList/GameComponents/GameCard";
 import GamePlayerBox from "../_GamesList/GameComponents/GamePlayerBox";
 
@@ -14,15 +14,16 @@ const EscapeRoad = () => {
       <div className="hidden md:col-span-2 lg:col-span-2  lg:block border-0 border-green-800 mt-14 text-white ">
         <div className="secondMasonryGrid p-0 mt-6 sticky top-16">
           <ol className="list-none grid grid-cols-3 gap-1 list-outside p-0 m-0  ">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((singleMap, index) => {
+            {blogPostsObj.map((singleGame, index) => {
+              const { url, title, featuredImage, featuredImageAltText } = singleGame;
               return (
                 <GameCard
-                  linkHref="/racing"
-                  imgSrc={escapeRoadImage}
-                  imgAlt="Escape-Road"
-                  gameTitle="Escape Road "
-                  linkTitle="Escape-Road"
                   key={index}
+                  linkHref={url}
+                  imgSrc={featuredImage}
+                  imgAlt={featuredImageAltText}
+                  gameTitle={title}
+                  linkTitle={title}
                 />
               );
             })}
@@ -129,16 +130,16 @@ const EscapeRoad = () => {
       <section className="col-span-12 md:col-span-2 lg:col-span-2 border-0 border-slate-500 mt-14">
         <div className="secondMasonryGrid p-0 mt-6 sticky top-16">
           <ol className="list-none grid grid-cols-2 gap-1 list-outside p-0 m-0">
-            {[1, 2, 3, 4].map((singleMap, index) => {
+            {blogPostsObj.map((singleGame, index) => {
+              const { url, title, featuredImage, featuredImageAltText } = singleGame;
               return (
                 <GameCard
-                  linkHref="/"
-                  imgSrc={escapeRoadImage}
-                  imgAlt="Escape-Road"
-                  gameTitle="Escape Road "
-                  linkTitle="Escape-Road"
-                  scalVal={105}
                   key={index}
+                  linkHref={url}
+                  imgSrc={featuredImage}
+                  imgAlt={featuredImageAltText}
+                  gameTitle={title}
+                  linkTitle={title}
                 />
               );
             })}
