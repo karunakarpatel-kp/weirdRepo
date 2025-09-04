@@ -123,7 +123,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Crazypokigames features the latest and best free online games which are ready to play for free. You can enjoy gamesh without any interruptions from downloads and ads",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2025-09-01T10:07:55+00:00",
+    publishedTime: "2025-09-04T10:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -138,7 +138,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Welcome to crazypokigames privacy policy. In here you can find all the details about privacy policy of online crazypokigames in here.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2025-09-01T10:07:55+00:00",
+    publishedTime: "2025-09-04T10:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -153,7 +153,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Welcome to crazypokigames contact page. In here you can find all the details of about crazypokigames contact information and a way to contact administrator of the Crazypokigames site.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2025-09-01T10:07:55+00:00",
+    publishedTime: "2025-09-04T10:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -168,7 +168,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "Welcome to CrazyPokiGames disclaimer page. In here you can find all the details of about KarunakarPatel's Disclaimer and its policies.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2025-09-01T10:07:55+00:00",
+    publishedTime: "2025-09-04T10:07:55+00:00",
     featuredImage: welcomePatelsImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -183,7 +183,7 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     description:
       "This high-speed car chase game will get your adrenaline pumping as soon as you put your foot on the gas. Police cars will start tailing you from the moment you start the car.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2025-09-01T10:07:55+00:00",
+    publishedTime: "2025-09-04T10:07:55+00:00",
     featuredImage: escapeRoadImg,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
