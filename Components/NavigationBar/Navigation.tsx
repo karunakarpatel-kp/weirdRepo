@@ -39,11 +39,11 @@ const Navigation = () => {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link href="/Games" className="text-white">
                 <FaCar size={27} />
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 

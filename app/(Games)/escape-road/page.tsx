@@ -1,8 +1,12 @@
 import React from "react";
 import escapeRoadImage from "@Public/escape-road.webp";
+import Link from "next/link";
+import { CustomMetaData } from "Components/MetaData/CustomMetaData";
+import { SEO_OBJ } from "Essential";
 import GameCard from "../_GamesList/GameComponents/GameCard";
 import GamePlayerBox from "../_GamesList/GameComponents/GamePlayerBox";
-import Link from "next/link";
+
+export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.ESCAPE_ROAD.absoluteURL });
 
 const EscapeRoad = () => {
   return (
