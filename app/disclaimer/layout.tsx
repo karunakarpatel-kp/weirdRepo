@@ -20,7 +20,7 @@ const DisclaimerPageLayout = (props: any) => {
         </header>
         <main className=" grid grid-cols-12">
           <section
-            className="p-7 col-span-12 mt-20 mb-4 prose prose-lg prose-invert max-w-none w-3/6   m-auto min-h-[64vh]  prose-h1:leading-slug md:prose-img:h-[520px]  prose-img:rounded-lg "
+            className="p-7 col-span-12 mt-20 mb-4 prose prose-lg prose-invert max-w-none w-6/6 md:w-3/6   m-auto min-h-[64vh]  prose-h1:leading-slug md:prose-img:h-[520px]  prose-img:rounded-lg prose-h1:text-4xl md:prose-h1:text-6xl"
             id="top"
           >
             {props.children}

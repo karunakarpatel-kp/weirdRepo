@@ -30,7 +30,7 @@ const EscapeRoad = () => {
           </ol>
         </div>
       </div>
-      <section className="col-span-12 md:col-span-8 lg:col-span-8  border-0 border-red-500 m-auto w-full mb-32 ">
+      <section className="col-span-12 md:col-span-8 lg:col-span-8  border-0 border-red-500 m-auto w-full md:mb-32 ">
         <div className="videoPlayer my-20 p-4">
           <GamePlayerBox />
           <article className="prose prose-lg md:prose-lg lg:prose-lg prose-invert max-w-none border border-slate-800  p-3 pt-11">
@@ -127,9 +127,9 @@ const EscapeRoad = () => {
           </article>
         </div>
       </section>
-      <section className="col-span-12 md:col-span-2 lg:col-span-2 border-0 border-slate-500 mt-14">
-        <div className="secondMasonryGrid p-0 mt-6 sticky top-16">
-          <ol className="list-none grid grid-cols-2 gap-1 list-outside p-0 m-0">
+      <section className="col-span-12 md:col-span-2 lg:col-span-2 border-0 border-slate-500 md:mt-14">
+        <div className="secondMasonryGrid p-0 md:mt-6 sticky top-16  -mt-20 mb-10 md:mb-0">
+          <ol className="list-none grid grid-cols-3 gap-1 list-outside px-3 md:p-0 m-0">
             {blogPostsObj.map((singleGame, index) => {
               const { url, title, featuredImage, featuredImageAltText } = singleGame;
               return (

@@ -14,7 +14,7 @@ const GamePlayerBox = () => {
       ></iframe>
       <div className="controlContainer text-white grid grid-cols-12 border border-slate-800 bg-slate-900">
         <div className="title col-span-12 md:col-span-3 lg:col-span-4 p-2 border-0">
-          <h1 className="text-xl text-white font-bold  mx-auto my-auto pl-5 md:text-normal text-nowrap md:pl-1  ">
+          <h1 className="text-2xl text-white font-bold  mx-auto my-auto pl-5 md:text-normal text-nowrap md:pl-1  text-center md:text-left ">
             Escape Road 2{" "}
           </h1>
         </div>

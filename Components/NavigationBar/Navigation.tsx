@@ -25,13 +25,13 @@ const Navigation = () => {
         {/* Desktop */}
         <div className="hidden md:invisible lg:flex col-span-1 border-0 border-white self-stretch justify-center items-center "></div>
         <div
-          className="col-span-5 md:col-span-4  border-0 border-green-800 mt-3 ml-2 md:ml-0 lg:ml-0 cursor-pointer  inline-flex"
+          className="col-span-9 md:col-span-4  border-0 border-green-800 mt-3 ml-2 md:ml-0 lg:ml-0 cursor-pointer inline-flex"
           onClick={onLogoClickHandler}
         >
-          <SiEpicgames className="text-white text-6xl mr-3 animate-bounce animate duration-700 ease-in-out" />
-          <h1 className=" text-xl font-semibold mt-2 text-slate-300">CrazyPokiGames</h1>
+          <SiEpicgames className="text-white text-4xl md:text-6xl mr-3 md:animate-bounce animate duration-700 ease-in-out " />
+          <h1 className=" text-xl font-semibold mt-1 md:mt-2 text-slate-300">CrazyPokiGames</h1>
         </div>
-        <div className="col-span-7 md:col-span-6 border-0 border-purple-400 m-0 p-0 mr-3  ">
+        <div className="col-span-3 md:col-span-6 border-0 border-purple-400 m-0 p-0 pr-3 mr-3  ">
           <ul className="list-none flex space-x-2 md:space-x-6 text-white justify-end mt-2">
             <li>
               <Link href="/" className="text-white">

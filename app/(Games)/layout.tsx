@@ -1,5 +1,3 @@
-"use client";
-
 import Navigation from "Components/NavigationBar/Navigation";
 import Footer from "Components/Footer/Footer";
 import { AppProgressBar } from "next-nprogress-bar";
