@@ -205,4 +205,30 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImageAltText: `${SEO_OBJ.ESCAPE_ROAD.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.ESCAPE_ROAD.ogImageURL}`,
   },
+
+  {
+    id: 1,
+    url: `${blogPostURLS.ESCAPE_ROAD_RELATIVE}`,
+    title: `${SEO_OBJ.ESCAPE_ROAD.title}`,
+    description: `${SEO_OBJ.ESCAPE_ROAD.description}`,
+    lastUpdateTime: `${SEO_OBJ.ESCAPE_ROAD.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.ESCAPE_ROAD.publishedTime}`,
+    tags: SEO_OBJ.ESCAPE_ROAD.tags!,
+    featuredImage: SEO_OBJ.ESCAPE_ROAD.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.ESCAPE_ROAD.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.ESCAPE_ROAD.ogImageURL}`,
+  },
+
+  {
+    id: 2,
+    url: `${blogPostURLS.ESCAPE_ROAD_RELATIVE}`,
+    title: `${SEO_OBJ.ESCAPE_ROAD.title}`,
+    description: `${SEO_OBJ.ESCAPE_ROAD.description}`,
+    lastUpdateTime: `${SEO_OBJ.ESCAPE_ROAD.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.ESCAPE_ROAD.publishedTime}`,
+    tags: SEO_OBJ.ESCAPE_ROAD.tags!,
+    featuredImage: SEO_OBJ.ESCAPE_ROAD.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.ESCAPE_ROAD.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.ESCAPE_ROAD.ogImageURL}`,
+  },
 ];

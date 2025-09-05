@@ -21,7 +21,7 @@ import { SEO_OBJ } from "Essential";
 const Footer = () => {
   return (
     <>
-      <div className={"  md:ml-0 pl-2 md:grid grid-cols-12 w-full bg-brandColor border-t border-t-slate-800"}>
+      <div className={"  md:ml-0 pl-2 md:grid grid-cols-12 w-full bg-brandColor border-t border-t-slate-800 py-9"}>
         {/* Desktop */}
         <div className="Left border-0 border-white col-span-1 invisible"></div>
         <div className="copyrightMessage border-0 border-green-500 col-span-3 cursor-pointer text-white flex items-center font-semibold text-base justify-center md:justify-start">
@@ -30,17 +30,17 @@ const Footer = () => {
         <div className="privacyLinks border-0 border-red-800 col-span-4">
           <ul className="list-none flex flex-wrap px-3 md:space-x-5 text-white justify-evenly md:justify-center md:flex-wrap mt-3">
             <li>
-              <Link href="/contact" className="text-white">
+              <Link href="/contact" className="text-white underline-offset-4">
                 Contact Us
               </Link>
             </li>
             <li>
-              <Link href="/privacy" className="text-white">
+              <Link href="/privacy" className="text-white underline-offset-4">
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link href="/disclaimer" className="text-white">
+              <Link href="/disclaimer" className="text-white underline-offset-4">
                 Disclaimer
               </Link>
             </li>

@@ -11,9 +11,9 @@ const Home = () => {
     <>
       <div className="masonry  mt-20 text-white min-h-[70vh]">
         <HomePageAd />
-        <div className="firstSection">
-          <h1 className="text-white text-2xl font-semibold">Popular Games</h1>
-          <ol className="list-none grid grid-cols-9 gap-1 list-outside p-0 m-0">
+        <div className="firstSection px-2">
+          <h1 className="text-white text-xl text-center md:text-left md:text-2xl font-semibold">Popular Games</h1>
+          <ol className="list-none grid grid-cols-3 gap-1 md:grid-cols-9 md:gap-1 list-outside p-0 m-0 ">
             {blogPostsObj.map((singleGame, index) => {
               const { url, title, featuredImage, featuredImageAltText } = singleGame;
               return (

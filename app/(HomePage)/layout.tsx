@@ -21,8 +21,8 @@ const HomePageLayout = (props: RootLayoutProps) => {
         <section className="hidden md:invisible md:block md:col-span-1 border-2 border-green-800">
           {/* First Section */}
         </section>
-        <section className="col-span-12 md:col-span-10 border-0 border-red-500 m-auto w-full mb-32">
-          <article>{props.children}</article>
+        <section className="col-span-12 md:col-span-10 border-0 border-red-500 m-auto w-full mb-32 px-1">
+          {props.children}
         </section>
         <section className="hidden md:col-span-1 md:block md:invisible border border-slate-500">
           {/* Second Section */}
