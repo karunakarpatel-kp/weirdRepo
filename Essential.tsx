@@ -2,6 +2,7 @@ import seoImage from "/public/seo.jpg";
 import nextjsInstallImage from "/public/nextjs_install.png";
 import welcomePatelsImage from "/public/welcome-page.png";
 import escapeRoadImg from "@Public/escape-road.png";
+import trafficRoadImg from "@Public/traffic-road.png";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -63,6 +64,9 @@ interface Blog_Post_URL_Props {
 
   ESCAPE_ROAD_ABSOLUTE: string;
   ESCAPE_ROAD_RELATIVE: string;
+
+  TRAFFIC_ROAD_ABSOLUTE: string;
+  TRAFFIC_ROAD_RELATIVE: string;
 }
 
 export const blogPostURLS: Blog_Post_URL_Props = {
@@ -80,6 +84,9 @@ export const blogPostURLS: Blog_Post_URL_Props = {
 
   ESCAPE_ROAD_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/escape-road`,
   ESCAPE_ROAD_RELATIVE: "/escape-road",
+
+  TRAFFIC_ROAD_ABSOLUTE: `${BASE_URLS.HOME_PAGE_BASE_URL}/traffic-road`,
+  TRAFFIC_ROAD_RELATIVE: "/traffic-road",
 };
 
 interface blogPostsObjProps {
@@ -190,6 +197,21 @@ export const SEO_OBJ: SEO_OBJ_Props = {
     changeFrequency: "daily",
     tags: [{ tag: "disclaimer", href: "/disclaimer" }],
   },
+
+  TRAFFIC_ROAD: {
+    absoluteURL: blogPostURLS.TRAFFIC_ROAD_ABSOLUTE,
+    relativeURL: blogPostURLS.TRAFFIC_ROAD_RELATIVE,
+    title: "Traffic Road 🎮 Play on CrazyPokiGames",
+    description:
+      "This high-speed car chase game will get your adrenaline pumping as soon as you put your foot on the gas. Police cars will start tailing you from the moment you start the car.",
+    lastUpdateTime: `${dynamicLastUpdatedTime()}`,
+    publishedTime: "2025-09-05T10:07:55+00:00",
+    featuredImage: trafficRoadImg,
+    featuredImageAltText: "traffic-road-poster",
+    ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
+    changeFrequency: "daily",
+    tags: [{ tag: "disclaimer", href: "/disclaimer" }],
+  },
 };
 
 export const blogPostsObj: blogPostsObjProps[] = [
@@ -204,5 +226,18 @@ export const blogPostsObj: blogPostsObjProps[] = [
     featuredImage: SEO_OBJ.ESCAPE_ROAD.featuredImage,
     featuredImageAltText: `${SEO_OBJ.ESCAPE_ROAD.featuredImageAltText}`,
     ogImageURL: `${SEO_OBJ.ESCAPE_ROAD.ogImageURL}`,
+  },
+
+  {
+    id: 1,
+    url: `${blogPostURLS.TRAFFIC_ROAD_RELATIVE}`,
+    title: `${SEO_OBJ.TRAFFIC_ROAD.title}`,
+    description: `${SEO_OBJ.TRAFFIC_ROAD.description}`,
+    lastUpdateTime: `${SEO_OBJ.TRAFFIC_ROAD.lastUpdateTime}`,
+    publishedTime: `${SEO_OBJ.TRAFFIC_ROAD.publishedTime}`,
+    tags: SEO_OBJ.TRAFFIC_ROAD.tags!,
+    featuredImage: SEO_OBJ.TRAFFIC_ROAD.featuredImage,
+    featuredImageAltText: `${SEO_OBJ.TRAFFIC_ROAD.featuredImageAltText}`,
+    ogImageURL: `${SEO_OBJ.TRAFFIC_ROAD.ogImageURL}`,
   },
 ];
